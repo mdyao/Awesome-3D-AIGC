@@ -32,10 +32,10 @@ A curated list of papers and open-source resources focused on 3D AIGC, intended 
 
 </details>
 
-<be>
+<br>
 
-## Survey
 
+## Survey:
 ### 1. Generative AI meets 3D: A Survey on Text-to-3D in AIGC Era
 
 **Authors**: Chenghao Li, Chaoning Zhang, Atish Waghwase, Lik-Hang Lee, Francois Rameau, Yang Yang, Sung-Ho Bae, Choong Seon Hong
@@ -69,8 +69,9 @@ Deep learning has been successfully used for tasks in the 2D image domain. Resea
   [📄 Paper](https://link.springer.com/article/10.1007/s41095-022-0321-5) 
 
 
-## Text to 3D
-
+<br>
+ 
+## Text to 3D Generation:
 ### 1. DreamFusion: Text-to-3D using 2D Diffusion
 
 **Authors**: Ben Poole, Ajay Jain, Jonathan T. Barron, Ben Mildenhall
@@ -83,8 +84,10 @@ Recent breakthroughs in text-to-image synthesis have been driven by diffusion mo
   [📄 Paper](https://arxiv.org/abs/2209.14988) | [🌐 Project Page](https://dreamfusion3d.github.io) | [💻 Code](https://github.com/ashawkey/stable-dreamfusion) 
 
 
-## Image to 3D
 
+<br>
+ 
+## Image to 3D Generation:
 ### 1. Zero-1-to-3: Zero-shot One Image to 3D Object
 
 **Authors**: Ruoshi Liu1, Rundi Wu1, Basile Van Hoorick1, Pavel Tokmakov2, Sergey Zakharov2, Carl Vondrick1
@@ -109,8 +112,9 @@ We report Zero123++, an image-conditioned diffusion model for generating 3D-cons
 
 
 
-## Editing 
-
+<br>
+ 
+## Editing:
 ### 1. DreamEditor: Text-Driven 3D Scene Editing with Neural Fields
 
 **Authors**: Zhuang, Jingyu and Wang, Chen and Liu, Lingjie and Lin, Liang and Li, Guanbin
@@ -148,10 +152,9 @@ Existing 3D-aware facial generation methods face a dilemma in quality versus edi
   [📄 Paper](https://arxiv.org/abs/2208.07227) | [💻 Code](https://github.com/vLAR-group/DM-NeRF) 
 
 
+<br>
 
-## Human-Avatar Generation
-
-
+## Human-Avatar Generation:
 ### 1. AvatarBooth: High-Quality and Customizable 3D Human Avatar Generation
 
 **Authors**: Yifei Zeng1, Yuanxun Lu1, Xinya Ji1, Yao Yao1, Hao Zhu1, Xun Cao1,
@@ -190,8 +193,9 @@ Existing 3D-aware facial generation methods face a dilemma in quality versus edi
   [📄 Paper](https://openaccess.thecvf.com/content/WACV2023/papers/Canfes_Text_and_Image_Guided_3D_Avatar_Generation_and_Manipulation_WACV_2023_paper.pdf) | [🌐 Project Page](https://catlab-team.github.io/latent3D/) | [💻 Code](https://github.com/catlab-team/latent3D_code) 
 
 
+<br>
 
-## Autonomous Driving
+## Autonomous Driving:
 
 ### 1. 3D Object Detection for Autonomous Driving: A Comprehensive Survey
 
@@ -217,9 +221,9 @@ Existing 3D-aware facial generation methods face a dilemma in quality versus edi
   [📄 Paper](https://arxiv.org/abs/2202.02215) 
 
 
+<br>
 
-
-## BioMedical
+## BioMedical:
 
 ### 1. MinD-3D: Reconstruct High-quality 3D objects in Human Brain
 **Authors**: Jianxiong Gao, Yuqian Fu, Yun Wang, Xuelin Qian, Jianfeng Feng, Yanwei Fu
@@ -232,7 +236,9 @@ In this paper, we introduce Recon3DMind, a groundbreaking task focused on recons
   [📄 Paper](https://arxiv.org/abs/2312.07485) | [🌐 Project Page](https://jianxgao.github.io/MinD-3D/) | [💻 Code](https://github.com/JianxGao/MinD-3D) 
 
 
-## Misc
+<br>
+ 
+## Misc:
 
 <!--
 
@@ -251,7 +257,7 @@ In this paper, we introduce Recon3DMind, a groundbreaking task focused on recons
 
 
 
-
+<br>
 
 
 ## Credits
