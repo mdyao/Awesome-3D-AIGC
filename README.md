@@ -10,9 +10,7 @@ A curated list of papers and open-source resources focused on 3D AIGC, intended 
 - [Image to 3D](#image-to-3d)
 - [Editing](#editing)
 - [Efficient-3D-AIGC](#diffusion)
-- [Multi-modality to 3D](multi-modality-to-3D)
-- [Avatar Generation](#avatars)
-- [Human Body Generation](#human-body-generation)
+- [Human Avatar Generation](#human-avatar-generation)
 - [Autonomous Driving](#autonomous-driving)
 - [BioMedical](biomedical)
 - [Misc](#misc)
@@ -86,8 +84,10 @@ Recent breakthroughs in text-to-image synthesis have been driven by diffusion mo
 
   [📄 Paper](https://arxiv.org/abs/2209.14988) | [🌐 Project Page](https://dreamfusion3d.github.io) | [💻 Code](https://github.com/ashawkey/stable-dreamfusion) 
 
-### 2. Zero-1-to-3: Zero-shot One Image to 3D Object
 
+## Image to 3D
+
+### 1. Zero-1-to-3: Zero-shot One Image to 3D Object
 
 **Authors**: Ruoshi Liu1, Rundi Wu1, Basile Van Hoorick1, Pavel Tokmakov2, Sergey Zakharov2, Carl Vondrick1
 
@@ -98,7 +98,7 @@ We introduce Zero-1-to-3, a framework for changing the camera viewpoint of an ob
 
   [📄 Paper](https://arxiv.org/abs/2303.11328) | [🌐 Project Page](https://zero123.cs.columbia.edu/) | [💻 Code](https://github.com/cvlab-columbia/zero123) | [🤗 Hugging Face](https://huggingface.co/spaces/cvlab/zero123-live)
 
-### 3. Zero123++: a Single Image to Consistent Multi-view Diffusion Base Model
+### 2. Zero123++: a Single Image to Consistent Multi-view Diffusion Base Model
 
 **Authors**: Ruoxi Shi, Hansheng Chen, Zhuoyang Zhang, Minghua Liu, Chao Xu, Xinyue Wei, Linghao Chen, Chong Zeng, Hao Su
 
@@ -111,15 +111,62 @@ We report Zero123++, an image-conditioned diffusion model for generating 3D-cons
 
 
 
-## Image to 3D
+## Editing 
 
-## Multi-modality to 3D
+## 1. DreamEditor: Text-Driven 3D Scene Editing with Neural Fields
 
-## Efficient-3D-AIGC
+**Authors**: Zhuang, Jingyu and Wang, Chen and Liu, Lingjie and Lin, Liang and Li, Guanbin
 
-## Avatar Generation
+<details span>
+<summary><b>Abstract</b></summary>
+Neural fields have achieved impressive advancements in view synthesis and scene reconstruction. However, editing these neural fields remains challenging due to the implicit encoding of geometry and texture information. In this paper, we propose DreamEditor, a novel framework that enables users to perform controlled editing of neural fields using text prompts. By representing scenes as mesh-based neural fields, DreamEditor allows localized editing within specific regions. DreamEditor utilizes the text encoder of a pretrained text-to-Image diffusion model to automatically identify the regions to be edited based on the semantics of the text prompts. Subsequently, DreamEditor optimizes the editing region and aligns its geometry and texture with the text prompts through score distillation sampling [Poole et al. 2022]. Extensive experiments have demonstrated that DreamEditor can accurately edit neural fields of real-world scenes according to the given text prompts while ensuring consistency in irrelevant areas. DreamEditor generates highly realistic textures and geometry, significantly surpassing previous works in both quantitative and qualitative evaluations.
+</details>
 
-## Human Body Generation
+  [📄 Paper](https://arxiv.org/abs/2306.13455) | [🌐 Project Page](https://www.sysu-hcp.net/projects/cv/111.html) | [💻 Code](https://github.com/zjy526223908/DreamEditor) 
+
+
+## 2. IDE-3D: Interactive Disentangled Editing For High-Resolution 3D-aware Portrait Synthesis
+
+**Authors**: Jingxiang Sun, Xuan Wang, Yichun Shi, Lizhen Wang, Jue Wang, Yebin Liu
+
+<details span>
+<summary><b>Abstract</b></summary>
+Existing 3D-aware facial generation methods face a dilemma in quality versus editability: they either generate editable results in low resolution, or high quality ones with no editing flexibility. In this work, we propose a new approach that brings the best of both worlds together. Our system consists of three major components: (1) a 3D-semantics-aware generative model that produces view-consistent, disentangled face images and semantic masks; (2) a hybrid GAN inversion approach that initialize the latent codes from the semantic and texture encoder, and further optimized them for faithful reconstruction; and (3) a canonical editor that enables efficient manipulation of semantic masks in canonical view and producs high quality editing results. Our approach is competent for many applications, e.g. free-view face drawing, editing and style control. Both quantitative and qualitative results show that our method reaches the state-of-the-art in terms of photorealism, faithfulness and efficiency.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2205.15517) | [🌐 Project Page](https://mrtornado24.github.io/IDE-3D/) | [💻 Code](https://github.com/MrTornado24/IDE-3D) 
+
+
+
+
+## Human-Avatar Generation
+
+
+## 1. AvatarBooth: High-Quality and Customizable 3D Human Avatar Generation
+
+**Authors**: Yifei Zeng1, Yuanxun Lu1, Xinya Ji1, Yao Yao1, Hao Zhu1, Xun Cao1,
+
+<details span>
+<summary><b>Abstract</b></summary>
+ We introduce AvatarBooth, a novel method for generating high-quality 3D avatars using text prompts or specific images. Unlike previous approaches that can only synthesize avatars based on simple text descriptions, our method enables the creation of personalized avatars from casually captured face or body images, while still supporting text-based model generation and editing. Our key contribution is the precise avatar generation control by using dual fine-tuned diffusion models separately for the human face and body. This enables us to capture intricate details of facial appearance, clothing, and accessories, resulting in highly realistic avatar generations. Furthermore, we introduce pose-consistent constraint to the optimization process to enhance the multi-view consistency of synthesized head images from the diffusion model and thus eliminate interference from uncontrolled human poses. In addition, we present a multi-resolution rendering strategy that facilitates coarse-to-fine supervision of 3D avatar generation, thereby enhancing the performance of the proposed system. The resulting avatar model can be further edited using additional text descriptions and driven by motion sequences. Experiments show that AvatarBooth outperforms previous text-to-3D methods in terms of rendering and geometric quality from either text prompts or specific images. Please check our project website at this https URL.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2306.09864) | [🌐 Project Page](https://zeng-yifei.github.io/avatarbooth_page/) | [💻 Code](https://github.com/zeng-yifei/AvatarBooth) 
+
+
+
+## 2. SEEAvatar: Photorealistic Text-to-3D Avatar Generation with Constrained Geometry and Appearance
+
+**Authors**: Yuanyou Xu, Zongxin Yang, Yi Yang
+
+<details span>
+<summary><b>Abstract</b></summary>
+ Powered by large-scale text-to-image generation models, text-to-3D avatar generation has made promising progress. However, most methods fail to produce photorealistic results, limited by imprecise geometry and low-quality appearance. Towards more practical avatar generation, we present SEEAvatar, a method for generating photorealistic 3D avatars from text with SElf-Evolving constraints for decoupled geometry and appearance. For geometry, we propose to constrain the optimized avatar in a decent global shape with a template avatar. The template avatar is initialized with human prior and can be updated by the optimized avatar periodically as an evolving template, which enables more flexible shape generation. Besides, the geometry is also constrained by the static human prior in local parts like face and hands to maintain the delicate structures. For appearance generation, we use diffusion model enhanced by prompt engineering to guide a physically based rendering pipeline to generate realistic textures. The lightness constraint is applied on the albedo texture to suppress incorrect lighting effect. Experiments show that our method outperforms previous methods on both global and local geometry and appearance quality by a large margin. Since our method can produce high-quality meshes and textures, such assets can be directly applied in classic graphics pipeline for realistic rendering under any lighting condition. Project page at: this https URL.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2312.08889.pdf) | [🌐 Project Page](https://seeavatar3d.github.io/) 
+
+
 
 ## Autonomous Driving
 
@@ -140,8 +187,20 @@ In this paper, we introduce Recon3DMind, a groundbreaking task focused on recons
 
 ## Misc
 
+<!--
+
+## 2. 
+
+**Authors**: 
+
+<details span>
+<summary><b>Abstract</b></summary>
+</details>
+
+  [📄 Paper]() | [🌐 Project Page]() | [💻 Code]() 
 
 
+-->
 
 
 
