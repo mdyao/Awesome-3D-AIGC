@@ -9,7 +9,6 @@ A curated list of papers and open-source resources focused on 3D AIGC, intended 
 - [Text to 3D Generation](#text-to-3d)
 - [Image to 3D Generation](#image-to-3d)
 - [3D Editing](#editing)
-- [Efficient-3D-AIGC](#diffusion)
 - [Human Avatar Generation](#human-avatar-generation)
 - [Autonomous Driving](#autonomous-driving)
 - [BioMedical](biomedical)
@@ -193,10 +192,21 @@ Existing 3D-aware facial generation methods face a dilemma in quality versus edi
 
 
 
-
 ## Autonomous Driving
 
-## 1. A Survey on Safety-Critical Driving Scenario Generation – A Methodological Perspective
+## 1. 3D Object Detection for Autonomous Driving: A Comprehensive Survey
+
+**Authors**: Jiageng Mao, Shaoshuai Shi, Xiaogang Wang, Hongsheng Li
+
+<details span>
+<summary><b>Abstract</b></summary>
+ Autonomous driving, in recent years, has been receiving increasing attention for its potential to relieve drivers' burdens and improve the safety of driving. In modern autonomous driving pipelines, the perception system is an indispensable component, aiming to accurately estimate the status of surrounding environments and provide reliable observations for prediction and planning. 3D object detection, which intelligently predicts the locations, sizes, and categories of the critical 3D objects near an autonomous vehicle, is an important part of a perception system. This paper reviews the advances in 3D object detection for autonomous driving. First, we introduce the background of 3D object detection and discuss the challenges in this task. Second, we conduct a comprehensive survey of the progress in 3D object detection from the aspects of models and sensory inputs, including LiDAR-based, camera-based, and multi-modal detection approaches. We also provide an in-depth analysis of the potentials and challenges in each category of methods. Additionally, we systematically investigate the applications of 3D object detection in driving systems. Finally, we conduct a performance analysis of the 3D object detection approaches, and we further summarize the research trends over the years and prospect the future directions of this area.
+</details>
+
+  [📄 Paper]() | [💻 Code](https://github.com/PointsCoder/Awesome-3D-Object-Detection-for-Autonomous-Driving) 
+
+
+## 2. A Survey on Safety-Critical Driving Scenario Generation – A Methodological Perspective
 
 **Authors**: Wenhao Ding, Chejian Xu, Mansur Arief, Haohong Lin, Bo Li, Ding Zhao
 
