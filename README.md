@@ -6,9 +6,9 @@ A curated list of papers and open-source resources focused on 3D AIGC, intended 
 ## Table of contents
 
 - [Survey](#survey)
-- [Text to 3D](#text-to-3d)
-- [Image to 3D](#image-to-3d)
-- [Editing](#editing)
+- [Text to 3D Generation](#text-to-3d)
+- [Image to 3D Generation](#image-to-3d)
+- [3D Editing](#editing)
 - [Efficient-3D-AIGC](#diffusion)
 - [Human Avatar Generation](#human-avatar-generation)
 - [Autonomous Driving](#autonomous-driving)
@@ -138,6 +138,18 @@ Existing 3D-aware facial generation methods face a dilemma in quality versus edi
 
 
 
+## 2. DM-NeRF: 3D Scene Geometry Decomposition and Manipulation from 2D Images
+
+**Authors**: Bing Wang, Lu Chen, Bo Yang
+
+<details span>
+<summary><b>Abstract</b></summary>
+ In this paper, we study the problem of 3D scene geometry decomposition and manipulation from 2D views. By leveraging the recent implicit neural representation techniques, particularly the appealing neural radiance fields, we introduce an object field component to learn unique codes for all individual objects in 3D space only from 2D supervision. The key to this component is a series of carefully designed loss functions to enable every 3D point, especially in non-occupied space, to be effectively optimized even without 3D labels. In addition, we introduce an inverse query algorithm to freely manipulate any specified 3D object shape in the learned scene representation. Notably, our manipulation algorithm can explicitly tackle key issues such as object collisions and visual occlusions. Our method, called DM-NeRF, is among the first to simultaneously reconstruct, decompose, manipulate and render complex 3D scenes in a single pipeline. Extensive experiments on three datasets clearly show that our method can accurately decompose all 3D objects from 2D views, allowing any interested object to be freely manipulated in 3D space such as translation, rotation, size adjustment, and deformation.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2208.07227) | [💻 Code](https://github.com/vLAR-group/DM-NeRF) 
+
+
 
 ## Human-Avatar Generation
 
@@ -168,7 +180,33 @@ Existing 3D-aware facial generation methods face a dilemma in quality versus edi
 
 
 
+## 3. Text and Image Guided 3D Avatar Generation and Manipulation
+
+**Authors**: Zehranaz Canfes, M. Furkan Atasoy, Alara Dirik, Pinar Yanardag
+
+<details span>
+<summary><b>Abstract</b></summary>
+ The manipulation of latent space has recently become an interesting topic in the field of generative models. Recent research shows that latent directions can be used to manipulate images towards certain attributes. However, controlling the generation process of 3D generative models remains a challenge. In this work, we propose a novel 3D manipulation method that can manipulate both the shape and texture of the model using text or image-based prompts such as 'a young face' or 'a surprised face'. We leverage the power of Contrastive Language-Image Pre-training (CLIP) model and a pre-trained 3D GAN model designed to generate face avatars, and create a fully differentiable rendering pipeline to manipulate meshes. More specifically, our method takes an input latent code and modifies it such that the target attribute specified by a text or image prompt is present or enhanced, while leaving other attributes largely unaffected. Our method requires only 5 minutes per manipulation, and we demonstrate the effectiveness of our approach with extensive results and comparisons.
+</details>
+
+  [📄 Paper](https://openaccess.thecvf.com/content/WACV2023/papers/Canfes_Text_and_Image_Guided_3D_Avatar_Generation_and_Manipulation_WACV_2023_paper.pdf) | [🌐 Project Page](https://catlab-team.github.io/latent3D/) | [💻 Code](https://github.com/catlab-team/latent3D_code) 
+
+
+
+
 ## Autonomous Driving
+
+## 1. A Survey on Safety-Critical Driving Scenario Generation – A Methodological Perspective
+
+**Authors**: Wenhao Ding, Chejian Xu, Mansur Arief, Haohong Lin, Bo Li, Ding Zhao
+
+<details span>
+<summary><b>Abstract</b></summary>
+ Autonomous driving systems have witnessed a significant development during the past years thanks to the advance in machine learning-enabled sensing and decision-making algorithms. One critical challenge for their massive deployment in the real world is their safety evaluation. Most existing driving systems are still trained and evaluated on naturalistic scenarios collected from daily life or heuristically-generated adversarial ones. However, the large population of cars, in general, leads to an extremely low collision rate, indicating that the safety-critical scenarios are rare in the collected real-world data. Thus, methods to artificially generate scenarios become crucial to measure the risk and reduce the cost. In this survey, we focus on the algorithms of safety-critical scenario generation in autonomous driving. We first provide a comprehensive taxonomy of existing algorithms by dividing them into three categories: data-driven generation, adversarial generation, and knowledge-based generation. Then, we discuss useful tools for scenario generation, including simulation platforms and packages. Finally, we extend our discussion to five main challenges of current works -- fidelity, efficiency, diversity, transferability, controllability -- and research opportunities lighted up by these challenges.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2202.02215) 
+
 
 
 
