@@ -13,7 +13,6 @@ A curated list of papers and open-source resources focused on 3D AIGC, intended 
 - [Autonomous Driving](#autonomous-driving)
 - [BioMedical](biomedical)
 - [Misc](#misc)
-
 - [Open Source Implementations](#open-source-implementations)
   * [Reference](#reference)
   * [Unofficial Implementations](#unofficial-implementations)
@@ -23,7 +22,7 @@ A curated list of papers and open-source resources focused on 3D AIGC, intended 
 - [Tutorial Videos](#tutorial-videos)
 - [Credits](#credits)
 
-
+  
 <details span>
 <summary><b>Update Log:</b></summary>
 <br>
@@ -137,7 +136,7 @@ Existing 3D-aware facial generation methods face a dilemma in quality versus edi
 
 
 
-## 2. DM-NeRF: 3D Scene Geometry Decomposition and Manipulation from 2D Images
+## 3. DM-NeRF: 3D Scene Geometry Decomposition and Manipulation from 2D Images
 
 **Authors**: Bing Wang, Lu Chen, Bo Yang
 
