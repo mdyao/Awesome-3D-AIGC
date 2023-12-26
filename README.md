@@ -237,10 +237,10 @@ In this paper, we introduce Recon3DMind, a groundbreaking task focused on recons
 
 
 <br>
- 
-## Misc:
 
+ 
 <!--
+## Misc:
 
 ## 2. 
 
