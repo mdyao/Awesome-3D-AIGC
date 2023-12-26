@@ -28,7 +28,7 @@ A curated list of papers and open-source resources focused on 3D AIGC, intended 
 <br>
 
 
-  **Dec 27, 2023**: Initial list with first 6 papers.
+  **Dec 27, 2023**: Initial list with first 15 papers.
 
 </details>
 
