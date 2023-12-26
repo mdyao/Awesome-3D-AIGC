@@ -111,7 +111,7 @@ We report Zero123++, an image-conditioned diffusion model for generating 3D-cons
 
 ## Editing 
 
-## 1. DreamEditor: Text-Driven 3D Scene Editing with Neural Fields
+### 1. DreamEditor: Text-Driven 3D Scene Editing with Neural Fields
 
 **Authors**: Zhuang, Jingyu and Wang, Chen and Liu, Lingjie and Lin, Liang and Li, Guanbin
 
@@ -123,7 +123,7 @@ Neural fields have achieved impressive advancements in view synthesis and scene 
   [📄 Paper](https://arxiv.org/abs/2306.13455) | [🌐 Project Page](https://www.sysu-hcp.net/projects/cv/111.html) | [💻 Code](https://github.com/zjy526223908/DreamEditor) 
 
 
-## 2. IDE-3D: Interactive Disentangled Editing For High-Resolution 3D-aware Portrait Synthesis
+### 2. IDE-3D: Interactive Disentangled Editing For High-Resolution 3D-aware Portrait Synthesis
 
 **Authors**: Jingxiang Sun, Xuan Wang, Yichun Shi, Lizhen Wang, Jue Wang, Yebin Liu
 
@@ -136,7 +136,7 @@ Existing 3D-aware facial generation methods face a dilemma in quality versus edi
 
 
 
-## 3. DM-NeRF: 3D Scene Geometry Decomposition and Manipulation from 2D Images
+### 3. DM-NeRF: 3D Scene Geometry Decomposition and Manipulation from 2D Images
 
 **Authors**: Bing Wang, Lu Chen, Bo Yang
 
@@ -152,7 +152,7 @@ Existing 3D-aware facial generation methods face a dilemma in quality versus edi
 ## Human-Avatar Generation
 
 
-## 1. AvatarBooth: High-Quality and Customizable 3D Human Avatar Generation
+### 1. AvatarBooth: High-Quality and Customizable 3D Human Avatar Generation
 
 **Authors**: Yifei Zeng1, Yuanxun Lu1, Xinya Ji1, Yao Yao1, Hao Zhu1, Xun Cao1,
 
@@ -165,7 +165,7 @@ Existing 3D-aware facial generation methods face a dilemma in quality versus edi
 
 
 
-## 2. SEEAvatar: Photorealistic Text-to-3D Avatar Generation with Constrained Geometry and Appearance
+### 2. SEEAvatar: Photorealistic Text-to-3D Avatar Generation with Constrained Geometry and Appearance
 
 **Authors**: Yuanyou Xu, Zongxin Yang, Yi Yang
 
@@ -178,7 +178,7 @@ Existing 3D-aware facial generation methods face a dilemma in quality versus edi
 
 
 
-## 3. Text and Image Guided 3D Avatar Generation and Manipulation
+### 3. Text and Image Guided 3D Avatar Generation and Manipulation
 
 **Authors**: Zehranaz Canfes, M. Furkan Atasoy, Alara Dirik, Pinar Yanardag
 
@@ -193,7 +193,7 @@ Existing 3D-aware facial generation methods face a dilemma in quality versus edi
 
 ## Autonomous Driving
 
-## 1. 3D Object Detection for Autonomous Driving: A Comprehensive Survey
+### 1. 3D Object Detection for Autonomous Driving: A Comprehensive Survey
 
 **Authors**: Jiageng Mao, Shaoshuai Shi, Xiaogang Wang, Hongsheng Li
 
@@ -205,7 +205,7 @@ Existing 3D-aware facial generation methods face a dilemma in quality versus edi
   [📄 Paper]() | [💻 Code](https://github.com/PointsCoder/Awesome-3D-Object-Detection-for-Autonomous-Driving) 
 
 
-## 2. A Survey on Safety-Critical Driving Scenario Generation – A Methodological Perspective
+### 2. A Survey on Safety-Critical Driving Scenario Generation – A Methodological Perspective
 
 **Authors**: Wenhao Ding, Chejian Xu, Mansur Arief, Haohong Lin, Bo Li, Ding Zhao
 
