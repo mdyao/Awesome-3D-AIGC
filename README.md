@@ -11,6 +11,7 @@ A curated list of papers and open-source resources focused on 3D AIGC, intended 
 - [3D Editing](#editing)
 - [Human Avatar Generation](#human-avatar-generation)
 - [Autonomous Driving](#autonomous-driving)
+- [SLAM](#slam)
 - [BioMedical](#biomedical)
 - [Misc](#misc)
 - [Open Source Implementations](#open-source-implementations)
@@ -70,7 +71,7 @@ Deep learning has been successfully used for tasks in the 2D image domain. Resea
 
 
 <br>
- 
+
 ## Text to 3D Generation:
 ### 1. DreamFusion: Text-to-3D using 2D Diffusion
 
@@ -85,8 +86,44 @@ Recent breakthroughs in text-to-image synthesis have been driven by diffusion mo
 
 
 
+### 2. Shapeglot: Learning Language for Shape Differentiation [CVPR2019]
+
+**Authors**: Panos Achlioptas* Judy Fan Robert Hawkins Noah Goodman Leonidas Guibas
+
+<details span>
+<summary><b>Abstract</b></summary>
+    In this work we explore how fine-grained differences between the shapes of common objects are expressed in language, grounded on images and 3D models of the objects. We first build a large scale, carefully controlled dataset of human utterances that each refers to a 2D rendering of a 3D CAD model so as to distinguish it from a set of shape-wise similar alternatives. Using this dataset, we develop neural language understanding (listening) and production (speaking) models that vary in their grounding (pure 3D forms via point-clouds vs. rendered 2D images), the degree of pragmatic reasoning captured (e.g. speakers that reason about a listener or not), and the neural architecture (e.g. with or without attention). We find models that perform well with both synthetic and human partners, and with held out utterances and objects. We also find that these models are amenable to zero-shot transfer learning to novel object classes (e.g. transfer from training on chairs to testing on lamps), as well as to real-world images drawn from furniture catalogs. Lesion studies indicate that the neural listeners depend heavily on part-related words and associate these words correctly with visual parts of objects (without any explicit network training on object parts), and that transfer to novel classes is most successful when known part-words are available. This work illustrates a practical approach to language grounding, and provides a case study in the relationship between object shape and linguistic structure when it comes to object differentiation.
+</details>
+
+  [📄 Paper](https://openaccess.thecvf.com/content_ICCV_2019/papers/Achlioptas_Shapeglot_Learning_Language_for_Shape_Differentiation_ICCV_2019_paper.pdf) | [💻 Code](https://github.com/optas/shapeglot) 
+
+
+
+## 3. Text2Shape: Generating Shapes from Natural Language by Learning Joint Embeddings
+
+**Authors**: Kevin Chen, Christopher B. Choy, Manolis Savva, Angel X. Chang, Thomas Funkhouser, Silvio Savarese
+
+<details span>
+<summary><b>Abstract</b></summary>
+    We present a method for generating colored 3D shapes from natural language. To this end, we first learn joint embeddings of freeform text descriptions and colored 3D shapes. Our model combines and extends learning by association and metric learning approaches to learn implicit cross-modal connections, and produces a joint representation that captures the many-to-many relations between language and physical properties of 3D shapes such as color and shape. To evaluate our approach, we collect a large dataset of natural language descriptions for physical 3D objects in the ShapeNet dataset. With this learned joint embedding we demonstrate text-to-shape retrieval that outperforms baseline approaches. Using our embeddings with a novel conditional Wasserstein GAN framework, we generate colored 3D shapes from text. Our method is the first to connect natural language text with realistic 3D objects exhibiting rich variations in color, texture, and shape detail. See video at this https URL
+</details>
+
+  [📄 Paper](http://arxiv.org/abs/1803.08495) | [🌐 Project Page](http://text2shape.stanford.edu/) | [💻 Code](https://github.com/kchen92/text2shape/) 
+
+## 4.
+
+**Authors**: 
+
+<details span>
+<summary><b>Abstract</b></summary>
+</details>
+
+  [📄 Paper]() | [🌐 Project Page]() | [💻 Code]() 
+
+
+
 <br>
- 
+
 ## Image to 3D Generation:
 ### 1. Zero-1-to-3: Zero-shot One Image to 3D Object
 
@@ -113,7 +150,7 @@ We report Zero123++, an image-conditioned diffusion model for generating 3D-cons
 
 
 <br>
- 
+
 ## Editing:
 ### 1. DreamEditor: Text-Driven 3D Scene Editing with Neural Fields
 
@@ -150,7 +187,6 @@ Existing 3D-aware facial generation methods face a dilemma in quality versus edi
 </details>
 
   [📄 Paper](https://arxiv.org/abs/2208.07227) | [💻 Code](https://github.com/vLAR-group/DM-NeRF) 
-
 
 <br>
 
@@ -238,11 +274,11 @@ In this paper, we introduce Recon3DMind, a groundbreaking task focused on recons
 
 <br>
 
- 
+
 <!--
 ## Misc:
 
-## 2. 
+## 2.
 
 **Authors**: 
 
