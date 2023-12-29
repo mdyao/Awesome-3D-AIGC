@@ -13,6 +13,7 @@ A curated list of papers and open-source resources focused on 3D AIGC, intended 
 - [Autonomous Driving](#autonomous-driving)
 - [SLAM](#slam)
 - [BioMedical](#biomedical)
+- [4D AIGC](#4d-aigc)
 - [Misc](#misc)
 - [Open Source Implementations](#open-source-implementations)
   * [Reference](#reference)
@@ -28,7 +29,7 @@ A curated list of papers and open-source resources focused on 3D AIGC, intended 
 <summary><b>Update Log:</b></summary>
 <br>
 
-
+  **Dec 29, 2023**: Contribute on the text to 3d part, add new papers and publish years.
   **Dec 27, 2023**: Initial list with first 15 papers.
 
 </details>
@@ -73,7 +74,7 @@ Deep learning has been successfully used for tasks in the 2D image domain. Resea
 <br>
 
 ## Text to 3D Generation:
-### 1. DreamFusion: Text-to-3D using 2D Diffusion
+### 1. DreamFusion: Text-to-3D using 2D Diffusion [ICLR 2023]
 
 **Authors**: Ben Poole, Ajay Jain, Jonathan T. Barron, Ben Mildenhall
 
@@ -86,7 +87,7 @@ Recent breakthroughs in text-to-image synthesis have been driven by diffusion mo
 
 
 
-### 2. Shapeglot: Learning Language for Shape Differentiation [CVPR2019]
+### 2. Shapeglot: Learning Language for Shape Differentiation [CVPR 2019]
 
 **Authors**: Panos Achlioptas* Judy Fan Robert Hawkins Noah Goodman Leonidas Guibas
 
@@ -99,7 +100,7 @@ Recent breakthroughs in text-to-image synthesis have been driven by diffusion mo
 
 
 
-## 3. Text2Shape: Generating Shapes from Natural Language by Learning Joint Embeddings
+## 3. Text2Shape: Generating Shapes from Natural Language by Learning Joint Embeddings [ACCV 2018]
 
 **Authors**: Kevin Chen, Christopher B. Choy, Manolis Savva, Angel X. Chang, Thomas Funkhouser, Silvio Savarese
 
@@ -110,15 +111,76 @@ Recent breakthroughs in text-to-image synthesis have been driven by diffusion mo
 
   [📄 Paper](http://arxiv.org/abs/1803.08495) | [🌐 Project Page](http://text2shape.stanford.edu/) | [💻 Code](https://github.com/kchen92/text2shape/) 
 
-## 4.
+## 4. ShapeCrafter: A Recursive Text-Conditioned 3D Shape Generation Model [NeurIPS 2022]
 
-**Authors**: 
+**Authors**: Rao Fu, Xiao Zhan, Yiwen Chen, Daniel Ritchie, Srinath Sridhar
 
 <details span>
 <summary><b>Abstract</b></summary>
+ We present ShapeCrafter, a neural network for recursive text-conditioned 3D shape generation. Existing methods to generate text-conditioned 3D shapes consume an entire text prompt to generate a 3D shape in a single step. However, humans tend to describe shapes recursively---we may start with an initial description and progressively add details based on intermediate results. To capture this recursive process, we introduce a method to generate a 3D shape distribution, conditioned on an initial phrase, that gradually evolves as more phrases are added. Since existing datasets are insufficient for training this approach, we present Text2Shape++, a large dataset of 369K shape--text pairs that supports recursive shape generation. To capture local details that are often used to refine shape descriptions, we build on top of vector-quantized deep implicit functions that generate a distribution of high-quality shapes. Results show that our method can generate shapes consistent with text descriptions, and shapes evolve gradually as more phrases are added. Our method supports shape editing, extrapolation, and can enable new applications in human--machine collaboration for creative design.
 </details>
 
-  [📄 Paper]() | [🌐 Project Page]() | [💻 Code]() 
+  [📄 Paper](https://arxiv.org/abs/2207.09446) | [🌐 Project Page](https://ivl.cs.brown.edu/#/projects/shapecrafter) 
+
+
+## 5. Magic3D: High-Resolution Text-to-3D Content Creation [CVPR 2023]
+
+**Authors**: Chen-Hsuan Lin, Jun Gao, Luming Tang, Towaki Takikawa, Xiaohui Zeng, Xun Huang, Karsten Kreis, Sanja Fidler, Ming-Yu Liu, Tsung-Yi Lin
+
+<details span>
+<summary><b>Abstract</b></summary>
+ DreamFusion has recently demonstrated the utility of a pre-trained text-to-image diffusion model to optimize Neural Radiance Fields (NeRF), achieving remarkable text-to-3D synthesis results. However, the method has two inherent limitations: (a) extremely slow optimization of NeRF and (b) low-resolution image space supervision on NeRF, leading to low-quality 3D models with a long processing time. In this paper, we address these limitations by utilizing a two-stage optimization framework. First, we obtain a coarse model using a low-resolution diffusion prior and accelerate with a sparse 3D hash grid structure. Using the coarse representation as the initialization, we further optimize a textured 3D mesh model with an efficient differentiable renderer interacting with a high-resolution latent diffusion model. Our method, dubbed Magic3D, can create high quality 3D mesh models in 40 minutes, which is 2x faster than DreamFusion (reportedly taking 1.5 hours on average), while also achieving higher resolution. User studies show 61.7% raters to prefer our approach over DreamFusion. Together with the image-conditioned generation capabilities, we provide users with new ways to control 3D synthesis, opening up new avenues to various creative applications.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2211.10440.pdf) | [🌐 Project Page](https://research.nvidia.com/labs/dir/magic3d)  | [💻 Code][Coming soon.] 
+
+
+## 6. Dream3D: Zero-Shot Text-to-3D Synthesis Using 3D Shape Prior and Text-to-Image Diffusion Models [CVPR 2023]
+
+**Authors**: Jiale Xu, Xintao Wang, Weihao Cheng, Yan-Pei Cao, Ying Shan, Xiaohu Qie, Shenghua Gao
+
+<details span>
+<summary><b>Abstract</b></summary>
+ Recent CLIP-guided 3D optimization methods, such as DreamFields and PureCLIPNeRF, have achieved impressive results in zero-shot text-to-3D synthesis. However, due to scratch training and random initialization without prior knowledge, these methods often fail to generate accurate and faithful 3D structures that conform to the input text. In this paper, we make the first attempt to introduce explicit 3D shape priors into the CLIP-guided 3D optimization process. Specifically, we first generate a high-quality 3D shape from the input text in the text-to-shape stage as a 3D shape prior. We then use it as the initialization of a neural radiance field and optimize it with the full prompt. To address the challenging text-to-shape generation task, we present a simple yet effective approach that directly bridges the text and image modalities with a powerful text-to-image diffusion model. To narrow the style domain gap between the images synthesized by the text-to-image diffusion model and shape renderings used to train the image-to-shape generator, we further propose to jointly optimize a learnable text prompt and fine-tune the text-to-image diffusion model for rendering-style image generation. Our method, Dream3D, is capable of generating imaginative 3D content with superior visual quality and shape accuracy compared to state-of-the-art methods.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2212.14704.pdf) | [🌐 Project Page](https://bluestyle97.github.io/dream3d/) | [💻 Code][Coming soon.] 
+
+
+## 7. CLIP-Mesh: Generating textured meshes from text using pretrained image-text models [SIGGRAPH ASIA 2022]
+
+**Authors**: Nasir Mohammad Khalid, Tianhao Xie, Eugene Belilovsky, Tiberiu Popa
+
+<details span>
+<summary><b>Abstract</b></summary>
+ We present a technique for zero-shot generation of a 3D model using only a target text prompt. Without any 3D supervision our method deforms the control shape of a limit subdivided surface along with its texture map and normal map to obtain a 3D asset that corresponds to the input text prompt and can be easily deployed into games or modeling applications. We rely only on a pre-trained CLIP model that compares the input text prompt with differentiably rendered images of our 3D model. While previous works have focused on stylization or required training of generative models we perform optimization on mesh parameters directly to generate shape, texture or both. To constrain the optimization to produce plausible meshes and textures we introduce a number of techniques using image augmentations and the use of a pretrained prior that generates CLIP image embeddings given a text embedding.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2203.13333.pdf) | [🌐 Project Page](https://www.nasir.lol/clipmesh) | [💻 Code](https://github.com/NasirKhalid24/CLIP-Mesh) 
+
+
+## 8. Score Jacobian Chaining: Lifting Pretrained 2D Diffusion Models for 3D Generation [CVPR 2023]
+
+**Authors**: Haochen Wang, Xiaodan Du, Jiahao Li, Raymond A. Yeh, Greg Shakhnarovich
+
+<details span>
+<summary><b>Abstract</b></summary>
+ A diffusion model learns to predict a vector field of gradients. We propose to apply chain rule on the learned gradients, and back-propagate the score of a diffusion model through the Jacobian of a differentiable renderer, which we instantiate to be a voxel radiance field. This setup aggregates 2D scores at multiple camera viewpoints into a 3D score, and repurposes a pretrained 2D model for 3D data generation. We identify a technical challenge of distribution mismatch that arises in this application, and propose a novel estimation mechanism to resolve it. We run our algorithm on several off-the-shelf diffusion image generative models, including the recently released Stable Diffusion trained on the large-scale LAION dataset.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2212.00774.pdf) | [🌐 Project Page]() | [💻 Code](https://github.com/pals-ttic/sjc/) 
+
+
+## 9. Dream Fields: Zero-Shot Text-Guided Object Generation with Dream Fields [CVPR 2022 and AI4CC 2022 (Best Poster)]
+
+**Authors**: Ajay Jain, Ben Mildenhall, Jonathan T. Barron, Pieter Abbeel, Ben Poole
+
+<details span>
+<summary><b>Abstract</b></summary>
+ We combine neural rendering with multi-modal image and text representations to synthesize diverse 3D objects solely from natural language descriptions. Our method, Dream Fields, can generate the geometry and color of a wide range of objects without 3D supervision. Due to the scarcity of diverse, captioned 3D data, prior methods only generate objects from a handful of categories, such as ShapeNet. Instead, we guide generation with image-text models pre-trained on large datasets of captioned images from the web. Our method optimizes a Neural Radiance Field from many camera views so that rendered images score highly with a target caption according to a pre-trained CLIP model. To improve fidelity and visual quality, we introduce simple geometric priors, including sparsity-inducing transmittance regularization, scene bounds, and new MLP architectures. In experiments, Dream Fields produce realistic, multi-view consistent object geometry and color from a variety of natural language captions.
+</details>
+
+  [📄 Paper](https://openaccess.thecvf.com/content/CVPR2022/papers/Jain_Zero-Shot_Text-Guided_Object_Generation_With_Dream_Fields_CVPR_2022_paper.pdf) | [🌐 Project Page](https://ajayj.com/dreamfields) | [💻 Code]() 
 
 
 
@@ -272,13 +334,58 @@ In this paper, we introduce Recon3DMind, a groundbreaking task focused on recons
   [📄 Paper](https://arxiv.org/abs/2312.07485) | [🌐 Project Page](https://jianxgao.github.io/MinD-3D/) | [💻 Code](https://github.com/JianxGao/MinD-3D) 
 
 
+
+<be>
+
+## 4D AIGC
+
+
+### 1. 4DGen: Grounded 4D Content Generation with Spatial-temporal Consistency
+
+
+**Authors**: Yuyang Yin, Dejia Xu, Zhangyang Wang, Yao Zhao, Yunchao Wei
+
+<details span>
+<summary><b>Abstract</b></summary>
+ Aided by text-to-image and text-to-video diffusion models, existing 4D content creation pipelines utilize score distillation sampling to optimize the entire dynamic 3D scene. However, as these pipelines generate 4D content from text or image inputs, they incur significant time and effort in prompt engineering through trial and error. This work introduces 4DGen, a novel, holistic framework for grounded 4D content creation that decomposes the 4D generation task into multiple stages. We identify static 3D assets and monocular video sequences as key components in constructing the 4D content. Our pipeline facilitates conditional 4D generation, enabling users to specify geometry (3D assets) and motion (monocular videos), thus offering superior control over content creation. Furthermore, we construct our 4D representation using dynamic 3D Gaussians, which permits efficient, high-resolution supervision through rendering during training, thereby facilitating high-quality 4D generation. Additionally, we employ spatial-temporal pseudo labels on anchor frames, along with seamless consistency priors implemented through 3D-aware score distillation sampling and smoothness regularizations. Compared to existing baselines, our approach yields competitive results in faithfully reconstructing input signals and realistically inferring renderings from novel viewpoints and timesteps. Most importantly, our method supports grounded generation, offering users enhanced control, a feature difficult to achieve with previous methods. Project page: this https URL
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2312.17225) | [🌐 Project Page](https://vita-group.github.io/4DGen/) | [💻 Code](https://github.com/VITA-Group/4DGen) 
+
+
+
+### 2.
+
+**Authors**: 
+
+<details span>
+<summary><b>Abstract</b></summary>
+</details>
+
+  [📄 Paper]() | [🌐 Project Page]() | [💻 Code]() 
+
+
+
+### 2.
+
+**Authors**: 
+
+<details span>
+<summary><b>Abstract</b></summary>
+</details>
+
+  [📄 Paper]() | [🌐 Project Page]() | [💻 Code]() 
+
+
+
+
 <br>
 
 
 <!--
 ## Misc:
 
-## 2.
+### 2.
 
 **Authors**: 
 
@@ -294,6 +401,16 @@ In this paper, we introduce Recon3DMind, a groundbreaking task focused on recons
 
 
 <br>
+
+
+## Open Source Implementations
+### Unofficial Implementations
+  [ThreeStudio](https://github.com/threestudio-project/threestudio) is a unified framework for 3D content creation from text prompts, single images, and few-shot images, by lifting 2D text-to-image generation models.
+  
+Currenty supported 3D content generation methods (2023.12.29):
+
+ProlificDreamer | DreamFusion | Magic3D | SJC | Latent-NeRF | Fantasia3D | TextMesh | Zero-1-to-3 | Magic123 | InstructNeRF2NeRF | Control4D 
+
 
 
 ## Credits
