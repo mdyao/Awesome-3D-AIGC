@@ -335,8 +335,7 @@ In this paper, we introduce Recon3DMind, a groundbreaking task focused on recons
   [📄 Paper](https://arxiv.org/abs/2312.07485) | [🌐 Project Page](https://jianxgao.github.io/MinD-3D/) | [💻 Code](https://github.com/JianxGao/MinD-3D) 
 
 
-
-<be>
+<br>
 
 ## 4D AIGC
 
@@ -354,8 +353,6 @@ In this paper, we introduce Recon3DMind, a groundbreaking task focused on recons
   [📄 Paper](https://arxiv.org/abs/2312.17225) | [🌐 Project Page](https://vita-group.github.io/4DGen/) | [💻 Code](https://github.com/VITA-Group/4DGen) 
 
 
-
-<br>
 
 
 <!--
