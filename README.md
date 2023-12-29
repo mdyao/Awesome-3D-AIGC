@@ -355,31 +355,6 @@ In this paper, we introduce Recon3DMind, a groundbreaking task focused on recons
 
 
 
-### 2.
-
-**Authors**: 
-
-<details span>
-<summary><b>Abstract</b></summary>
-</details>
-
-  [📄 Paper]() | [🌐 Project Page]() | [💻 Code]() 
-
-
-
-### 2.
-
-**Authors**: 
-
-<details span>
-<summary><b>Abstract</b></summary>
-</details>
-
-  [📄 Paper]() | [🌐 Project Page]() | [💻 Code]() 
-
-
-
-
 <br>
 
 
