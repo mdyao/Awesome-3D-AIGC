@@ -37,7 +37,7 @@ A curated list of papers and open-source resources focused on 3D AIGC, intended 
 
 
 ## Survey:
-### 1. Generative AI meets 3D: A Survey on Text-to-3D in AIGC Era
+### 1. Generative AI meets 3D: A Survey on Text-to-3D in AIGC Era [Arxiv, 2023]
 
 **Authors**: Chenghao Li, Chaoning Zhang, Atish Waghwase, Lik-Hang Lee, Francois Rameau, Yang Yang, Sung-Ho Bae, Choong Seon Hong
 
