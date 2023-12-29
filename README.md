@@ -29,7 +29,7 @@ A curated list of papers and open-source resources focused on 3D AIGC, intended 
 <summary><b>Update Log:</b></summary>
 <br>
 
-  **Dec 29, 2023**: Contribute on the text to 3d part, add new papers and publish years.
+  **Dec 29, 2023**: Contribute to the section on text-to-3d by adding new papers with their publication years.
   
   **Dec 27, 2023**: Initial list with first 15 papers.
 
