@@ -100,7 +100,7 @@ Recent breakthroughs in text-to-image synthesis have been driven by diffusion mo
 
 
 
-## 3. Text2Shape: Generating Shapes from Natural Language by Learning Joint Embeddings [ACCV 2018]
+### 3. Text2Shape: Generating Shapes from Natural Language by Learning Joint Embeddings [ACCV 2018]
 
 **Authors**: Kevin Chen, Christopher B. Choy, Manolis Savva, Angel X. Chang, Thomas Funkhouser, Silvio Savarese
 
@@ -111,7 +111,7 @@ Recent breakthroughs in text-to-image synthesis have been driven by diffusion mo
 
   [📄 Paper](http://arxiv.org/abs/1803.08495) | [🌐 Project Page](http://text2shape.stanford.edu/) | [💻 Code](https://github.com/kchen92/text2shape/) 
 
-## 4. ShapeCrafter: A Recursive Text-Conditioned 3D Shape Generation Model [NeurIPS 2022]
+### 4. ShapeCrafter: A Recursive Text-Conditioned 3D Shape Generation Model [NeurIPS 2022]
 
 **Authors**: Rao Fu, Xiao Zhan, Yiwen Chen, Daniel Ritchie, Srinath Sridhar
 
@@ -123,7 +123,7 @@ Recent breakthroughs in text-to-image synthesis have been driven by diffusion mo
   [📄 Paper](https://arxiv.org/abs/2207.09446) | [🌐 Project Page](https://ivl.cs.brown.edu/#/projects/shapecrafter) 
 
 
-## 5. Magic3D: High-Resolution Text-to-3D Content Creation [CVPR 2023]
+### 5. Magic3D: High-Resolution Text-to-3D Content Creation [CVPR 2023]
 
 **Authors**: Chen-Hsuan Lin, Jun Gao, Luming Tang, Towaki Takikawa, Xiaohui Zeng, Xun Huang, Karsten Kreis, Sanja Fidler, Ming-Yu Liu, Tsung-Yi Lin
 
@@ -135,7 +135,7 @@ Recent breakthroughs in text-to-image synthesis have been driven by diffusion mo
   [📄 Paper](https://arxiv.org/pdf/2211.10440.pdf) | [🌐 Project Page](https://research.nvidia.com/labs/dir/magic3d)  | [💻 Code][Coming soon.] 
 
 
-## 6. Dream3D: Zero-Shot Text-to-3D Synthesis Using 3D Shape Prior and Text-to-Image Diffusion Models [CVPR 2023]
+### 6. Dream3D: Zero-Shot Text-to-3D Synthesis Using 3D Shape Prior and Text-to-Image Diffusion Models [CVPR 2023]
 
 **Authors**: Jiale Xu, Xintao Wang, Weihao Cheng, Yan-Pei Cao, Ying Shan, Xiaohu Qie, Shenghua Gao
 
@@ -147,7 +147,7 @@ Recent breakthroughs in text-to-image synthesis have been driven by diffusion mo
   [📄 Paper](https://arxiv.org/pdf/2212.14704.pdf) | [🌐 Project Page](https://bluestyle97.github.io/dream3d/) | [💻 Code][Coming soon.] 
 
 
-## 7. CLIP-Mesh: Generating textured meshes from text using pretrained image-text models [SIGGRAPH ASIA 2022]
+### 7. CLIP-Mesh: Generating textured meshes from text using pretrained image-text models [SIGGRAPH ASIA 2022]
 
 **Authors**: Nasir Mohammad Khalid, Tianhao Xie, Eugene Belilovsky, Tiberiu Popa
 
@@ -159,7 +159,7 @@ Recent breakthroughs in text-to-image synthesis have been driven by diffusion mo
   [📄 Paper](https://arxiv.org/pdf/2203.13333.pdf) | [🌐 Project Page](https://www.nasir.lol/clipmesh) | [💻 Code](https://github.com/NasirKhalid24/CLIP-Mesh) 
 
 
-## 8. Score Jacobian Chaining: Lifting Pretrained 2D Diffusion Models for 3D Generation [CVPR 2023]
+### 8. Score Jacobian Chaining: Lifting Pretrained 2D Diffusion Models for 3D Generation [CVPR 2023]
 
 **Authors**: Haochen Wang, Xiaodan Du, Jiahao Li, Raymond A. Yeh, Greg Shakhnarovich
 
@@ -171,7 +171,7 @@ Recent breakthroughs in text-to-image synthesis have been driven by diffusion mo
   [📄 Paper](https://arxiv.org/pdf/2212.00774.pdf) | [🌐 Project Page]() | [💻 Code](https://github.com/pals-ttic/sjc/) 
 
 
-## 9. Dream Fields: Zero-Shot Text-Guided Object Generation with Dream Fields [CVPR 2022 and AI4CC 2022 (Best Poster)]
+### 9. Dream Fields: Zero-Shot Text-Guided Object Generation with Dream Fields [CVPR 2022 and AI4CC 2022 (Best Poster)]
 
 **Authors**: Ajay Jain, Ben Mildenhall, Jonathan T. Barron, Pieter Abbeel, Ben Poole
 
