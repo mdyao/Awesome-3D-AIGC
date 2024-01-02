@@ -27,7 +27,9 @@ A curated list of papers and open-source resources focused on 3D AIGC, intended 
   
 <details span>
 <summary><b>Update Log:</b></summary>
-<br>
+<be>
+
+  **Jan 2, 2024**: Adding papers to image to 3d generation. 
 
   **Dec 29, 2023**: Contribute to the section on text-to-3d by adding new papers with their publication years.
   
@@ -188,7 +190,7 @@ Recent breakthroughs in text-to-image synthesis have been driven by diffusion mo
 <br>
 
 ## Image to 3D Generation:
-### 1. Zero-1-to-3: Zero-shot One Image to 3D Object
+### 1. Zero-1-to-3: Zero-shot One Image to 3D Object [ICCV 2023]
 
 **Authors**: Ruoshi Liu1, Rundi Wu1, Basile Van Hoorick1, Pavel Tokmakov2, Sergey Zakharov2, Carl Vondrick1
 
@@ -199,7 +201,7 @@ We introduce Zero-1-to-3, a framework for changing the camera viewpoint of an ob
 
   [📄 Paper](https://arxiv.org/abs/2303.11328) | [🌐 Project Page](https://zero123.cs.columbia.edu/) | [💻 Code](https://github.com/cvlab-columbia/zero123) | [🤗 Hugging Face](https://huggingface.co/spaces/cvlab/zero123-live)
 
-### 2. Zero123++: a Single Image to Consistent Multi-view Diffusion Base Model
+### 2. Zero123++: a Single Image to Consistent Multi-view Diffusion Base Model [arxiv 2023.10]
 
 **Authors**: Ruoxi Shi, Hansheng Chen, Zhuoyang Zhang, Minghua Liu, Chao Xu, Xinyue Wei, Linghao Chen, Chong Zeng, Hao Su
 
@@ -209,6 +211,91 @@ We report Zero123++, an image-conditioned diffusion model for generating 3D-cons
 </details>
 
   [📄 Paper](https://arxiv.org/abs/2310.15110) | [🌐 Project Page](https://zero123.cs.columbia.edu/) | [💻 Code](https://github.com/SUDO-AI-3D/zero123plus) | [🤗 Hugging Face](https://huggingface.co/spaces/sudo-ai/zero123plus-demo-space)
+
+
+### 3. One-2-3-45: Any Single Image to 3D Mesh in 45 Seconds without Per-Shape Optimization [arxiv 2023]
+
+**Authors**: Minghua Liu1*, Chao Xu2*, Haian Jin3,4*, Linghao Chen1,4*, Mukund Varma T5, Zexiang Xu6, Hao Su1
+
+<details span>
+<summary><b>Abstract</b></summary>
+ Single image 3D reconstruction is an important but challenging task that requires extensive knowledge of our natural world. Many existing methods solve this problem by optimizing a neural radiance field under the guidance of 2D diffusion models but suffer from lengthy optimization time, 3D inconsistency results, and poor geometry. In this work, we propose a novel method that takes a single image of any object as input and generates a full 360-degree 3D textured mesh in a single feed-forward pass. Given a single image, we first use a view-conditioned 2D diffusion model, Zero123, to generate multi-view images for the input view, and then aim to lift them up to 3D space. Since traditional reconstruction methods struggle with inconsistent multi-view predictions, we build our 3D reconstruction module upon an SDF-based generalizable neural surface reconstruction method and propose several critical training strategies to enable the reconstruction of 360-degree meshes. Without costly optimizations, our method reconstructs 3D shapes in significantly less time than existing methods. Moreover, our method favors better geometry, generates more 3D consistent results, and adheres more closely to the input image. We evaluate our approach on both synthetic data and in-the-wild images and demonstrate its superiority in terms of both mesh quality and runtime. In addition, our approach can seamlessly support the text-to-3D task by integrating with off-the-shelf text-to-image diffusion models.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2306.16928.pdf) | [🌐 Project Page](https://one-2-3-45.github.io/) | [💻 Code](https://github.com/One-2-3-45/One-2-3-45) 
+
+
+### 4. One-2-3-45++: Fast Single Image to 3D Objects with Consistent Multi-View Generation and 3D Diffusion [arxiv 2023]
+
+**Authors**: Minghua Liu, Ruoxi Shi, Linghao Chen, Zhuoyang Zhang, Chao Xu, Xinyue Wei, Hansheng Chen, Chong Zeng, Jiayuan Gu, Hao Su
+
+<details span>
+<summary><b>Abstract</b></summary>
+Recent advancements in open-world 3D object generation have been remarkable, with image-to-3D methods offering superior fine-grained control over their text-to-3D counterparts. However, most existing models fall short in simultaneously providing rapid generation speeds and high fidelity to input images - two features essential for practical applications. In this paper, we present One-2-3-45++, an innovative method that transforms a single image into a detailed 3D textured mesh in approximately one minute. Our approach aims to fully harness the extensive knowledge embedded in 2D diffusion models and priors from valuable yet limited 3D data. This is achieved by initially finetuning a 2D diffusion model for consistent multi-view image generation, followed by elevating these images to 3D with the aid of multi-view conditioned 3D native diffusion models. Extensive experimental evaluations demonstrate that our method can produce high-quality, diverse 3D assets that closely mirror the original input image. Our project webpage: this https URL.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2311.07885.pdf) | [🌐 Project Page](https://sudo-ai-3d.github.io/One2345plus_page/) | [💻 Code](https://github.com/SUDO-AI-3D/One2345plus) 
+
+
+### 5. Instant3D: Fast Text-to-3D with Sparse-View Generation and Large Reconstruction Model [ICLR 2024, under review]
+
+**Authors**: 
+
+<details span>
+<summary><b>Abstract</b></summary>
+ Text-to-3D with diffusion models has achieved remarkable progress in recent years. However, existing methods either rely on score distillation-based optimization which suffer from slow inference, low diversity and Janus problems, or are feed-forward methods that generate low quality results due to the scarcity of 3D training data. In this paper, we propose Instant3D, a novel method that generates high-quality and diverse 3D assets from text prompts in a feed-forward manner. We adopt a two-stage paradigm, which first generates a sparse set of four structured and consistent views from text in one shot with a fine-tuned 2D text-to-image diffusion model, and then directly regresses the NeRF from the generated images with a novel transformer-based sparse-view reconstructor. Through extensive experiments, we demonstrate that our method can generate high-quality, diverse and Janus-free 3D assets within 20 seconds, which is two order of magnitude faster than previous optimization-based methods that can take 1 to 10 hours.
+</details>
+
+  [📄 Paper](https://openreview.net/forum?id=2lDQLiH1W4) | [🌐 Project Page](https://instant-3d.github.io/) 
+
+
+### 6. Wonder3d: Single Image to 3D using Cross-Domain Diffusion [arxiv 23.10]
+
+**Authors**: Xiaoxiao Long1,3,6,*, Yuan-Chen Guo2,3,*, Cheng Lin1, Yuan Liu1, Zhiyang Dou1, Lingjie Liu4, Yuexin Ma5, Song-Hai Zhang2, Marc Habermann6, Christian Theobalt6, Wenping Wang7
+
+<details span>
+<summary><b>Abstract</b></summary>
+ In this work, we introduce Wonder3D, a novel method for efficiently generating high-fidelity textured meshes from single-view images.Recent methods based on Score Distillation Sampling (SDS) have shown the potential to recover 3D geometry from 2D diffusion priors, but they typically suffer from time-consuming per-shape optimization and inconsistent geometry. In contrast, certain works directly produce 3D information via fast network inferences, but their results are often of low quality and lack geometric details. To holistically improve the quality, consistency, and efficiency of image-to-3D tasks, we propose a cross-domain diffusion model that generates multi-view normal maps and the corresponding color images. To ensure consistency, we employ a multi-view cross-domain attention mechanism that facilitates information exchange across views and modalities. Lastly, we introduce a geometry-aware normal fusion algorithm that extracts high-quality surfaces from the multi-view 2D representations. Our extensive evaluations demonstrate that our method achieves high-quality reconstruction results, robust generalization, and reasonably good efficiency compared to prior works.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2310.15008.pdf) | [🌐 Project Page](https://www.xxlong.site/Wonder3D/) | [💻 Code](https://github.com/xxlong0/Wonder3D) 
+
+
+### 7. LRM: Large Reconstruction Model for Single Image to 3D [ICLR 2024]
+
+**Authors**: Yicong Hong1,2, Kai Zhang1, Jiuxiang Gu1, Sai Bi1, Yang Zhou1, Difan Liu1, Feng Liu1, Kalyan Sunkavalli1, Trung Bui1, Hao Tan1
+
+<details span>
+<summary><b>Abstract</b></summary>
+ We propose the first Large Reconstruction Model (LRM) that predicts the 3D model of an object from a single input image within just 5 seconds. In contrast to many previous methods that are trained on small-scale datasets such as ShapeNet in a category-specific fashion, LRM adopts a highly scalable transformer-based architecture with 500 million learnable parameters to directly predict a neural radiance field (NeRF) from the input image. We train our model in an end-to-end manner on massive multi-view data containing around 1 million objects, including both synthetic renderings from Objaverse and real captures from MVImgNet. This combination of a high-capacity model and large-scale training data empowers our model to be highly generalizable and produce high-quality 3D reconstructions from various testing inputs including real-world in-the-wild captures and images from generative models.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2311.04400) | [🌐 Project Page](https://yiconghong.me/LRM/)
+
+
+### 8. Magic123: One Image to High-Quality 3D Object Generation Using Both 2D and 3D Diffusion Priors
+
+**Authors**: Qian, Guocheng and Mai, Jinjie and Hamdi, Abdullah and Ren, Jian and Siarohin, Aliaksandr and Li, Bing and Lee, Hsin-Ying and Skorokhodov, Ivan and Wonka, Peter and Tulyakov, Sergey and Ghanem, Bernard
+
+<details span>
+<summary><b>Abstract</b></summary>
+ We present "Magic123", a two-stage coarse-to-fine solution for high-quality, textured 3D meshes generation from a single unposed image in the wild using both 2D and 3D priors. In the first stage, we optimize a neural radiance field to produce a coarse geometry. In the second stage, we adopt a memory-efficient differentiable mesh representation to yield a high-resolution mesh with a visually appealing texture. In both stages, the 3D content is learned through reference view supervision and novel views guided by both 2D and 3D diffusion priors. We introduce a single tradeoff parameter between the 2D and 3D priors to control exploration (more imaginative) and exploitation (more precise) of the generated geometry. Additionally, We employ textual inversion and monocular depth regularization to encourage consistent appearances across views and to prevent degenerate solutions, respectively. Magic123 demonstrates a significant improvement over previous image-to-3D techniques, as validated through extensive experiments on synthetic benchmarks and diverse real-world images.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2306.17843) | [🌐 Project Page](https://guochengqian.github.io/project/magic123/) | [💻 Code](https://github.com/guochengqian/Magic123) 
+
+
+### 9. DreamCraft3D: Hierarchical 3D Generation with Bootstrapped Diffusion Prior [arxiv 23.10]
+
+
+**Authors**: Jingxiang Sun 1,   Bo Zhang 3,   Ruizhi Shao 1,   Lizhen Wang 1,   Wen Liu 2,   Zhenda Xie 2,   Yebin Liu 1
+
+<details span>
+<summary><b>Abstract</b></summary>
+ We present DreamCraft3D, a hierarchical 3D content generation method that produces high-fidelity and coherent 3D objects. We tackle the problem by leveraging a 2D reference image to guide the stages of geometry sculpting and texture boosting. A central focus of this work is to address the consistency issue that existing works encounter. To sculpt geometries that render coherently, we perform score distillation sampling via a view-dependent diffusion model. This 3D prior, alongside several training strategies, prioritizes the geometry consistency but compromises the texture fidelity. We further propose Bootstrapped Score Distillation (BSD) to specifically boost the texture. We train a personalized diffusion model, Dreambooth, on the augmented renderings of the scene, imbuing it with 3D knowledge of the scene being optimized. The score distillation from this 3D-aware diffusion prior provides view-consistent guidance for the scene. Notably, through an alternating optimization of the diffusion prior and 3D scene representation, we achieve mutually reinforcing improvements: the optimized 3D scene aids in training the scene-specific diffusion model, which offers increasingly view-consistent guidance for 3D optimization. The optimization is thus bootstrapped and leads to substantial texture boosting. With tailored 3D priors throughout the hierarchical generation, DreamCraft3D generates coherent 3D objects with photorealistic renderings, advancing the state-of-the-art in 3D content generation.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2310.16818) | [🌐 Project Page](https://mrtornado24.github.io/DreamCraft3D/) | [💻 Code](https://github.com/deepseek-ai/DreamCraft3D) 
 
 
 
