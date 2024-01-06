@@ -346,6 +346,18 @@ Recent advancements in open-world 3D object generation have been remarkable, wit
   [📄 Paper](https://arxiv.org/abs/2401.00616)
 
 
+### 11. NeuralLift-360: Lifting An In-the-wild 2D Photo to A 3D Object with 360° Views
+
+**Authors**: Dejia Xu, Yifan Jiang, Peihao Wang, Zhiwen Fan, Yi Wang, Zhangyang Wang
+
+<details span>
+<summary><b>Abstract</b></summary>
+ Virtual reality and augmented reality (XR) bring increasing demand for 3D content. However, creating high-quality 3D content requires tedious work that a human expert must do. In this work, we study the challenging task of lifting a single image to a 3D object and, for the first time, demonstrate the ability to generate a plausible 3D object with 360° views that correspond well with the given reference image. By conditioning on the reference image, our model can fulfill the everlasting curiosity for synthesizing novel views of objects from images. Our technique sheds light on a promising direction of easing the workflows for 3D artists and XR designers. We propose a novel framework, dubbed NeuralLift-360, that utilizes a depth-aware neural radiance representation (NeRF) and learns to craft the scene guided by denoising diffusion models. By introducing a ranking loss, our NeuralLift-360 can be guided with rough depth estimation in the wild. We also adopt a CLIP-guided sampling strategy for the diffusion prior to provide coherent guidance. Extensive experiments demonstrate that our NeuralLift-360 significantly outperforms existing state-of-the-art baselines. Project page: this https URL
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2211.16431) | [🌐 Project Page](https://vita-group.github.io/NeuralLift-360/) | [💻 Code](https://github.com/Ir1d/NeuralLift-360) 
+
+
 
 <br>
 
