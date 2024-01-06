@@ -212,7 +212,7 @@ Score distillation has emerged as one of the most prevalent approaches for text-
   [📄 Paper](https://arxiv.org/abs/2401.00604) | [🌐 Project Page](https://vita-group.github.io/SteinDreamer/) | [💻 Code](https://github.com/Ir1d/SteinDreamer) 
 
 
-### 12. Taming Mode Collapse in Score Distillation for Text-to-3D Generation
+### 12. Taming Mode Collapse in Score Distillation for Text-to-3D Generation [arxiv 2024.01]
 
 **Authors**:  Peihao Wang, Dejia Xu, Zhiwen Fan, Dilin Wang, Sreyas Mohan, Forrest Iandola, Rakesh Ranjan, Yilei Li, Qiang Liu, Zhangyang Wang, Vikas Chandra
 
@@ -346,7 +346,7 @@ Recent advancements in open-world 3D object generation have been remarkable, wit
   [📄 Paper](https://arxiv.org/abs/2401.00616)
 
 
-### 11. NeuralLift-360: Lifting An In-the-wild 2D Photo to A 3D Object with 360° Views
+### 11. NeuralLift-360: Lifting An In-the-wild 2D Photo to A 3D Object with 360° Views [arxiv 2022.11]
 
 **Authors**: Dejia Xu, Yifan Jiang, Peihao Wang, Zhiwen Fan, Yi Wang, Zhangyang Wang
 
