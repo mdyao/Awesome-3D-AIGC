@@ -480,7 +480,29 @@ Existing 3D-aware facial generation methods face a dilemma in quality versus edi
   [📄 Paper](https://arxiv.org/pdf/2312.15430.pdf) | [🌐 Project Page](https://human3daigc.github.io/MACH/) | [💻 Code](https://github.com/Human3DAIGC/Make-A-Character) 
 
 
-Make-A-Character: High Quality Text-to-3D Character Generation within Minutes
+### 6. Text2Avatar: Text to 3D Human Avatar Generation with Codebook-Driven Body Controllable Attribute [arxiv 2024.01]
+
+**Authors**: Chaoqun Gong, Yuqin Dai, Ronghui Li, Achun Bao, Jun Li, Jian Yang, Yachao Zhang, Xiu Li
+
+<details span>
+<summary><b>Abstract</b></summary>
+ Generating 3D human models directly from text helps reduce the cost and time of character modeling. However, achieving multi-attribute controllable and realistic 3D human avatar generation is still challenging due to feature coupling and the scarcity of realistic 3D human avatar datasets. To address these issues, we propose Text2Avatar, which can generate realistic-style 3D avatars based on the coupled text prompts. Text2Avatar leverages a discrete codebook as an intermediate feature to establish a connection between text and avatars, enabling the disentanglement of features. Furthermore, to alleviate the scarcity of realistic style 3D human avatar data, we utilize a pre-trained unconditional 3D human avatar generation model to obtain a large amount of 3D avatar pseudo data, which allows Text2Avatar to achieve realistic style generation. Experimental results demonstrate that our method can generate realistic 3D avatars from coupled textual data, which is challenging for other existing methods in this field.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2401.00711)
+
+### 7. DreamHuman: Animatable 3D Avatars from Text [arxiv 2023.06]
+
+**Authors**: Nikos Kolotouros Thiemo Alldieck Andrei Zanfir Eduard Gabriel Bazavan Mihai Fieraru Cristian Sminchisescu
+
+<details span>
+<summary><b>Abstract</b></summary>
+We present DreamHuman, a method to generate realistic animatable 3D human avatar models solely from textual descriptions. Recent text-to-3D methods have made considerable strides in generation, but are still lacking in important aspects. Control and often spatial resolution remain limited, existing methods produce fixed rather than animated 3D human models, and anthropometric consistency for complex structures like people remains a challenge. DreamHuman connects large text-to-image synthesis models, neural radiance fields, and statistical human body models in a novel modeling and optimization framework. This makes it possible to generate dynamic 3D human avatars with high-quality textures and learned, instance-specific, surface deformations. We demonstrate that our method is capable to generate a wide variety of animatable, realistic 3D human models from text. Our 3D models have diverse appearance, clothing, skin tones and body shapes, and significantly outperform both generic text-to-3D approaches and previous text-based 3D avatar generators in visual fidelity. For more results and animations please check our website at this https URL.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2306.09329) | [🌐 Project Page](https://dream-human.github.io/) 
+
+
 
 <br>
 
