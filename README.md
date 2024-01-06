@@ -439,7 +439,7 @@ Existing 3D-aware facial generation methods face a dilemma in quality versus edi
 
 ## Autonomous Driving:
 
-### 1. 3D Object Detection for Autonomous Driving: A Comprehensive Survey
+### 1. 3D Object Detection for Autonomous Driving: A Comprehensive Survey [IJCV 2023]
 
 **Authors**: Jiageng Mao, Shaoshuai Shi, Xiaogang Wang, Hongsheng Li
 
@@ -451,7 +451,7 @@ Existing 3D-aware facial generation methods face a dilemma in quality versus edi
   [📄 Paper]() | [💻 Code](https://github.com/PointsCoder/Awesome-3D-Object-Detection-for-Autonomous-Driving) 
 
 
-### 2. A Survey on Safety-Critical Driving Scenario Generation – A Methodological Perspective
+### 2. A Survey on Safety-Critical Driving Scenario Generation – A Methodological Perspective [IEEE Transactions on Intelligent Transportation Systems (T-ITS) 2023]
 
 **Authors**: Wenhao Ding, Chejian Xu, Mansur Arief, Haohong Lin, Bo Li, Ding Zhao
 
@@ -464,7 +464,7 @@ Existing 3D-aware facial generation methods face a dilemma in quality versus edi
 
 
 
-### 3. Street Gaussians for Modeling Dynamic Urban Scenes
+### 3. Street Gaussians for Modeling Dynamic Urban Scenes [arxiv 2024.01]
 
 **Authors**: Yunzhi Yan, Haotong Lin, Chenxu Zhou, Weijie Wang, Haiyang Sun, Kun Zhan, Xianpeng Lang, Xiaowei Zhou, Sida Peng
 
@@ -483,7 +483,7 @@ Existing 3D-aware facial generation methods face a dilemma in quality versus edi
 
 ## BioMedical:
 
-### 1. MinD-3D: Reconstruct High-quality 3D objects in Human Brain
+### 1. MinD-3D: Reconstruct High-quality 3D objects in Human Brain [arxiv 2023.12]
 **Authors**: Jianxiong Gao, Yuqian Fu, Yun Wang, Xuelin Qian, Jianfeng Feng, Yanwei Fu
 
 <details span>
@@ -499,7 +499,7 @@ In this paper, we introduce Recon3DMind, a groundbreaking task focused on recons
 ## 4D AIGC
 
 
-### 1. 4DGen: Grounded 4D Content Generation with Spatial-temporal Consistency
+### 1. 4DGen: Grounded 4D Content Generation with Spatial-temporal Consistency [arxiv 2023.12]
 
 **Authors**: Yuyang Yin, Dejia Xu, Zhangyang Wang, Yao Zhao, Yunchao Wei
 
@@ -510,8 +510,19 @@ In this paper, we introduce Recon3DMind, a groundbreaking task focused on recons
 
   [📄 Paper](https://arxiv.org/abs/2312.17225) | [🌐 Project Page](https://vita-group.github.io/4DGen/) | [💻 Code](https://github.com/VITA-Group/4DGen) 
 
+### 2. DreamGaussian4D: Generative 4D Gaussian Splatting [arxiv 2023.12]
 
-### 2. Learning 3D Animal Motions from Unlabeled Online Videos
+**Authors**: Jiawei Ren* Liang Pan* Jiaxiang Tang Chi Zhang Ang Cao Gang Zeng Ziwei Liu†
+
+<details span>
+<summary><b>Abstract</b></summary>
+ Remarkable progress has been made in 4D content generation recently. However, existing methods suffer from long optimization time, lack of motion controllability, and a low level of detail. In this paper, we introduce DreamGaussian4D, an efficient 4D generation framework that builds on 4D Gaussian Splatting representation. Our key insight is that the explicit modeling of spatial transformations in Gaussian Splatting makes it more suitable for the 4D generation setting compared with implicit representations. DreamGaussian4D reduces the optimization time from several hours to just a few minutes, allows flexible control of the generated 3D motion, and produces animated meshes that can be efficiently rendered in 3D engines.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2312.17142) | [🌐 Project Page](https://jiawei-ren.github.io/projects/dreamgaussian4d/) | [💻 Code](https://github.com/jiawei-ren/dreamgaussian4d) 
+
+
+### 3. Learning 3D Animal Motions from Unlabeled Online Videos [arxiv 2023.12]
 
 **Authors**: Keqiang Sun1*, Dor Litvak2,3*, Yunzhi Zhang2, Hongsheng Li1, Jiajun Wu2†, Shangzhe Wu2†
 
@@ -529,10 +540,9 @@ We introduce Ponymation, a new method for learning a generative model of articul
 
 ## Misc:
 
-### 1. FMGS: Foundation Model Embedded 3D Gaussian Splatting for Holistic 3D Scene Understanding
+### 1. FMGS: Foundation Model Embedded 3D Gaussian Splatting for Holistic 3D Scene Understanding [arxiv 2024.01]
 
 **Authors**: Xingxing Zuo, Pouya Samangouei, Yunwen Zhou, Yan Di, Mingyang Li
-
 
 <details span>
 <summary><b>Abstract</b></summary>
