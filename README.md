@@ -200,6 +200,18 @@ Recent breakthroughs in text-to-image synthesis have been driven by diffusion mo
   [📄 Paper](https://arxiv.org/abs/2311.16918) | [🌐 Project Page](https://aigc3d.github.io/richdreamer/) | [💻 Code](https://github.com/modelscope/richdreamer) 
 
 
+### 11. SteinDreamer: Variance Reduction for Text-to-3D Score Distillation via Stein Identity [arxiv 2024.01]
+
+**Authors**: Peihao Wang, Zhiwen Fan, Dejia Xu, Dilin Wang, Sreyas Mohan, Forrest Iandola, Rakesh Ranjan, Yilei Li, Qiang Liu, Zhangyang Wang, Vikas Chandra
+
+<details span>
+<summary><b>Abstract</b></summary>
+Score distillation has emerged as one of the most prevalent approaches for text-to-3D asset synthesis. Essentially, score distillation updates 3D parameters by lifting and back-propagating scores averaged over different views. In this paper, we reveal that the gradient estimation in score distillation is inherent to high variance. Through the lens of variance reduction, the effectiveness of SDS and VSD can be interpreted as applications of various control variates to the Monte Carlo estimator of the distilled score. Motivated by this rethinking and based on Stein's identity, we propose a more general solution to reduce variance for score distillation, termed Stein Score Distillation (SSD). SSD incorporates control variates constructed by Stein identity, allowing for arbitrary baseline functions. This enables us to include flexible guidance priors and network architectures to explicitly optimize for variance reduction. In our experiments, the overall pipeline, dubbed SteinDreamer, is implemented by instantiating the control variate with a monocular depth estimator. The results suggest that SSD can effectively reduce the distillation variance and consistently improve visual quality for both object- and scene-level generation. Moreover, we demonstrate that SteinDreamer achieves faster convergence than existing methods due to more stable gradient updates.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2401.00604) | [🌐 Project Page](https://vita-group.github.io/SteinDreamer/) | [💻 Code](https://github.com/Ir1d/SteinDreamer) 
+
+
 
 <br>
 
