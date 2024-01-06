@@ -11,7 +11,7 @@ A curated list of papers and open-source resources focused on 3D AIGC, intended 
 - [Audio to 3D Generation](#audio-to-3d-generation)
 - [3D Editing](#editing)
 - [Human Avatar Generation](#human-avatar-generation)
-- [Autonomous Driving](#autonomous-driving)
+- [City/Autonomous Driving](#autonomous-driving)
 - [SLAM](#slam)
 - [BioMedical](#biomedical)
 - [4D AIGC](#4d-aigc)
@@ -463,6 +463,22 @@ Existing 3D-aware facial generation methods face a dilemma in quality versus edi
   [📄 Paper](https://arxiv.org/abs/2202.02215) 
 
 
+
+### 3. Street Gaussians for Modeling Dynamic Urban Scenes
+
+**Authors**: Yunzhi Yan, Haotong Lin, Chenxu Zhou, Weijie Wang, Haiyang Sun, Kun Zhan, Xianpeng Lang, Xiaowei Zhou, Sida Peng
+
+<details span>
+<summary><b>Abstract</b></summary>
+ This paper aims to tackle the problem of modeling dynamic urban street scenes from monocular videos. Recent methods extend NeRF by incorporating tracked vehicle poses to animate vehicles, enabling photo-realistic view synthesis of dynamic urban street scenes. However, significant limitations are their slow training and rendering speed, coupled with the critical need for high precision in tracked vehicle poses. We introduce Street Gaussians, a new explicit scene representation that tackles all these limitations. Specifically, the dynamic urban street is represented as a set of point clouds equipped with semantic logits and 3D Gaussians, each associated with either a foreground vehicle or the background. To model the dynamics of foreground object vehicles, each object point cloud is optimized with optimizable tracked poses, along with a dynamic spherical harmonics model for the dynamic appearance. The explicit representation allows easy composition of object vehicles and background, which in turn allows for scene editing operations and rendering at 133 FPS (1066×1600 resolution) within half an hour of training. The proposed method is evaluated on multiple challenging benchmarks, including KITTI and Waymo Open datasets. Experiments show that the proposed method consistently outperforms state-of-the-art methods across all datasets. Furthermore, the proposed representation delivers performance on par with that achieved using precise ground-truth poses, despite relying only on poses from an off-the-shelf tracker. The code is available at this https URL.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2401.01339) | [🌐 Project Page](https://zju3dv.github.io/street_gaussians/) | [💻 Code](https://github.com/zju3dv/street_gaussians) 
+
+
+
+
+
 <br>
 
 ## BioMedical:
@@ -485,7 +501,6 @@ In this paper, we introduce Recon3DMind, a groundbreaking task focused on recons
 
 ### 1. 4DGen: Grounded 4D Content Generation with Spatial-temporal Consistency
 
-
 **Authors**: Yuyang Yin, Dejia Xu, Zhangyang Wang, Yao Zhao, Yunchao Wei
 
 <details span>
@@ -494,6 +509,19 @@ In this paper, we introduce Recon3DMind, a groundbreaking task focused on recons
 </details>
 
   [📄 Paper](https://arxiv.org/abs/2312.17225) | [🌐 Project Page](https://vita-group.github.io/4DGen/) | [💻 Code](https://github.com/VITA-Group/4DGen) 
+
+
+### 2. Learning 3D Animal Motions from Unlabeled Online Videos
+
+**Authors**: Keqiang Sun1*, Dor Litvak2,3*, Yunzhi Zhang2, Hongsheng Li1, Jiajun Wu2†, Shangzhe Wu2†
+
+<details span>
+<summary><b>Abstract</b></summary>
+We introduce Ponymation, a new method for learning a generative model of articulated 3D animal motions from raw, unlabeled online videos. Unlike existing approaches for motion synthesis, our model does not require any pose annotations or parametric shape models for training, and is learned purely from a collection of raw video clips obtained from the Internet. We build upon a recent work, MagicPony, which learns articulated 3D animal shapes purely from single image collections, and extend it on two fronts. First, instead of training on static images, we augment the framework with a video training pipeline that incorporates temporal regularizations, achieving more accurate and temporally consistent reconstructions. Second, we learn a generative model of the underlying articulated 3D motion sequences via a spatio-temporal transformer VAE, simply using 2D reconstruction losses without relying on any explicit pose annotations. At inference time, given a single 2D image of a new animal instance, our model reconstructs an articulated, textured 3D mesh, and generates plausible 3D animations by sampling from the learned motion latent space.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2312.13604.pdf) | [🌐 Project Page](https://keqiangsun.github.io/projects/ponymation/) | [💻 Code](https://keqiangsun.github.io/projects/ponymationn) 
+
 
 
 
