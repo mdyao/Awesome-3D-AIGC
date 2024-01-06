@@ -491,7 +491,7 @@ Existing 3D-aware facial generation methods face a dilemma in quality versus edi
 
   [📄 Paper](https://arxiv.org/abs/2401.00711)
 
-### 7. DreamHuman: Animatable 3D Avatars from Text [arxiv 2023.06]
+### 7. DreamHuman: Animatable 3D Avatars from Text [NeurIPS 2023]
 
 **Authors**: Nikos Kolotouros Thiemo Alldieck Andrei Zanfir Eduard Gabriel Bazavan Mihai Fieraru Cristian Sminchisescu
 
