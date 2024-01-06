@@ -44,7 +44,7 @@ A curated list of papers and open-source resources focused on 3D AIGC, intended 
 
 
 ## Survey:
-### 1. Generative AI meets 3D: A Survey on Text-to-3D in AIGC Era [Arxiv, 2023]
+### 1. Generative AI meets 3D: A Survey on Text-to-3D in AIGC Era [arxiv 2023.05]
 
 **Authors**: Chenghao Li, Chaoning Zhang, Atish Waghwase, Lik-Hang Lee, Francois Rameau, Yang Yang, Sung-Ho Bae, Choong Seon Hong
 
@@ -55,7 +55,7 @@ Generative AI (AIGC, a.k.a. AI generated content) has made remarkable progress i
 
   [📄 Paper](https://arxiv.org/pdf/2305.06131.pdf) 
 
-### 2. Deep Generative Models on 3D Representations: A Survey
+### 2. Deep Generative Models on 3D Representations: A Survey [arxiv 2023.10]
 
 **Authors**: Zifan Shi, Sida Peng, Yinghao Xu, Andreas Geiger, Yiyi Liao, Yujun Shen
 
@@ -66,7 +66,7 @@ Generative models aim to learn the distribution of observed data by generating n
 
   [📄 Paper](https://arxiv.org/pdf/2210.15663.pdf) | [🌐 Project Page](https://github.com/justimyhxu/awesome-3D-generation/)
 
-### 3. A survey of deep learning-based 3D shape generation
+### 3. A survey of deep learning-based 3D shape generation [Computational Visual Media 2023.05]
 **Authors**: Qun-Ce Xu, Tai-Jiang Mu, Yong-Liang Yang 
 
 <details span>
@@ -227,7 +227,7 @@ We report Zero123++, an image-conditioned diffusion model for generating 3D-cons
   [📄 Paper](https://arxiv.org/abs/2310.15110) | [🌐 Project Page](https://zero123.cs.columbia.edu/) | [💻 Code](https://github.com/SUDO-AI-3D/zero123plus) | [🤗 Hugging Face](https://huggingface.co/spaces/sudo-ai/zero123plus-demo-space)
 
 
-### 3. One-2-3-45: Any Single Image to 3D Mesh in 45 Seconds without Per-Shape Optimization [arxiv 2023]
+### 3. One-2-3-45: Any Single Image to 3D Mesh in 45 Seconds without Per-Shape Optimization [arxiv 2023.06]
 
 **Authors**: Minghua Liu1*, Chao Xu2*, Haian Jin3,4*, Linghao Chen1,4*, Mukund Varma T5, Zexiang Xu6, Hao Su1
 
@@ -239,7 +239,7 @@ We report Zero123++, an image-conditioned diffusion model for generating 3D-cons
   [📄 Paper](https://arxiv.org/pdf/2306.16928.pdf) | [🌐 Project Page](https://one-2-3-45.github.io/) | [💻 Code](https://github.com/One-2-3-45/One-2-3-45) 
 
 
-### 4. One-2-3-45++: Fast Single Image to 3D Objects with Consistent Multi-View Generation and 3D Diffusion [arxiv 2023]
+### 4. One-2-3-45++: Fast Single Image to 3D Objects with Consistent Multi-View Generation and 3D Diffusion [arxiv 2023.11]
 
 **Authors**: Minghua Liu, Ruoxi Shi, Linghao Chen, Zhuoyang Zhang, Chao Xu, Xinyue Wei, Hansheng Chen, Chong Zeng, Jiayuan Gu, Hao Su
 
@@ -251,7 +251,7 @@ Recent advancements in open-world 3D object generation have been remarkable, wit
   [📄 Paper](https://arxiv.org/pdf/2311.07885.pdf) | [🌐 Project Page](https://sudo-ai-3d.github.io/One2345plus_page/) | [💻 Code](https://github.com/SUDO-AI-3D/One2345plus) 
 
 
-### 5. Instant3D: Fast Text-to-3D with Sparse-View Generation and Large Reconstruction Model [ICLR 2024, under review]
+### 5. Instant3D: Fast Text-to-3D with Sparse-View Generation and Large Reconstruction Model [ICLR 2024 under review]
 
 **Authors**: 
 
@@ -263,7 +263,7 @@ Recent advancements in open-world 3D object generation have been remarkable, wit
   [📄 Paper](https://openreview.net/forum?id=2lDQLiH1W4) | [🌐 Project Page](https://instant-3d.github.io/) 
 
 
-### 6. Wonder3d: Single Image to 3D using Cross-Domain Diffusion [arxiv 23.10]
+### 6. Wonder3d: Single Image to 3D using Cross-Domain Diffusion [arxiv 2023.10]
 
 **Authors**: Xiaoxiao Long1,3,6,*, Yuan-Chen Guo2,3,*, Cheng Lin1, Yuan Liu1, Zhiyang Dou1, Lingjie Liu4, Yuexin Ma5, Song-Hai Zhang2, Marc Habermann6, Christian Theobalt6, Wenping Wang7
 
@@ -287,7 +287,7 @@ Recent advancements in open-world 3D object generation have been remarkable, wit
   [📄 Paper](https://arxiv.org/abs/2311.04400) | [🌐 Project Page](https://yiconghong.me/LRM/)
 
 
-### 8. Magic123: One Image to High-Quality 3D Object Generation Using Both 2D and 3D Diffusion Priors
+### 8. Magic123: One Image to High-Quality 3D Object Generation Using Both 2D and 3D Diffusion Priors [arxiv 2023.06]
 
 **Authors**: Qian, Guocheng and Mai, Jinjie and Hamdi, Abdullah and Ren, Jian and Siarohin, Aliaksandr and Li, Bing and Lee, Hsin-Ying and Skorokhodov, Ivan and Wonka, Peter and Tulyakov, Sergey and Ghanem, Bernard
 
@@ -299,7 +299,7 @@ Recent advancements in open-world 3D object generation have been remarkable, wit
   [📄 Paper](https://arxiv.org/abs/2306.17843) | [🌐 Project Page](https://guochengqian.github.io/project/magic123/) | [💻 Code](https://github.com/guochengqian/Magic123) 
 
 
-### 9. DreamCraft3D: Hierarchical 3D Generation with Bootstrapped Diffusion Prior [arxiv 23.10]
+### 9. DreamCraft3D: Hierarchical 3D Generation with Bootstrapped Diffusion Prior [arxiv 2023.10]
 
 **Authors**: Jingxiang Sun 1,   Bo Zhang 3,   Ruizhi Shao 1,   Lizhen Wang 1,   Wen Liu 2,   Zhenda Xie 2,   Yebin Liu 1
 
@@ -316,7 +316,7 @@ Recent advancements in open-world 3D object generation have been remarkable, wit
 
 ## Audio to 3D Generation:
 
-### 1. From Audio to Photoreal Embodiment: Synthesizing Humans in Conversations [arxiv 2401]
+### 1. From Audio to Photoreal Embodiment: Synthesizing Humans in Conversations [arxiv 2024.01]
 
 
 **Authors**: Evonne Ng1, 2, Javier Romero1, Timur Bagautdinov1, Shaojie Bai1, Trevor Darrell2, Angjoo Kanazawa2, Alexander Richard1
@@ -333,7 +333,7 @@ We present a framework for generating full-bodied photorealistic avatars that ge
 <be>
 
 ## Editing:
-### 1. DreamEditor: Text-Driven 3D Scene Editing with Neural Fields
+### 1. DreamEditor: Text-Driven 3D Scene Editing with Neural Fields [arxiv 2023.06]
 
 **Authors**: Zhuang, Jingyu and Wang, Chen and Liu, Lingjie and Lin, Liang and Li, Guanbin
 
@@ -345,7 +345,7 @@ Neural fields have achieved impressive advancements in view synthesis and scene 
   [📄 Paper](https://arxiv.org/abs/2306.13455) | [🌐 Project Page](https://www.sysu-hcp.net/projects/cv/111.html) | [💻 Code](https://github.com/zjy526223908/DreamEditor) 
 
 
-### 2. IDE-3D: Interactive Disentangled Editing For High-Resolution 3D-aware Portrait Synthesis
+### 2. IDE-3D: Interactive Disentangled Editing For High-Resolution 3D-aware Portrait Synthesis [arxiv 2022.05]
 
 **Authors**: Jingxiang Sun, Xuan Wang, Yichun Shi, Lizhen Wang, Jue Wang, Yebin Liu
 
@@ -358,7 +358,7 @@ Existing 3D-aware facial generation methods face a dilemma in quality versus edi
 
 
 
-### 3. DM-NeRF: 3D Scene Geometry Decomposition and Manipulation from 2D Images
+### 3. DM-NeRF: 3D Scene Geometry Decomposition and Manipulation from 2D Images [ICLR 2023]
 
 **Authors**: Bing Wang, Lu Chen, Bo Yang
 
@@ -370,7 +370,7 @@ Existing 3D-aware facial generation methods face a dilemma in quality versus edi
   [📄 Paper](https://arxiv.org/abs/2208.07227) | [💻 Code](https://github.com/vLAR-group/DM-NeRF) 
 
 
-### 4. Image Sculpting: Precise Object Editing with 3D Geometry Control
+### 4. Image Sculpting: Precise Object Editing with 3D Geometry Control [arxiv 2024.01]
 
 **Authors**: Jiraphon Yenphraphai, Xichen Pan, Sainan Liu, Daniele Panozzo, Saining Xie
 
@@ -385,7 +385,7 @@ Existing 3D-aware facial generation methods face a dilemma in quality versus edi
 <br>
 
 ## Human-Avatar Generation:
-### 1. AvatarBooth: High-Quality and Customizable 3D Human Avatar Generation
+### 1. AvatarBooth: High-Quality and Customizable 3D Human Avatar Generation [arxiv 2023.06]
 
 **Authors**: Yifei Zeng1, Yuanxun Lu1, Xinya Ji1, Yao Yao1, Hao Zhu1, Xun Cao1,
 
@@ -398,7 +398,7 @@ Existing 3D-aware facial generation methods face a dilemma in quality versus edi
 
 
 
-### 2. SEEAvatar: Photorealistic Text-to-3D Avatar Generation with Constrained Geometry and Appearance
+### 2. SEEAvatar: Photorealistic Text-to-3D Avatar Generation with Constrained Geometry and Appearance [arxiv 2023.12]
 
 **Authors**: Yuanyou Xu, Zongxin Yang, Yi Yang
 
@@ -411,7 +411,7 @@ Existing 3D-aware facial generation methods face a dilemma in quality versus edi
 
 
 
-### 3. Text and Image Guided 3D Avatar Generation and Manipulation
+### 3. Text and Image Guided 3D Avatar Generation and Manipulation [arxiv 2023.08]
 
 **Authors**: Zehranaz Canfes, M. Furkan Atasoy, Alara Dirik, Pinar Yanardag
 
@@ -423,7 +423,7 @@ Existing 3D-aware facial generation methods face a dilemma in quality versus edi
   [📄 Paper](https://openaccess.thecvf.com/content/WACV2023/papers/Canfes_Text_and_Image_Guided_3D_Avatar_Generation_and_Manipulation_WACV_2023_paper.pdf) | [🌐 Project Page](https://catlab-team.github.io/latent3D/) | [💻 Code](https://github.com/catlab-team/latent3D_code) 
 
 
-### 4. En3D: An Enhanced Generative Model for Sculpting 3D Humans from 2D Synthetic Data
+### 4. En3D: An Enhanced Generative Model for Sculpting 3D Humans from 2D Synthetic Data [arxiv 2024.01]
 
 **Authors**: Yifang Men1, Biwen Lei1, Yuan Yao1, Miaomiao Cui1, Zhouhui Lian2, Xuansong Xie1
 
