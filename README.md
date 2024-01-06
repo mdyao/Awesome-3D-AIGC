@@ -30,9 +30,9 @@ A curated list of papers and open-source resources focused on 3D AIGC, intended 
 <summary><b>Update Log:</b></summary>
 <be>
 
-  **Jan 6, 2024**: Adding recent papers. 
+  **Jan 6, 2024**: Add recent papers. 
 
-  **Jan 2, 2024**: Adding papers to image to 3d generation. 
+  **Jan 2, 2024**: Add papers to image to 3d generation. 
 
   **Dec 29, 2023**: Contribute to the section on text-to-3d by adding new papers with their publication years.
   
