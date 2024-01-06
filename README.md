@@ -8,6 +8,7 @@ A curated list of papers and open-source resources focused on 3D AIGC, intended 
 - [Survey](#survey)
 - [Text to 3D Generation](#text-to-3d-generation)
 - [Image to 3D Generation](#image-to-3d-generation)
+- [Audio to 3D Generation](#audio-to-3d-generation)
 - [3D Editing](#editing)
 - [Human Avatar Generation](#human-avatar-generation)
 - [Autonomous Driving](#autonomous-driving)
@@ -28,6 +29,8 @@ A curated list of papers and open-source resources focused on 3D AIGC, intended 
 <details span>
 <summary><b>Update Log:</b></summary>
 <be>
+
+  **Jan 6, 2024**: Adding recent papers. 
 
   **Jan 2, 2024**: Adding papers to image to 3d generation. 
 
@@ -298,7 +301,6 @@ Recent advancements in open-world 3D object generation have been remarkable, wit
 
 ### 9. DreamCraft3D: Hierarchical 3D Generation with Bootstrapped Diffusion Prior [arxiv 23.10]
 
-
 **Authors**: Jingxiang Sun 1,   Bo Zhang 3,   Ruizhi Shao 1,   Lizhen Wang 1,   Wen Liu 2,   Zhenda Xie 2,   Yebin Liu 1
 
 <details span>
@@ -311,6 +313,24 @@ Recent advancements in open-world 3D object generation have been remarkable, wit
 
 
 <br>
+
+## Audio to 3D Generation:
+
+### 1. From Audio to Photoreal Embodiment: Synthesizing Humans in Conversations [arxiv 2401]
+
+
+**Authors**: Evonne Ng1, 2, Javier Romero1, Timur Bagautdinov1, Shaojie Bai1, Trevor Darrell2, Angjoo Kanazawa2, Alexander Richard1
+
+<details span>
+<summary><b>Abstract</b></summary>
+We present a framework for generating full-bodied photorealistic avatars that gesture according to the conversational dynamics of a dyadic interaction. Given speech audio, we output multiple possibilities of gestural motion for an individual, including face, body, and hands. The key behind our method is in combining the benefits of sample diversity from vector quantization with the high-frequency details obtained through diffusion to generate more dynamic, expressive motion. We visualize the generated motion using highly photorealistic avatars that can express crucial nuances in gestures (e.g. sneers and smirks). To facilitate this line of research, we introduce a first-of-its-kind multi-view conversational dataset that allows for photorealistic reconstruction. Experiments show our model generates appropriate and diverse gestures, outperforming both diffusion- and VQ-only methods. Furthermore, our perceptual evaluation highlights the importance of photorealism (vs. meshes) in accurately assessing subtle motion details in conversational gestures. Code and dataset will be publicly released.
+</details>
+
+  [📄 Paper](https://people.eecs.berkeley.edu/~evonne_ng/projects/audio2photoreal/static/CCA.pdf) | [🌐 Project Page](https://people.eecs.berkeley.edu/~evonne_ng/projects/audio2photoreal/) | [💻 Code]([https://github.com/deepseek-ai/DreamCraft3D](https://github.com/facebookresearch/audio2photoreal)) 
+
+
+
+<be>
 
 ## Editing:
 ### 1. DreamEditor: Text-Driven 3D Scene Editing with Neural Fields
@@ -348,6 +368,19 @@ Existing 3D-aware facial generation methods face a dilemma in quality versus edi
 </details>
 
   [📄 Paper](https://arxiv.org/abs/2208.07227) | [💻 Code](https://github.com/vLAR-group/DM-NeRF) 
+
+
+### 4. Image Sculpting: Precise Object Editing with 3D Geometry Control
+
+**Authors**: Jiraphon Yenphraphai, Xichen Pan, Sainan Liu, Daniele Panozzo, Saining Xie
+
+<details span>
+<summary><b>Abstract</b></summary>
+ We present Image Sculpting, a new framework for editing 2D images by incorporating tools from 3D geometry and graphics. This approach differs markedly from existing methods, which are confined to 2D spaces and typically rely on textual instructions, leading to ambiguity and limited control. Image Sculpting converts 2D objects into 3D, enabling direct interaction with their 3D geometry. Post-editing, these objects are re-rendered into 2D, merging into the original image to produce high-fidelity results through a coarse-to-fine enhancement process. The framework supports precise, quantifiable, and physically-plausible editing options such as pose editing, rotation, translation, 3D composition, carving, and serial addition. It marks an initial step towards combining the creative freedom of generative models with the precision of graphics pipelines.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2401.01702) | [🌐 Project Page](https://image-sculpting.github.io/) | [💻 Code](https://github.com/vision-x-nyu/image-sculpting) 
+
 
 <br>
 
@@ -388,6 +421,18 @@ Existing 3D-aware facial generation methods face a dilemma in quality versus edi
 </details>
 
   [📄 Paper](https://openaccess.thecvf.com/content/WACV2023/papers/Canfes_Text_and_Image_Guided_3D_Avatar_Generation_and_Manipulation_WACV_2023_paper.pdf) | [🌐 Project Page](https://catlab-team.github.io/latent3D/) | [💻 Code](https://github.com/catlab-team/latent3D_code) 
+
+
+### 4. En3D: An Enhanced Generative Model for Sculpting 3D Humans from 2D Synthetic Data
+
+**Authors**: Yifang Men1, Biwen Lei1, Yuan Yao1, Miaomiao Cui1, Zhouhui Lian2, Xuansong Xie1
+
+<details span>
+<summary><b>Abstract</b></summary>
+ We present En3D, an enhanced generative scheme for sculpting high-quality 3D human avatars. Unlike previous works that rely on scarce 3D datasets or limited 2D collections with imbalanced viewing angles and imprecise pose priors, our approach aims to develop a zero-shot 3D generative scheme capable of producing visually realistic, geometrically accurate and content-wise diverse 3D humans without relying on pre-existing 3D or 2D assets. To address this challenge, we introduce a meticulously crafted workflow that implements accurate physical modeling to learn the enhanced 3D generative model from synthetic 2D data. During inference, we integrate optimization modules to bridge the gap between realistic appearances and coarse 3D shapes. Specifically, En3D comprises three modules: a 3D generator that accurately models generalizable 3D humans with realistic appearance from synthesized balanced, diverse, and structured human images; a geometry sculptor that enhances shape quality using multi-view normal constraints for intricate human anatomy; and a texturing module that disentangles explicit texture maps with fidelity and editability, leveraging semantical UV partitioning and a differentiable rasterizer. Experimental results show that our approach significantly outperforms prior works in terms of image quality, geometry accuracy and content diversity. We also showcase the applicability of our generated avatars for animation and editing, as well as the scalability of our approach for content-style free adaptation.
+</details>
+
+  [📄 Paper](http://arxiv.org/abs/2401.01173) | [🌐 Project Page](https://menyifang.github.io/projects/En3D/index.html) | [💻 Code](https://github.com/menyifang/En3D) 
 
 
 <br>
@@ -453,9 +498,37 @@ In this paper, we introduce Recon3DMind, a groundbreaking task focused on recons
 
 
 
-<!--
+
 ## Misc:
 
+### 1. FMGS: Foundation Model Embedded 3D Gaussian Splatting for Holistic 3D Scene Understanding
+
+**Authors**: Xingxing Zuo, Pouya Samangouei, Yunwen Zhou, Yan Di, Mingyang Li
+
+
+<details span>
+<summary><b>Abstract</b></summary>
+ Precisely perceiving the geometric and semantic properties of real-world 3D objects is crucial for the continued evolution of augmented reality and robotic applications. To this end, we present \algfull{} (\algname{}), which incorporates vision-language embeddings of foundation models into 3D Gaussian Splatting (GS). The key contribution of this work is an efficient method to reconstruct and represent 3D vision-language models. This is achieved by distilling feature maps generated from image-based foundation models into those rendered from our 3D model. To ensure high-quality rendering and fast training, we introduce a novel scene representation by integrating strengths from both GS and multi-resolution hash encodings (MHE). Our effective training procedure also introduces a pixel alignment loss that makes the rendered feature distance of same semantic entities close, following the pixel-level semantic boundaries. Our results demonstrate remarkable multi-view semantic consistency, facilitating diverse downstream tasks, beating state-of-the-art methods by 10.2 percent on open-vocabulary language-based object detection, despite that we are 851× faster for inference. This research explores the intersection of vision, language, and 3D scene representation, paving the way for enhanced scene understanding in uncontrolled real-world environments. We plan to release the code upon paper acceptance.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2401.01970) 
+
+### 2. Learning the 3D Fauna of the Web [arxiv 2401]
+
+**Authors**: Zizhang Li, Dor Litvak, Ruining Li, Yunzhi Zhang, Tomas Jakab, Christian Rupprecht, Shangzhe Wu, Andrea Vedaldi, Jiajun Wu
+
+
+<details span>
+<summary><b>Abstract</b></summary>
+ Learning 3D models of all animals on the Earth requires massively scaling up existing solutions. With this ultimate goal in mind, we develop 3D-Fauna, an approach that learns a pan-category deformable 3D animal model for more than 100 animal species jointly. One crucial bottleneck of modeling animals is the limited availability of training data, which we overcome by simply learning from 2D Internet images. We show that prior category-specific attempts fail to generalize to rare species with limited training images. We address this challenge by introducing the Semantic Bank of Skinned Models (SBSM), which automatically discovers a small set of base animal shapes by combining geometric inductive priors with semantic knowledge implicitly captured by an off-the-shelf self-supervised feature extractor. To train such a model, we also contribute a new large-scale dataset of diverse animal species. At inference time, given a single image of any quadruped animal, our model reconstructs an articulated 3D mesh in a feed-forward fashion within seconds.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2401.02400) | [🌐 Project Page](https://kyleleey.github.io/3DFauna/) | [💻 Code]() 
+
+
+
+
+<--
 ### 2.
 
 **Authors**: 
