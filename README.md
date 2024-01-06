@@ -185,6 +185,17 @@ Recent breakthroughs in text-to-image synthesis have been driven by diffusion mo
 
   [📄 Paper](https://openaccess.thecvf.com/content/CVPR2022/papers/Jain_Zero-Shot_Text-Guided_Object_Generation_With_Dream_Fields_CVPR_2022_paper.pdf) | [🌐 Project Page](https://ajayj.com/dreamfields) | [💻 Code]() 
 
+### 10. RichDreamer: A Generalizable Normal-Depth Diffusion Model for Detail Richness in Text-to-3D [arxiv 2023.11]
+
+**Authors**: Lingteng Qiu, Guanying Chen, Xiaodong Gu, Qi Zuo, Mutian Xu, Yushuang Wu, Weihao Yuan, Zilong Dong, Liefeng Bo, Xiaoguang Han
+
+<details span>
+<summary><b>Abstract</b></summary>
+ Lifting 2D diffusion for 3D generation is a challenging problem due to the lack of geometric prior and the com- plex entanglement of materials and lighting in natural im- ages. Existing methods have shown promise by first creat- ing the geometry through score-distillation sampling (SDS) applied to rendered surface normals, followed by appear- ance modeling. However, relying on a 2D RGB diffusion model to optimize surface normals is suboptimal due to the distribution discrepancy between natural images and nor- mals maps, leading to instability in optimization. In this paper, recognizing that the normal and depth information effectively describe scene geometry and be automatically estimated from images, we propose to learn a generaliz- able Normal-Depth diffusion model for 3D generation. We achieve this by training on the large-scale LAION dataset together with the generalizable image-to-depth and normal prior models. In an attempt to alleviate the mixed illumi- nation effects in the generated materials, we introduce an albedo diffusion model to impose data-driven constraints on the albedo component. Our experiments show that when in- tegrated into existing text-to-3D pipelines, our models sig- nificantly enhance the detail richness, achieving state-of- the-art results.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2311.16918) | [🌐 Project Page](https://aigc3d.github.io/richdreamer/) | [💻 Code](https://github.com/modelscope/richdreamer) 
+
 
 
 <br>
