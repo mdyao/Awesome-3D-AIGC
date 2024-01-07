@@ -35,7 +35,7 @@ A curated list of papers and open-source resources focused on 3D AIGC, intended 
   **Jan 2, 2024**: Add papers to image to 3d generation. 
 
   **Dec 29, 2023**: Contribute to the section on text-to-3d by adding new papers with their publication years.
-  
+
   **Dec 27, 2023**: Initial list with first 15 papers.
 
 </details>
@@ -377,7 +377,7 @@ We present a framework for generating full-bodied photorealistic avatars that ge
 
 
 
-<be>
+<br>
 
 ## Editing:
 ### 1. DreamEditor: Text-Driven 3D Scene Editing with Neural Fields [arxiv 2023.06]
@@ -537,6 +537,20 @@ We present DreamHuman, a method to generate realistic animatable 3D human avatar
 </details>
 
   [📄 Paper](https://arxiv.org/abs/2306.09329) | [🌐 Project Page](https://dream-human.github.io/) 
+
+
+
+### 8.  Global-correlated 3D-decoupling Transformer for Clothed Avatar Reconstruction [NeurIPS 2023]
+
+**Authors**: Zechuan Zhang, Li Sun, Zongxin Yang, Ling Chen, Yi Yang
+
+<details span>
+<summary><b>Abstract</b></summary>
+Reconstructing 3D clothed human avatars from single images is a challenging task, especially when encountering complex poses and loose clothing. Current methods exhibit limitations in performance, largely attributable to their dependence on insufficient 2D image features and inconsistent query methods. Owing to this, we present the Global-correlated 3D-decoupling Transformer for clothed Avatar reconstruction (GTA), a novel transformer-based architecture that reconstructs clothed human avatars from monocular images. Our approach leverages transformer architectures by utilizing a Vision Transformer model as an encoder for capturing global-correlated image features. Subsequently, our innovative 3D-decoupling decoder employs cross-attention to decouple tri-plane features, using learnable embeddings as queries for cross-plane generation. To effectively enhance feature fusion with the tri-plane 3D feature and human body prior, we propose a hybrid prior fusion strategy combining spatial and prior-enhanced queries, leveraging the benefits of spatial localization and human body prior knowledge. Comprehensive experiments on CAPE and THuman2.0 datasets illustrate that our method outperforms state-of-the-art approaches in both geometry and texture reconstruction, exhibiting high robustness to challenging poses and loose clothing, and producing higher-resolution textures. Codes will be available at this https URL.
+</details>
+
+
+  [📄 Paper](https://arxiv.org/abs/2309.13524) | [🌐 Project Page](https://river-zhang.github.io/GTA-projectpage/)  | [💻 Code](https://river-zhang.github.io/GTA-projectpage/) 
 
 
 
@@ -705,7 +719,7 @@ We introduce Ponymation, a new method for learning a generative model of articul
 ## Open Source Implementations
 ### Unofficial Implementations
   [ThreeStudio](https://github.com/threestudio-project/threestudio) is a unified framework for 3D content creation from text prompts, single images, and few-shot images, by lifting 2D text-to-image generation models.
-  
+
 Currenty supported 3D content generation methods (2023.12.29):
 
 ProlificDreamer | DreamFusion | Magic3D | SJC | Latent-NeRF | Fantasia3D | TextMesh | Zero-1-to-3 | Magic123 | InstructNeRF2NeRF | Control4D 
