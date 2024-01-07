@@ -354,8 +354,21 @@ Recent advancements in open-world 3D object generation have been remarkable, wit
 <summary><b>Abstract</b></summary>
  Virtual reality and augmented reality (XR) bring increasing demand for 3D content. However, creating high-quality 3D content requires tedious work that a human expert must do. In this work, we study the challenging task of lifting a single image to a 3D object and, for the first time, demonstrate the ability to generate a plausible 3D object with 360° views that correspond well with the given reference image. By conditioning on the reference image, our model can fulfill the everlasting curiosity for synthesizing novel views of objects from images. Our technique sheds light on a promising direction of easing the workflows for 3D artists and XR designers. We propose a novel framework, dubbed NeuralLift-360, that utilizes a depth-aware neural radiance representation (NeRF) and learns to craft the scene guided by denoising diffusion models. By introducing a ranking loss, our NeuralLift-360 can be guided with rough depth estimation in the wild. We also adopt a CLIP-guided sampling strategy for the diffusion prior to provide coherent guidance. Extensive experiments demonstrate that our NeuralLift-360 significantly outperforms existing state-of-the-art baselines. Project page: this https URL
 </details>
-
   [📄 Paper](https://arxiv.org/abs/2211.16431) | [🌐 Project Page](https://vita-group.github.io/NeuralLift-360/) | [💻 Code](https://github.com/Ir1d/NeuralLift-360) 
+
+
+
+### 12. Free3D: Consistent Novel View Synthesis without 3D Representation [arxiv 2023.12]
+
+**Authors**: Chuanxia Zheng, Andrea Vedaldi
+
+<details span>
+<summary><b>Abstract</b></summary>
+We introduce Free3D, a simple approach designed for open-set novel view synthesis (NVS) from a single image. Similar to Zero-1-to-3, we start from a pre-trained 2D image generator for generalization, and fine-tune it for NVS. Compared to recent and concurrent works, we obtain significant improvements without resorting to an explicit 3D representation, which is slow and memory-consuming or training an additional 3D network. We do so by encoding better the target camera pose via a new per-pixel ray conditioning normalization (RCN) layer. The latter injects pose information in the underlying 2D image generator by telling each pixel its specific viewing direction. We also improve multi-view consistency via a light-weight multi-view attention layer and multi-view noise sharing. We train Free3D on the Objaverse dataset and demonstrate excellent generalization to various new categories in several new datasets, including OminiObject3D and GSO. We hope our simple and effective approach will serve as a solid baseline and help future research in NVS with more accuracy pose. The project page is available at this https URL.
+</details>
+
+
+  [📄 Paper](https://chuanxiaz.com/free3d/static/videos/Free3D.pdf) | [🌐 Project Page](https://chuanxiaz.com/free3d/) | [💻 Code](https://github.com/lyndonzheng/Free3D) 
 
 
 
