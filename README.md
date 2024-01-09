@@ -76,7 +76,7 @@ Deep learning has been successfully used for tasks in the 2D image domain. Resea
 
   [📄 Paper](https://link.springer.com/article/10.1007/s41095-022-0321-5) 
 
-### 4. Learning Generative Models of 3D Structures
+### 4. Learning Generative Models of 3D Structures [Computer Graphics Forum 2020.05]
 **Authors**: Siddhartha Chaudhuri, Daniel Ritchie, Jiajun Wu, Kai Xu, Hao Zhang
 
 <details span>
