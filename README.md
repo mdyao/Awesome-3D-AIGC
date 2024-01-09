@@ -724,8 +724,6 @@ We introduce Ponymation, a new method for learning a generative model of articul
 
 -->
 
-
-
 <br>
 
 
