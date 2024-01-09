@@ -76,6 +76,15 @@ Deep learning has been successfully used for tasks in the 2D image domain. Resea
 
   [📄 Paper](https://link.springer.com/article/10.1007/s41095-022-0321-5) 
 
+### 4. Learning Generative Models of 3D Structures [Computer Graphics Forum 2020.05]
+**Authors**: Siddhartha Chaudhuri, Daniel Ritchie, Jiajun Wu, Kai Xu, Hao Zhang
+
+<details span>
+<summary><b>Abstract</b></summary>
+3D models of objects and scenes are critical to many academic disciplines and industrial applications. Of particular interest is the emerging opportunity for 3D graphics to serve artificial intelligence: computer vision systems can benefit from synthetically-generated training data rendered from virtual 3D scenes, and robots can be trained to navigate in and interact with real-world environments by first acquiring skills in simulated ones. One of the most promising ways to achieve this is by learning and applying generative models of 3D content: computer programs that can synthesize new 3D shapes and scenes. To allow users to edit and manipulate the synthesized 3D content to achieve their goals, the generative model should also be structure-aware: it should express 3D shapes and scenes using abstractions that allow manipulation of their high-level structure. This state-of-the-art report surveys historical work and recent progress on learning structure-aware generative models of 3D shapes and scenes. We present fundamental representations of 3D shape and scene geometry and structures, describe prominent methodologies including probabilistic models, deep generative models, program synthesis, and neural networks for structured data, and cover many recent methods for structure-aware synthesis of 3D shapes and indoor scenes.
+</details>
+
+  [📄 Paper](https://doi.org/10.1111/cgf.14020)
 
 <br>
 
