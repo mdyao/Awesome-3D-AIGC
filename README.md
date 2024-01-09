@@ -566,6 +566,17 @@ Reconstructing 3D clothed human avatars from single images is a challenging task
   [📄 Paper](https://arxiv.org/abs/2309.13524) | [🌐 Project Page](https://river-zhang.github.io/GTA-projectpage/)  | [💻 Code](https://river-zhang.github.io/GTA-projectpage/) 
 
 
+### 9. PV3D: A 3D Generative Model for Portrait Video Generation
+
+**Authors**: Zhongcong Xu*1 Jianfeng Zhang*2 Jun Hao Liew2 Wenqing Zhang2 Song Bai2 Jiashi Feng2 Mike Zheng Shou1
+
+<details span>
+<summary><b>Abstract</b></summary>
+ Recent advances in generative adversarial networks (GANs) have demonstrated the capabilities of generating stunning photo-realistic portrait images. While some prior works have applied such image GANs to unconditional 2D portrait video generation and static 3D portrait synthesis, there are few works successfully extending GANs for generating 3D-aware portrait videos. In this work, we propose PV3D, the first generative framework that can synthesize multi-view consistent portrait videos. Specifically, our method extends the recent static 3D-aware image GAN to the video domain by generalizing the 3D implicit neural representation to model the spatio-temporal space. To introduce motion dynamics to the generation process, we develop a motion generator by stacking multiple motion layers to generate motion features via modulated convolution. To alleviate motion ambiguities caused by camera/human motions, we propose a simple yet effective camera condition strategy for PV3D, enabling both temporal and multi-view consistent video generation. Moreover, PV3D introduces two discriminators for regularizing the spatial and temporal domains to ensure the plausibility of the generated portrait videos. These elaborated designs enable PV3D to generate 3D-aware motion-plausible portrait videos with high-quality appearance and geometry, significantly outperforming prior works. As a result, PV3D is able to support many downstream applications such as animating static portraits and view-consistent video motion editing. Code and models will be released.
+</details>
+
+  [📄 Paper](https://openreview.net/pdf?id=o3yygm3lnzS) | [🌐 Project Page](https://showlab.github.io/pv3d/) | [💻 Code](https://github.com/bytedance/pv3d) 
+
 
 <br>
 
