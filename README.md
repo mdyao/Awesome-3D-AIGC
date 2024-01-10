@@ -29,6 +29,7 @@ A curated list of papers and open-source resources focused on 3D AIGC, intended 
 <details span>
 <summary><b>Update Log:</b></summary>
 <be>
+ 
   **Jan 10, 2024**: Add DreamGaussian (3D version)  and several avatar papers. 
 
   **Jan 6, 2024**: Add recent papers. 
