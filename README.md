@@ -88,6 +88,16 @@ Deep learning has been successfully used for tasks in the 2D image domain. Resea
 
   [📄 Paper](https://doi.org/10.1111/cgf.14020)
 
+### 5. A Survey on 3D Gaussian Splatting [arxiv 2024.01]
+**Authors**: Guikun Chen, Wenguan Wang
+
+<details span>
+<summary><b>Abstract</b></summary>
+3D Gaussian splatting (3D GS) has recently emerged as a transformative technique in the explicit radiance field and computer graphics landscape. This innovative approach, characterized by the utilization of millions of 3D Gaussians, represents a significant departure from the neural radiance field (NeRF) methodologies, which predominantly use implicit, coordinate-based models to map spatial coordinates to pixel values. 3D GS, with its explicit scene representations and differentiable rendering algorithms, not only promises real-time rendering capabilities but also introduces unprecedented levels of control and editability. This positions 3D GS as a potential game-changer for the next generation of 3D reconstruction and representation. In the present paper, we provide the first systematic overview of the recent developments and critical contributions in the domain of 3D GS. We begin with a detailed exploration of the underlying principles and the driving forces behind the advent of 3D GS, setting the stage for understanding its significance. A focal point of our discussion is the practical applicability of 3D GS. By facilitating real-time performance, 3D GS opens up a plethora of applications, ranging from virtual reality to interactive media and beyond. This is complemented by a comparative analysis of leading 3D GS models, evaluated across various benchmark tasks to highlight their performance and practical utility. The survey concludes by identifying current challenges and suggesting potential avenues for future research in this domain. Through this survey, we aim to provide a valuable resource for both newcomers and seasoned researchers, fostering further exploration and advancement in applicable and explicit radiance field representation.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2401.03890)
+
 <br>
 
 ## Text to 3D Generation:
@@ -397,6 +407,28 @@ We introduce Free3D, a simple approach designed for open-set novel view synthesi
   [📄 Paper](https://chuanxiaz.com/free3d/static/videos/Free3D.pdf) | [🌐 Project Page](https://chuanxiaz.com/free3d/) | [💻 Code](https://github.com/lyndonzheng/Free3D) 
 
 
+### 13. AGG: Amortized Generative 3D Gaussians for Single Image to 3D [arxiv 2024.01]
+
+**Authors**: Dejia Xu, Ye Yuan, Morteza Mardani, Sifei Liu, Jiaming Song, Zhangyang Wang, Arash Vahdat
+
+<details span>
+<summary><b>Abstract</b></summary>
+Given the growing need for automatic 3D content creation pipelines, various 3D representations have been studied to generate 3D objects from a single image. Due to its superior rendering efficiency, 3D Gaussian splatting-based models have recently excelled in both 3D reconstruction and generation. 3D Gaussian splatting approaches for image to 3D generation are often optimization-based, requiring many computationally expensive score-distillation steps. To overcome these challenges, we introduce an Amortized Generative 3D Gaussian framework (AGG) that instantly produces 3D Gaussians from a single image, eliminating the need for per-instance optimization. Utilizing an intermediate hybrid representation, AGG decomposes the generation of 3D Gaussian locations and other appearance attributes for joint optimization. Moreover, we propose a cascaded pipeline that first generates a coarse representation of the 3D data and later upsamples it with a 3D Gaussian super-resolution module. Our method is evaluated against existing optimization-based 3D Gaussian frameworks and sampling-based pipelines utilizing other 3D representations, where AGG showcases competitive generation abilities both qualitatively and quantitatively while being several orders of magnitude faster. Project page: [this https URL](https://ir1d.github.io/AGG/).
+</details>
+
+
+  [📄 Paper](https://arxiv.org/abs/2401.04099) | [🌐 Project Page](https://ir1d.github.io/AGG/) 
+
+### 14. What You See is What You GAN: Rendering Every Pixel for High-Fidelity Geometry in 3D GANs [arxiv 2024.01]
+
+**Authors**: Alex Trevithick, Matthew Chan, Towaki Takikawa, Umar Iqbal, Shalini De Mello, Manmohan Chandraker, Ravi Ramamoorthi, Koki Nagano
+
+<details span>
+<summary><b>Abstract</b></summary>
+3D-aware Generative Adversarial Networks (GANs) have shown remarkable progress in learning to generate multi-view-consistent images and 3D geometries of scenes from collections of 2D images via neural volume rendering. Yet, the significant memory and computational costs of dense sampling in volume rendering have forced 3D GANs to adopt patch-based training or employ low-resolution rendering with post-processing 2D super resolution, which sacrifices multiview consistency and the quality of resolved geometry. Consequently, 3D GANs have not yet been able to fully resolve the rich 3D geometry present in 2D images. In this work, we propose techniques to scale neural volume rendering to the much higher resolution of native 2D images, thereby resolving fine-grained 3D geometry with unprecedented detail. Our approach employs learning-based samplers for accelerating neural rendering for 3D GAN training using up to 5 times fewer depth samples. This enables us to explicitly "render every pixel" of the full-resolution image during training and inference without post-processing superresolution in 2D. Together with our strategy to learn high-quality surface geometry, our method synthesizes high-resolution 3D geometry and strictly view-consistent images while maintaining image quality on par with baselines relying on post-processing super resolution. We demonstrate state-of-the-art 3D gemetric quality on FFHQ and AFHQ, setting a new standard for unsupervised learning of 3D shapes in 3D GANs.
+</details>
+
+[📄 Paper](https://research.nvidia.com/labs/nxp/wysiwyg/media/WYSIWYG.pdf) | [🌐 Project Page](https://research.nvidia.com/labs/nxp/wysiwyg/)
 
 <br>
 
@@ -490,6 +522,14 @@ Existing 3D-aware facial generation methods face a dilemma in quality versus edi
 
   [📄 Paper](https://arxiv.org/abs/2401.01647) | [🌐 Project Page](https://signerf.jdihlmann.com/) | [💻 Code](https://github.com/cgtuebingen/SIGNeRF) 
 
+
+### 7. InseRF: Text-Driven Generative Object Insertion in Neural 3D Scenes [arxiv 2024.01]
+<details span>
+<summary><b>Abstract</b></summary>
+We introduce InseRF, a novel method for generative object insertion in the NeRF reconstructions of 3D scenes. Based on a user-provided textual description and a 2D bounding box in a reference viewpoint, InseRF generates new objects in 3D scenes. Recently, methods for 3D scene editing have been profoundly transformed, owing to the use of strong priors of text-to-image diffusion models in 3D generative modeling. Existing methods are mostly effective in editing 3D scenes via style and appearance changes or removing existing objects. Generating new objects, however, remains a challenge for such methods, which we address in this study. Specifically, we propose grounding the 3D object insertion to a 2D object insertion in a reference view of the scene. The 2D edit is then lifted to 3D using a single-view object reconstruction method. The reconstructed object is then inserted into the scene, guided by the priors of monocular depth estimation methods. We evaluate our method on various 3D scenes and provide an in-depth analysis of the proposed components. Our experiments with generative insertion of objects in several 3D scenes indicate the effectiveness of our method compared to the existing methods. InseRF is capable of controllable and 3D-consistent object insertion without requiring explicit 3D information as input. Please visit our project page at [this https URL](https://mohamad-shahbazi.github.io/inserf).
+</details>
+
+[📄 Paper](https://arxiv.org/abs/2401.05335) | [🌐 Project Page](https://mohamad-shahbazi.github.io/inserf) 
 
 <br>
 
