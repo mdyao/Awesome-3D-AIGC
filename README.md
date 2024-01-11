@@ -604,7 +604,7 @@ Reconstructing 3D clothed human avatars from single images is a challenging task
   [📄 Paper](https://openreview.net/pdf?id=o3yygm3lnzS) | [🌐 Project Page](https://showlab.github.io/pv3d/) | [💻 Code](https://github.com/bytedance/pv3d) 
 
 
-### 9.  GART: Gaussian Articulated Template Models [arxiv 2023.11]
+### 10.  GART: Gaussian Articulated Template Models [arxiv 2023.11]
 
 **Authors**: Jiahui Lei1        Yufu Wang1        Georgios Pavlakos2        Lingjie Liu1        Kostas Daniilidis1,3
 
@@ -619,7 +619,7 @@ We introduce Gaussian Articulated Template Model GART, an explicit, efficient, a
 
 
 
-### 10.  Joint2Human: High-quality 3D Human Generation via Compact Spherical Embedding of 3D Joints [arxiv 2023.12]
+### 11.  Joint2Human: High-quality 3D Human Generation via Compact Spherical Embedding of 3D Joints [arxiv 2023.12]
 
 **Authors**: Muxin Zhang1,†, Qiao Feng1,†, Zhuo Su2, Chao Wen2, Zhou Xue2, Kun Li1*
 
