@@ -29,7 +29,9 @@ A curated list of papers and open-source resources focused on 3D AIGC, intended 
 <details span>
 <summary><b>Update Log:</b></summary>
 <be>
- 
+
+   **Jan 11, 2024**: Add AGG and recent papers. 
+
   **Jan 10, 2024**: Add DreamGaussian (3D version)  and several avatar papers. 
 
   **Jan 6, 2024**: Add recent papers. 
@@ -429,6 +431,18 @@ Given the growing need for automatic 3D content creation pipelines, various 3D r
 </details>
 
 [📄 Paper](https://research.nvidia.com/labs/nxp/wysiwyg/media/WYSIWYG.pdf) | [🌐 Project Page](https://research.nvidia.com/labs/nxp/wysiwyg/)
+
+### 15. AGG: Amortized Generative 3D Gaussians for Single Image to 3D [arxiv 2024.01]
+
+**Authors**: Dejia Xu, Ye Yuan, Morteza Mardani, Sifei Liu, Jiaming Song, Zhangyang Wang, Arash Vahdat
+
+<details span>
+<summary><b>Abstract</b></summary>
+Given the growing need for automatic 3D content creation pipelines, various 3D representations have been studied to generate 3D objects from a single image. Due to its superior rendering efficiency, 3D Gaussian splatting-based models have recently excelled in both 3D reconstruction and generation. 3D Gaussian splatting approaches for image to 3D generation are often optimization-based, requiring many computationally expensive score-distillation steps. To overcome these challenges, we introduce an Amortized Generative 3D Gaussian framework (AGG) that instantly produces 3D Gaussians from a single image, eliminating the need for per-instance optimization. Utilizing an intermediate hybrid representation, AGG decomposes the generation of 3D Gaussian locations and other appearance attributes for joint optimization. Moreover, we propose a cascaded pipeline that first generates a coarse representation of the 3D data and later upsamples it with a 3D Gaussian super-resolution module. Our method is evaluated against existing optimization-based 3D Gaussian frameworks and sampling-based pipelines utilizing other 3D representations, where AGG showcases competitive generation abilities both qualitatively and quantitatively while being several orders of magnitude faster.
+</details>
+
+[📄 Paper](https://arxiv.org/abs/2401.04099) | [🌐 Project Page](https://ir1d.github.io/AGG/)
+
 
 <br>
 
