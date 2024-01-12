@@ -262,6 +262,25 @@ Recent advances in 3D content creation mostly leverage optimization-based 3D gen
 
 Note: DreamGaussian also supports image-to-3d and text-to-image-to-3d.
 
+### 14. HiFA: High-fidelity Text-to-3D Generation with Advanced Diffusion Guidance　[arxiv 2023.05]
+
+**Authors**:  Junzhe Zhu and Peiye Zhuang
+
+<details span>
+<summary><b>Abstract</b></summary>
+Recent advances in 3D content creation mostly leverage optimization-based 3D generation via score distillation sampling (SDS). Though promising results have been exhibited, these methods often suffer from slow per-sample optimization, limiting their practical usage. In this paper, we propose DreamGaussian, a novel 3D content generation framework that achieves both efficiency and quality simultaneously. Our key insight is to design a generative 3D Gaussian Splatting model with companioned mesh extraction and texture refinement in UV space. In contrast to the occupancy pruning used in Neural Radiance Fields, we demonstrate that the progressive densification of 3D Gaussians converges significantly faster for 3D generative tasks. To further enhance the texture quality and facilitate downstream applications, we introduce an efficient algorithm to convert 3D Gaussians into textured meshes and apply a fine-tuning stage to refine the details. Extensive experiments demonstrate the superior efficiency and competitive generation quality of our proposed approach. Notably, DreamGaussian produces high-quality textured meshes in just 2 minutes from a single-view image, achieving approximately 10 times acceleration compared to existing methods.
+</details>
+
+
+
+  [📄 Paper](https://arxiv.org/abs/2305.18766) | [🌐 Project Page](https://josephzhu.com/HiFA-site/) | [💻 Code](https://github.com/JunzheJosephZhu/HiFA) 
+
+Note: DreamGaussian also supports image-to-3d and text-to-image-to-3d.
+
+
+
+
+
 <br>
 
 ## Image to 3D Generation:
