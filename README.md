@@ -30,6 +30,10 @@ A curated list of papers and open-source resources focused on 3D AIGC, intended 
 <summary><b>Update Log:</b></summary>
 <be>
 
+   **Jan 11, 2024**: Add AGG and recent papers. 
+
+  **Jan 10, 2024**: Add DreamGaussian (3D version)  and several avatar papers. 
+
   **Jan 6, 2024**: Add recent papers. 
 
   **Jan 2, 2024**: Add papers to image to 3d generation. 
@@ -244,6 +248,39 @@ Score distillation has emerged as one of the most prevalent approaches for text-
 
 
 
+### 13. DreamGaussian: Generative Gaussian Splatting for Efficient 3D Content Creation [arxiv 2023.09]
+
+**Authors**:  Jiaxiang Tang1, Jiawei Ren2, Hang Zhou3, Ziwei Liu2, Gang Zeng1
+
+<details span>
+<summary><b>Abstract</b></summary>
+Recent advances in 3D content creation mostly leverage optimization-based 3D generation via score distillation sampling (SDS). Though promising results have been exhibited, these methods often suffer from slow per-sample optimization, limiting their practical usage. In this paper, we propose DreamGaussian, a novel 3D content generation framework that achieves both efficiency and quality simultaneously. Our key insight is to design a generative 3D Gaussian Splatting model with companioned mesh extraction and texture refinement in UV space. In contrast to the occupancy pruning used in Neural Radiance Fields, we demonstrate that the progressive densification of 3D Gaussians converges significantly faster for 3D generative tasks. To further enhance the texture quality and facilitate downstream applications, we introduce an efficient algorithm to convert 3D Gaussians into textured meshes and apply a fine-tuning stage to refine the details. Extensive experiments demonstrate the superior efficiency and competitive generation quality of our proposed approach. Notably, DreamGaussian produces high-quality textured meshes in just 2 minutes from a single-view image, achieving approximately 10 times acceleration compared to existing methods.
+</details>
+
+
+  [📄 Paper](https://arxiv.org/abs/2309.16653) | [🌐 Project Page](https://dreamgaussian.github.io/) | [💻 Code](https://github.com/dreamgaussian/dreamgaussian) 
+
+Note: DreamGaussian also supports image-to-3d and text-to-image-to-3d.
+
+### 14. HiFA: High-fidelity Text-to-3D Generation with Advanced Diffusion Guidance　[arxiv 2023.05]
+
+**Authors**:  Junzhe Zhu and Peiye Zhuang
+
+<details span>
+<summary><b>Abstract</b></summary>
+Recent advances in 3D content creation mostly leverage optimization-based 3D generation via score distillation sampling (SDS). Though promising results have been exhibited, these methods often suffer from slow per-sample optimization, limiting their practical usage. In this paper, we propose DreamGaussian, a novel 3D content generation framework that achieves both efficiency and quality simultaneously. Our key insight is to design a generative 3D Gaussian Splatting model with companioned mesh extraction and texture refinement in UV space. In contrast to the occupancy pruning used in Neural Radiance Fields, we demonstrate that the progressive densification of 3D Gaussians converges significantly faster for 3D generative tasks. To further enhance the texture quality and facilitate downstream applications, we introduce an efficient algorithm to convert 3D Gaussians into textured meshes and apply a fine-tuning stage to refine the details. Extensive experiments demonstrate the superior efficiency and competitive generation quality of our proposed approach. Notably, DreamGaussian produces high-quality textured meshes in just 2 minutes from a single-view image, achieving approximately 10 times acceleration compared to existing methods.
+</details>
+
+
+
+  [📄 Paper](https://arxiv.org/abs/2305.18766) | [🌐 Project Page](https://josephzhu.com/HiFA-site/) | [💻 Code](https://github.com/JunzheJosephZhu/HiFA) 
+
+Note: DreamGaussian also supports image-to-3d and text-to-image-to-3d.
+
+
+
+
+
 <br>
 
 ## Image to 3D Generation:
@@ -413,6 +450,8 @@ Given the growing need for automatic 3D content creation pipelines, various 3D r
 </details>
 
 [📄 Paper](https://research.nvidia.com/labs/nxp/wysiwyg/media/WYSIWYG.pdf) | [🌐 Project Page](https://research.nvidia.com/labs/nxp/wysiwyg/)
+
+
 
 <br>
 
@@ -639,6 +678,49 @@ Reconstructing 3D clothed human avatars from single images is a challenging task
 </details>
 
   [📄 Paper](https://openreview.net/pdf?id=o3yygm3lnzS) | [🌐 Project Page](https://showlab.github.io/pv3d/) | [💻 Code](https://github.com/bytedance/pv3d) 
+
+
+### 10.  GART: Gaussian Articulated Template Models [arxiv 2023.11]
+
+**Authors**: Jiahui Lei1        Yufu Wang1        Georgios Pavlakos2        Lingjie Liu1        Kostas Daniilidis1,3
+
+<details span>
+<summary><b>Abstract</b></summary>
+We introduce Gaussian Articulated Template Model GART, an explicit, efficient, and expressive representation for non-rigid articulated subject capturing and rendering from monocular videos. GART utilizes a mixture of moving 3D Gaussians to explicitly approximate a deformable subject's geometry and appearance. It takes advantage of a categorical template model prior (SMPL, SMAL, etc.) with learnable forward skinning while further generalizing to more complex non-rigid deformations with novel latent bones. GART can be reconstructed via differentiable rendering from monocular videos in seconds or minutes and rendered in novel poses faster than 150fps.
+</details>
+
+
+
+  [📄 Paper](https://www.cis.upenn.edu/~leijh/projects/gart/pub/gart_paper_arxiv2023.pdf) | [🌐 Project Page](https://www.cis.upenn.edu/~leijh/projects/gart/)  | [💻 Code](https://github.com/JiahuiLei/GART) 
+
+
+
+### 11.  Joint2Human: High-quality 3D Human Generation via Compact Spherical Embedding of 3D Joints [arxiv 2023.12]
+
+**Authors**: Muxin Zhang1,†, Qiao Feng1,†, Zhuo Su2, Chao Wen2, Zhou Xue2, Kun Li1*
+
+<details span>
+<summary><b>Abstract</b></summary>
+3D human generation is increasingly significant in various applications. However, the direct use of 2D generative methods in 3D generation often results in significant loss of local details, while methods that reconstruct geometry from generated images struggle with global view consistency. In this work, we introduce Joint2Human, a novel method that leverages 2D diffusion models to generate detailed 3D human geometry directly, ensuring both global structure and local details. To achieve this, we employ the Fourier occupancy field (FOF) representation, enabling the direct production of 3D shapes as preliminary results using 2D generative models. With the proposed high-frequency enhancer and the multi-view recarving strategy, our method can seamlessly integrate the details from different views into a uniform global shape. To better utilize the 3D human prior and enhance control over the generated geometry, we introduce a compact spherical embedding of 3D joints. This allows for effective application of pose guidance during the generation process. Additionally, our method is capable of generating 3D humans guided by textual inputs. Our experimental results demonstrate the capability of our method to ensure global structure, local details, high resolution, and low computational cost, simultaneously.
+</details>
+
+
+
+  [📄 Paper](https://arxiv.org/pdf/2312.08591.pdf) | [🌐 Project Page](https://cic.tju.edu.cn/faculty/likun/projects/Joint2Human/index.html) 
+
+
+### 12. GaussianAvatars: Photorealistic Head Avatars with Rigged 3D Gaussians [arxiv 2023.12]
+
+**Authors**: Shenhan Qian, Tobias Kirschstein, Liam Schoneveld, Davide Davoli, Simon Giebenhain, Matthias Nießner
+
+<details span>
+<summary><b>Abstract</b></summary>
+ We introduce GaussianAvatars, a new method to create photorealistic head avatars that are fully controllable in terms of expression, pose, and viewpoint. The core idea is a dynamic 3D representation based on 3D Gaussian splats that are rigged to a parametric morphable face model. This combination facilitates photorealistic rendering while allowing for precise animation control via the underlying parametric model, e.g., through expression transfer from a driving sequence or by manually changing the morphable model parameters. We parameterize each splat by a local coordinate frame of a triangle and optimize for explicit displacement offset to obtain a more accurate geometric representation. During avatar reconstruction, we jointly optimize for the morphable model parameters and Gaussian splat parameters in an end-to-end fashion. We demonstrate the animation capabilities of our photorealistic avatar in several challenging scenarios. For instance, we show reenactments from a driving video, where our method outperforms existing works by a significant margin.
+</details>
+
+  [📄 Paper](http://arxiv.org/abs/2312.02069) | [🌐 Project Page](https://shenhanqian.github.io/gaussian-avatars) 
+
+
 
 
 <br>
