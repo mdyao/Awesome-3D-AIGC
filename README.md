@@ -508,6 +508,9 @@ Existing 3D-aware facial generation methods face a dilemma in quality versus edi
 
 
 ### 7. InseRF: Text-Driven Generative Object Insertion in Neural 3D Scenes [arxiv 2024.01]
+
+**Authors**: Mohamad Shahbazi, Liesbeth Claessens, Michael Niemeyer, Edo Collins, Alessio Tonioni, Luc Van Gool, Federico Tombari
+
 <details span>
 <summary><b>Abstract</b></summary>
 We introduce InseRF, a novel method for generative object insertion in the NeRF reconstructions of 3D scenes. Based on a user-provided textual description and a 2D bounding box in a reference viewpoint, InseRF generates new objects in 3D scenes. Recently, methods for 3D scene editing have been profoundly transformed, owing to the use of strong priors of text-to-image diffusion models in 3D generative modeling. Existing methods are mostly effective in editing 3D scenes via style and appearance changes or removing existing objects. Generating new objects, however, remains a challenge for such methods, which we address in this study. Specifically, we propose grounding the 3D object insertion to a 2D object insertion in a reference view of the scene. The 2D edit is then lifted to 3D using a single-view object reconstruction method. The reconstructed object is then inserted into the scene, guided by the priors of monocular depth estimation methods. We evaluate our method on various 3D scenes and provide an in-depth analysis of the proposed components. Our experiments with generative insertion of objects in several 3D scenes indicate the effectiveness of our method compared to the existing methods. InseRF is capable of controllable and 3D-consistent object insertion without requiring explicit 3D information as input. Please visit our project page at [this https URL](https://mohamad-shahbazi.github.io/inserf).
@@ -515,6 +518,16 @@ We introduce InseRF, a novel method for generative object insertion in the NeRF 
 
 [📄 Paper](https://arxiv.org/abs/2401.05335) | [🌐 Project Page](https://mohamad-shahbazi.github.io/inserf) 
 
+### 8. GO-NeRF: Generating Virtual Objects in Neural Radiance Fields [arxiv 2024.01]
+
+**Authors**: Peng Dai, Feitong Tan, Xin Yu, Yinda Zhang, Xiaojuan Qi
+
+<details span>
+<summary><b>Abstract</b></summary>
+Despite advances in 3D generation, the direct creation of 3D objects within an existing 3D scene represented as NeRF remains underexplored. This process requires not only high-quality 3D object generation but also seamless composition of the generated 3D content into the existing NeRF. To this end, we propose a new method, GO-NeRF, capable of utilizing scene context for high-quality and harmonious 3D object generation within an existing NeRF. Our method employs a compositional rendering formulation that allows the generated 3D objects to be seamlessly composited into the scene utilizing learned 3D-aware opacity maps without introducing unintended scene modification. Moreover, we also develop tailored optimization objectives and training strategies to enhance the model's ability to exploit scene context and mitigate artifacts, such as floaters, originating from 3D object generation within a scene. Extensive experiments on both feed-forward and 360o scenes show the superior performance of our proposed GO-NeRF in generating objects harmoniously composited with surrounding scenes and synthesizing high-quality novel view images. Project page at [this https URL](https://daipengwa.github.io/GO-NeRF/).
+</details>
+
+[📄 Paper](https://arxiv.org/abs/2401.05750) | [🌐 Project Page](https://daipengwa.github.io/GO-NeRF/) 
 <br>
 
 ## Human-Avatar Generation:
