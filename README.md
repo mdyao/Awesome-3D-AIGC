@@ -473,6 +473,19 @@ Given the growing need for automatic 3D content creation pipelines, various 3D r
 
 [📄 Paper](https://research.nvidia.com/labs/nxp/wysiwyg/media/WYSIWYG.pdf) | [🌐 Project Page](https://research.nvidia.com/labs/nxp/wysiwyg/)
 
+### 15. TextureDreamer: Image-guided Texture Synthesis through Geometry-aware Diffusion [ICLR 2024]
+
+**Authors**: Yu-Ying Yeh, Jia-Bin Huang, Changil Kim, Lei Xiao, Thu Nguyen-Phuoc, Numair Khan, Cheng Zhang, Manmohan Chandraker, Carl S Marshall, Zhao Dong, Zhengqin Li
+
+<details span>
+<summary><b>Abstract</b></summary>
+We present TextureDreamer, a novel image-guided texture synthesis method to transfer relightable textures from a small number of input images (3 to 5) to target 3D shapes across arbitrary categories. Texture creation is a pivotal challenge in vision and graphics. Industrial companies hire experienced artists to manually craft textures for 3D assets. Classical methods require densely sampled views and accurately aligned geometry, while learning-based methods are confined to category-specific shapes within the dataset. In contrast, TextureDreamer can transfer highly detailed, intricate textures from real-world environments to arbitrary objects with only a few casually captured images, potentially significantly democratizing texture creation. Our core idea, personalized geometry-aware score distillation (PGSD), draws inspiration from recent advancements in diffuse models, including personalized modeling for texture information extraction, variational score distillation for detailed appearance synthesis, and explicit geometry guidance with ControlNet. Our integration and several essential modifications substantially improve the texture quality. Experiments on real images spanning different categories show that TextureDreamer can successfully transfer highly realistic, semantic meaningful texture to arbitrary objects, surpassing the visual quality of previous state-of-the-art.
+</details>
+
+[📄 Paper](https://arxiv.org/abs/2401.09416) | [🌐 Project Page](https://texturedreamer.github.io/)
+
+
+TextureDreamer: Image-guided Texture Synthesis through Geometry-aware Diffusion
 
 
 <br>
