@@ -30,6 +30,8 @@ A curated list of papers and open-source resources focused on 3D AIGC, intended 
 <summary><b>Update Log:</b></summary>
 <be>
 
+   **Jan 19, 2024**: Update several ICLR 2024 papers. 
+
    **Jan 11, 2024**: Add AGG and recent papers. 
 
   **Jan 10, 2024**: Add DreamGaussian (3D version)  and several avatar papers. 
@@ -884,8 +886,20 @@ We introduce Ponymation, a new method for learning a generative model of articul
 
   [📄 Paper](https://arxiv.org/abs/2312.10763) | [🌐 Project Page](https://m3dbench.github.io/) | [💻 Code](https://github.com/OpenM3D/M3DBench) 
 
+### 4. LERF: Language Embedded Radiance Fields [ICCV 2023]
 
-### 4. LangSplat: 3D Language Gaussian Splatting [arxiv 2023.12]
+**Authors**: Justin Kerr, Chung Min Kim, Ken Goldberg, Angjoo Kanazawa, Matthew Tancik
+
+<details span>
+<summary><b>Abstract</b></summary>
+Humans describe the physical world using natural language to refer to specific 3D locations based on a vast range of properties: visual appearance, semantics, abstract associations, or actionable affordances. In this work we propose Language Embedded Radiance Fields (LERFs), a method for grounding language embeddings from off-the-shelf models like CLIP into NeRF, which enable these types of open-ended language queries in 3D. LERF learns a dense, multi-scale language field inside NeRF by volume rendering CLIP embeddings along training rays, supervising these embeddings across training views to provide multi-view consistency and smooth the underlying language field. After optimization, LERF can extract 3D relevancy maps for a broad range of language prompts interactively in real-time, which has potential use cases in robotics, understanding vision-language models, and interacting with 3D scenes. LERF enables pixel-aligned, zero-shot queries on the distilled 3D CLIP embeddings without relying on region proposals or masks, supporting long-tail open-vocabulary queries hierarchically across the volume. The project website can be found at this https URL .
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2303.09553) | [🌐 Project Page](https://www.lerf.io/) | [💻 Code](https://github.com/kerrj/lerf) 
+
+
+
+### 5. LangSplat: 3D Language Gaussian Splatting [arxiv 2023.12]
 
 **Authors**: Minghan Qin, Wanhua Li, Jiawei Zhou, Haoqian Wang, Hanspeter Pfister
 
