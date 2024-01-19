@@ -885,6 +885,19 @@ We introduce Ponymation, a new method for learning a generative model of articul
   [📄 Paper](https://arxiv.org/abs/2312.10763) | [🌐 Project Page](https://m3dbench.github.io/) | [💻 Code](https://github.com/OpenM3D/M3DBench) 
 
 
+### 4. LangSplat: 3D Language Gaussian Splatting [arxiv 2023.12]
+
+**Authors**: Minghan Qin, Wanhua Li, Jiawei Zhou, Haoqian Wang, Hanspeter Pfister
+
+<details span>
+<summary><b>Abstract</b></summary>
+Human lives in a 3D world and commonly uses natural language to interact with a 3D scene. Modeling a 3D language field to support open-ended language queries in 3D has gained increasing attention recently. This paper introduces LangSplat, which constructs a 3D language field that enables precise and efficient open-vocabulary querying within 3D spaces. Unlike existing methods that ground CLIP language embeddings in a NeRF model, LangSplat advances the field by utilizing a collection of 3D Gaussians, each encoding language features distilled from CLIP, to represent the language field. By employing a tile-based splatting technique for rendering language features, we circumvent the costly rendering process inherent in NeRF. Instead of directly learning CLIP embeddings, LangSplat first trains a scene-wise language autoencoder and then learns language features on the scene-specific latent space, thereby alleviating substantial memory demands imposed by explicit modeling. Existing methods struggle with imprecise and vague 3D language fields, which fail to discern clear boundaries between objects. We delve into this issue and propose to learn hierarchical semantics using SAM, thereby eliminating the need for extensively querying the language field across various scales and the regularization of DINO features. Extensive experiments on open-vocabulary 3D object localization and semantic segmentation demonstrate that LangSplat significantly outperforms the previous state-of-the-art method LERF by a large margin. Notably, LangSplat is extremely efficient, achieving a {\speed} × speedup compared to LERF at the resolution of 1440 × 1080. We strongly recommend readers to check out our video results at this https URL
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2312.16084) | [🌐 Project Page](https://langsplat.github.io/) | [💻 Code](https://github.com/minghanqin/LangSplat) 
+
+
+
 <!--
 
 ### 2.
