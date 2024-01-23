@@ -50,7 +50,6 @@ A curated list of papers and open-source resources focused on 3D AIGC, intended 
 
 <br>
 
-
 ## Survey:
 ### 1. Generative AI meets 3D: A Survey on Text-to-3D in AIGC Era [arxiv 2023.05]
 
