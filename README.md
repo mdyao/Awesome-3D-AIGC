@@ -337,6 +337,20 @@ Text-to-3D generation, which aims to synthesize vivid 3D objects from text promp
 
 Note: two Instant3D papers :)
 
+
+### 19. Progressive3D: Progressively Local Editing for Text-to-3D Content Creation with Complex Semantic Prompts [ICLR 2024]
+
+**Authors**: Xinhua Cheng, Tianyu Yang, Jianan Wang, Yu Li, Lei Zhang, Jian Zhang, Li Yuan
+
+<details span>
+<summary><b>Abstract</b></summary>
+Recent text-to-3D generation methods achieve impressive 3D content creation capacity thanks to the advances in image diffusion models and optimizing strategies. However, current methods struggle to generate correct 3D content for a complex prompt in semantics, i.e., a prompt describing multiple interacted objects binding with different attributes. In this work, we propose a general framework named Progressive3D, which decomposes the entire generation into a series of locally progressive editing steps to create precise 3D content for complex prompts, and we constrain the content change to only occur in regions determined by user-defined region prompts in each editing step. Furthermore, we propose an overlapped semantic component suppression technique to encourage the optimization process to focus more on the semantic differences between prompts. Extensive experiments demonstrate that the proposed Progressive3D framework generates precise 3D content for prompts with complex semantics and is general for various text-to-3D methods driven by different 3D representations.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2310.11784.pdf) | [🌐 Project Page](https://cxh0519.github.io/projects/Progressive3D/) | [💻 Code](https://github.com/cxh0519/Progressive3D)
+
+
+
 <br>
 
 ## Image to 3D Generation:
