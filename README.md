@@ -30,9 +30,9 @@ A curated list of papers and open-source resources focused on 3D AIGC, intended 
 <summary><b>Update Log:</b></summary>
 <be>
 
-   **Jan 19, 2024**: Update several ICLR 2024 papers. 
+  **Jan 19, 2024**: Update several ICLR 2024 papers. 
 
-   **Jan 11, 2024**: Add AGG and recent papers. 
+  **Jan 11, 2024**: Add AGG and recent papers. 
 
   **Jan 10, 2024**: Add DreamGaussian (3D version)  and several avatar papers. 
 
