@@ -314,6 +314,30 @@ We propose \textbf{DMV3D}, a novel 3D generation approach that uses a transforme
 
 Note: DMV3D also supports image-to-3d and text-to-image-to-3d.
 
+### 17. Instant3D: Fast Text-to-3D with Sparse-View Generation and Large Reconstruction Model [arxiv 2023.11]
+
+**Authors**: Jiahao Li, Hao Tan, Kai Zhang, Zexiang Xu, Fujun Luan, Yinghao Xu, Yicong Hong, Kalyan Sunkavalli, Greg Shakhnarovich, Sai Bi
+
+<details span>
+<summary><b>Abstract</b></summary>
+ Text-to-3D with diffusion models has achieved remarkable progress in recent years. However, existing methods either rely on score distillation-based optimization which suffer from slow inference, low diversity and Janus problems, or are feed-forward methods that generate low quality results due to the scarcity of 3D training data. In this paper, we propose Instant3D, a novel method that generates high-quality and diverse 3D assets from text prompts in a feed-forward manner. We adopt a two-stage paradigm, which first generates a sparse set of four structured and consistent views from text in one shot with a fine-tuned 2D text-to-image diffusion model, and then directly regresses the NeRF from the generated images with a novel transformer-based sparse-view reconstructor. Through extensive experiments, we demonstrate that our method can generate high-quality, diverse and Janus-free 3D assets within 20 seconds, which is two order of magnitude faster than previous optimization-based methods that can take 1 to 10 hours.
+</details>
+
+  [📄 Paper](https://openreview.net/forum?id=2lDQLiH1W4) | [🌐 Project Page](https://instant-3d.github.io/) 
+
+### 18. Instant3D: Instant Text-to-3D Generation [arxiv 2023.11]
+
+**Authors**: Ming Li, Pan Zhou, Jia-Wei Liu, Jussi Keppo, Min Lin, Shuicheng Yan, Xiangyu Xu
+
+<details span>
+<summary><b>Abstract</b></summary>
+Text-to-3D generation, which aims to synthesize vivid 3D objects from text prompts, has attracted much attention from the computer vision community. While several existing works have achieved impressive results for this task, they mainly rely on a time-consuming optimization paradigm. Specifically, these methods optimize a neural field from scratch for each text prompt, taking approximately one hour or more to generate one object. This heavy and repetitive training cost impedes their practical deployment. In this paper, we propose a novel framework for fast text-to-3D generation, dubbed Instant3D. Once trained, Instant3D is able to create a 3D object for an unseen text prompt in less than one second with a single run of a feedforward network. We achieve this remarkable speed by devising a new network that directly constructs a 3D triplane from a text prompt. The core innovation of our Instant3D lies in our exploration of strategies to effectively inject text conditions into the network. Furthermore, we propose a simple yet effective activation function, the scaled-sigmoid, to replace the original sigmoid function, which speeds up the training convergence by more than ten times. Finally, to address the Janus (multi-head) problem in 3D generation, we propose an adaptive Perp-Neg algorithm that can dynamically adjust its concept negation scales according to the severity of the Janus problem during training, effectively reducing the multi-head effect. Extensive experiments on a wide variety of benchmark datasets demonstrate that the proposed algorithm performs favorably against the state-of-the-art methods both qualitatively and quantitatively, while achieving significantly better efficiency. The project page is at this https URL.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2311.08403.pdf) | [🌐 Project Page](https://ming1993li.github.io/Instant3DProj/) | [💻 Code](https://github.com/ming1993li/Instant3DCodes)
+
+Note: two Instant3D papers :)
+
 <br>
 
 ## Image to 3D Generation:
@@ -363,17 +387,17 @@ Recent advancements in open-world 3D object generation have been remarkable, wit
 
   [📄 Paper](https://arxiv.org/pdf/2311.07885.pdf) | [🌐 Project Page](https://sudo-ai-3d.github.io/One2345plus_page/) | [💻 Code](https://github.com/SUDO-AI-3D/One2345plus) 
 
+### 5. TextureDreamer: Image-guided Texture Synthesis through Geometry-aware Diffusion [ICLR 2024]
 
-### 5. Instant3D: Fast Text-to-3D with Sparse-View Generation and Large Reconstruction Model [ICLR 2024 under review]
-
-**Authors**: 
+**Authors**: Yu-Ying Yeh, Jia-Bin Huang, Changil Kim, Lei Xiao, Thu Nguyen-Phuoc, Numair Khan, Cheng Zhang, Manmohan Chandraker, Carl S Marshall, Zhao Dong, Zhengqin Li
 
 <details span>
 <summary><b>Abstract</b></summary>
- Text-to-3D with diffusion models has achieved remarkable progress in recent years. However, existing methods either rely on score distillation-based optimization which suffer from slow inference, low diversity and Janus problems, or are feed-forward methods that generate low quality results due to the scarcity of 3D training data. In this paper, we propose Instant3D, a novel method that generates high-quality and diverse 3D assets from text prompts in a feed-forward manner. We adopt a two-stage paradigm, which first generates a sparse set of four structured and consistent views from text in one shot with a fine-tuned 2D text-to-image diffusion model, and then directly regresses the NeRF from the generated images with a novel transformer-based sparse-view reconstructor. Through extensive experiments, we demonstrate that our method can generate high-quality, diverse and Janus-free 3D assets within 20 seconds, which is two order of magnitude faster than previous optimization-based methods that can take 1 to 10 hours.
+We present TextureDreamer, a novel image-guided texture synthesis method to transfer relightable textures from a small number of input images (3 to 5) to target 3D shapes across arbitrary categories. Texture creation is a pivotal challenge in vision and graphics. Industrial companies hire experienced artists to manually craft textures for 3D assets. Classical methods require densely sampled views and accurately aligned geometry, while learning-based methods are confined to category-specific shapes within the dataset. In contrast, TextureDreamer can transfer highly detailed, intricate textures from real-world environments to arbitrary objects with only a few casually captured images, potentially significantly democratizing texture creation. Our core idea, personalized geometry-aware score distillation (PGSD), draws inspiration from recent advancements in diffuse models, including personalized modeling for texture information extraction, variational score distillation for detailed appearance synthesis, and explicit geometry guidance with ControlNet. Our integration and several essential modifications substantially improve the texture quality. Experiments on real images spanning different categories show that TextureDreamer can successfully transfer highly realistic, semantic meaningful texture to arbitrary objects, surpassing the visual quality of previous state-of-the-art.
 </details>
 
-  [📄 Paper](https://openreview.net/forum?id=2lDQLiH1W4) | [🌐 Project Page](https://instant-3d.github.io/) 
+[📄 Paper](https://arxiv.org/abs/2401.09416) | [🌐 Project Page](https://texturedreamer.github.io/)
+
 
 
 ### 6. Wonder3d: Single Image to 3D using Cross-Domain Diffusion [arxiv 2023.10]
@@ -484,19 +508,7 @@ Given the growing need for automatic 3D content creation pipelines, various 3D r
 
 [📄 Paper](https://research.nvidia.com/labs/nxp/wysiwyg/media/WYSIWYG.pdf) | [🌐 Project Page](https://research.nvidia.com/labs/nxp/wysiwyg/)
 
-### 15. TextureDreamer: Image-guided Texture Synthesis through Geometry-aware Diffusion [ICLR 2024]
 
-**Authors**: Yu-Ying Yeh, Jia-Bin Huang, Changil Kim, Lei Xiao, Thu Nguyen-Phuoc, Numair Khan, Cheng Zhang, Manmohan Chandraker, Carl S Marshall, Zhao Dong, Zhengqin Li
-
-<details span>
-<summary><b>Abstract</b></summary>
-We present TextureDreamer, a novel image-guided texture synthesis method to transfer relightable textures from a small number of input images (3 to 5) to target 3D shapes across arbitrary categories. Texture creation is a pivotal challenge in vision and graphics. Industrial companies hire experienced artists to manually craft textures for 3D assets. Classical methods require densely sampled views and accurately aligned geometry, while learning-based methods are confined to category-specific shapes within the dataset. In contrast, TextureDreamer can transfer highly detailed, intricate textures from real-world environments to arbitrary objects with only a few casually captured images, potentially significantly democratizing texture creation. Our core idea, personalized geometry-aware score distillation (PGSD), draws inspiration from recent advancements in diffuse models, including personalized modeling for texture information extraction, variational score distillation for detailed appearance synthesis, and explicit geometry guidance with ControlNet. Our integration and several essential modifications substantially improve the texture quality. Experiments on real images spanning different categories show that TextureDreamer can successfully transfer highly realistic, semantic meaningful texture to arbitrary objects, surpassing the visual quality of previous state-of-the-art.
-</details>
-
-[📄 Paper](https://arxiv.org/abs/2401.09416) | [🌐 Project Page](https://texturedreamer.github.io/)
-
-
-TextureDreamer: Image-guided Texture Synthesis through Geometry-aware Diffusion
 
 
 <br>
