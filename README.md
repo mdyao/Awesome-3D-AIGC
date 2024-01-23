@@ -299,9 +299,18 @@ Recent advancements in 3D reconstruction from single images have been driven by 
 
   [📄 Paper](https://arxiv.org/abs/2312.09147) | [🌐 Project Page](https://zouzx.github.io/TriplaneGaussian/)
 
+### 16. DMV3D:Denoising Multi-View Diffusion using 3D Large Reconstruction Model [ICLR 2024]
 
+**Authors**:  Yinghao Xu, Hao Tan, Fujun Luan, Sai Bi, Peng Wang, Jiahao Li, Zifan Shi, Kalyan Sunkavalli, Gordon Wetzstein, Zexiang Xu, Kai Zhang
 
+<details span>
+<summary><b>Abstract</b></summary>
+We propose \textbf{DMV3D}, a novel 3D generation approach that uses a transformer-based 3D large reconstruction model to denoise multi-view diffusion. Our reconstruction model incorporates a triplane NeRF representation and can denoise noisy multi-view images via NeRF reconstruction and rendering, achieving single-stage 3D generation in ∼30s on single A100 GPU. We train \textbf{DMV3D} on large-scale multi-view image datasets of highly diverse objects using only image reconstruction losses, without accessing 3D assets. We demonstrate state-of-the-art results for the single-image reconstruction problem where probabilistic modeling of unseen object parts is required for generating diverse reconstructions with sharp textures. We also show high-quality text-to-3D generation results outperforming previous 3D diffusion models. Our project website is at: this https URL .
+</details>
 
+  [📄 Paper](https://arxiv.org/abs/2311.09217) | [🌐 Project Page](https://justimyhxu.github.io/projects/dmv3d/)
+
+Note: DreamGaussian also supports image-to-3d and text-to-image-to-3d.
 
 <br>
 
