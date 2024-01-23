@@ -310,7 +310,7 @@ We propose \textbf{DMV3D}, a novel 3D generation approach that uses a transforme
 
   [📄 Paper](https://arxiv.org/abs/2311.09217) | [🌐 Project Page](https://justimyhxu.github.io/projects/dmv3d/)
 
-Note: DreamGaussian also supports image-to-3d and text-to-image-to-3d.
+Note: DMV3D also supports image-to-3d and text-to-image-to-3d.
 
 <br>
 
