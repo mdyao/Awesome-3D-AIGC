@@ -2,6 +2,8 @@
 
 A curated list of papers and open-source resources focused on 3D AIGC, intended to keep pace with the anticipated surge of research in the coming months. If you have any additions or suggestions, feel free to contribute. Additional resources like blog posts, videos, etc. are also welcome.
 
+![cuhk20241241959261](https://github.com/mdyao/Awesome-3D-AIGC/assets/33108887/2bee41c0-b19c-4047-ae26-02ca2af2c38f)
+
 
 ## Table of contents
 
