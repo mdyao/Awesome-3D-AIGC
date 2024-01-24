@@ -363,6 +363,17 @@ Text-to-image diffusion models pre-trained on billions of image-text pairs have 
 
   [📄 Paper](https://openreview.net/pdf?id=1bAUywYJTU)
 
+  ### 21. TextField3D: Towards Enhancing Open-Vocabulary 3D Generation with Noisy TextFields [ICLR 2024]
+
+**Authors**: Tianyu Huang, Yihan Zeng, Bowen Dong, Hang Xu, Songcen Xu, Rynson W.H. Lau, Wangmeng Zuo
+
+<details span>
+<summary><b>Abstract</b></summary>
+Recent works learn 3D representation explicitly under text-3D guidance. However, limited text-3D data restricts the vocabulary scale and text control of generations. Generators may easily fall into a stereotype concept for certain text prompts, thus losing open-vocabulary generation ability. To tackle this issue, we introduce a conditional 3D generative model, namely TextField3D. Specifically, rather than using the text prompts as input directly, we suggest to inject dynamic noise into the latent space of given text prompts, i.e., Noisy Text Fields (NTFs). In this way, limited 3D data can be mapped to the appropriate range of textual latent space that is expanded by NTFs. To this end, an NTFGen module is proposed to model general text latent code in noisy fields. Meanwhile, an NTFBind module is proposed to align view-invariant image latent code to noisy fields, further supporting image-conditional 3D generation. To guide the conditional generation in both geometry and texture, multi-modal discrimination is constructed with a text-3D discriminator and a text-2.5D discriminator. Compared to previous methods, TextField3D includes three merits: 1) large vocabulary, 2) text consistency, and 3) low latency. Extensive experiments demonstrate that our method achieves a potential open-vocabulary 3D generation capability.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2309.17175) | [🌐 Project Page](https://tyhuang0428.github.io/textfield3d.html)
+
 
 <br>
 
@@ -825,6 +836,17 @@ We present DreamWaltz, a novel framework for generating and animating complex 3D
 
   [📄 Paper](https://arxiv.org/abs/2305.12529) | [🌐 Project Page](https://dreamwaltz3d.github.io/) | [💻 Code](https://github.com/IDEA-Research/DreamWaltz) 
 
+  ### 14. ZeroAvatar: Zero-shot 3D Avatar Generation from a Single Image [arxiv 2023.05]
+
+**Authors**: Zhenzhen Weng, Zeyu Wang, Serena Yeung
+
+<details span>
+<summary><b>Abstract</b></summary>
+Recent advancements in text-to-image generation have enabled significant progress in zero-shot 3D shape generation. This is achieved by score distillation, a methodology that uses pre-trained text-to-image diffusion models to optimize the parameters of a 3D neural presentation, e.g. Neural Radiance Field (NeRF). While showing promising results, existing methods are often not able to preserve the geometry of complex shapes, such as human bodies. To address this challenge, we present ZeroAvatar, a method that introduces the explicit 3D human body prior to the optimization process. Specifically, we first estimate and refine the parameters of a parametric human body from a single image. Then during optimization, we use the posed parametric body as additional geometry constraint to regularize the diffusion model as well as the underlying density field. Lastly, we propose a UV-guided texture regularization term to further guide the completion of texture on invisible body parts. We show that ZeroAvatar significantly enhances the robustness and 3D consistency of optimization-based image-to-3D avatar generation, outperforming existing zero-shot image-to-3D methods.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2305.16411)
+
 
 <br>
 
@@ -990,6 +1012,17 @@ Human lives in a 3D world and commonly uses natural language to interact with a 
 </details>
 
   [📄 Paper](https://arxiv.org/abs/2312.16084) | [🌐 Project Page](https://langsplat.github.io/) | [💻 Code](https://github.com/minghanqin/LangSplat) 
+
+  ### 6. Infinite Photorealistic Worlds using Procedural Generation [CVPR 2023]
+
+**Authors**: Alexander Raistrick, Lahav Lipson, Zeyu Ma, Lingjie Mei, Mingzhe Wang, Yiming Zuo, Karhan Kayan, Hongyu Wen, Beining Han, Yihan Wang, Alejandro Newell, Hei Law, Ankit Goyal, Kaiyu Yang, Jia Deng
+
+<details span>
+<summary><b>Abstract</b></summary>
+We introduce Infinigen, a procedural generator of photorealistic 3D scenes of the natural world. Infinigen is entirely procedural: every asset, from shape to texture, is generated from scratch via randomized mathematical rules, using no external source and allowing infinite variation and composition. Infinigen offers broad coverage of objects and scenes in the natural world including plants, animals, terrains, and natural phenomena such as fire, cloud, rain, and snow. Infinigen can be used to generate unlimited, diverse training data for a wide range of computer vision tasks including object detection, semantic segmentation, optical flow, and 3D reconstruction. We expect Infinigen to be a useful resource for computer vision research and beyond.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2306.09310) |  [💻 Code](https://github.com/princeton-vl/infinigen) 
 
 
 
