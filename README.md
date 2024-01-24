@@ -350,6 +350,17 @@ Recent text-to-3D generation methods achieve impressive 3D content creation capa
   [📄 Paper](https://arxiv.org/pdf/2310.11784.pdf) | [🌐 Project Page](https://cxh0519.github.io/projects/Progressive3D/) | [💻 Code](https://github.com/cxh0519/Progressive3D)
 
 
+### 20. DreamTime: An Improved Optimization Strategy for Diffusion-Guided 3D Generation [ICLR 2024]
+
+**Authors**: Yukun Huang, Jianan Wang, Yukai Shi, Boshi Tang, Xianbiao Qi, Lei Zhang
+
+<details span>
+<summary><b>Abstract</b></summary>
+Text-to-image diffusion models pre-trained on billions of image-text pairs have recently enabled 3D content creation by optimizing a randomly initialized differentiable 3D representation with score distillation. However, the optimization process suffers slow convergence and the resultant 3D models often exhibit two limitations: (a) quality concerns such as missing attributes and distorted shape and textures; (b) extremely low diversity comparing to text-guided image synthesis. In this paper, we show that the conflict between the 3D optimization process and uniform timestep sampling in score distillation is the main reason for these limitations. To resolve this conflict, we propose to prioritize timestep sampling with monotonically non-increasing functions, which aligns the 3D optimization process with the sampling process of diffusion model. Extensive experiments show that our simple redesign significantly improves 3D content creation with faster convergence, better quality and diversity.
+</details>
+
+  [📄 Paper](https://openreview.net/pdf?id=1bAUywYJTU)
+
 
 <br>
 
@@ -522,6 +533,16 @@ Given the growing need for automatic 3D content creation pipelines, various 3D r
 [📄 Paper](https://research.nvidia.com/labs/nxp/wysiwyg/media/WYSIWYG.pdf) | [🌐 Project Page](https://research.nvidia.com/labs/nxp/wysiwyg/)
 
 
+### 15. TOSS: High-quality Text-guided Novel View Synthesis from a Single Image [ICLR 2024]
+
+**Authors**: Yukai Shi, Jianan Wang, He Cao, Boshi Tang, Xianbiao Qi, Tianyu Yang, Yukun Huang, Shilong Liu, Lei Zhang, Heung-Yeung Shum
+
+<details span>
+<summary><b>Abstract</b></summary>
+In this paper, we present TOSS, which introduces text to the task of novel view synthesis (NVS) from just a single RGB image. While Zero123 has demonstrated impressive zero-shot open-set NVS capabilities, it treats NVS as a pure image-to-image translation problem. This approach suffers from the challengingly under-constrained nature of single-view NVS: the process lacks means of explicit user control and often result in implausible NVS generations. To address this limitation, TOSS uses text as high-level semantic information to constrain the NVS solution space. TOSS fine-tunes text-to-image Stable Diffusion pre-trained on large-scale text-image pairs and introduces modules specifically tailored to image and camera pose conditioning, as well as dedicated training for pose correctness and preservation of fine details. Comprehensive experiments are conducted with results showing that our proposed TOSS outperforms Zero123 with higher-quality NVS results and faster convergence. We further support these results with comprehensive ablations that underscore the effectiveness and potential of the introduced semantic guidance and architecture design.
+</details>
+
+[📄 Paper](https://arxiv.org/abs/2310.10644) | [🌐 Project Page](https://toss3d.github.io/)
 
 
 <br>
@@ -791,7 +812,16 @@ We introduce Gaussian Articulated Template Model GART, an explicit, efficient, a
 
   [📄 Paper](http://arxiv.org/abs/2312.02069) | [🌐 Project Page](https://shenhanqian.github.io/gaussian-avatars) 
 
+### 13. DreamWaltz: Make a Scene with Complex 3D Animatable Avatars [NeurIPS 2023]
 
+**Authors**: Yukun Huang, Jianan Wang, Ailing Zeng, He CAO, Xianbiao Qi, Yukai Shi, Zheng-Jun Zha, Lei Zhang
+
+<details span>
+<summary><b>Abstract</b></summary>
+We present DreamWaltz, a novel framework for generating and animating complex 3D avatars given text guidance and parametric human body prior. While recent methods have shown encouraging results for text-to-3D generation of common objects, creating high-quality and animatable 3D avatars remains challenging. To create high-quality 3D avatars, DreamWaltz proposes 3D-consistent occlusion-aware Score Distillation Sampling (SDS) to optimize implicit neural representations with canonical poses. It provides view-aligned supervision via 3D-aware skeleton conditioning which enables complex avatar generation without artifacts and multiple faces. For animation, our method learns an animatable 3D avatar representation from abundant image priors of diffusion model conditioned on various poses, which could animate complex non-rigged avatars given arbitrary poses without retraining. Extensive evaluations demonstrate that DreamWaltz is an effective and robust approach for creating 3D avatars that can take on complex shapes and appearances as well as novel poses for animation. The proposed framework further enables the creation of complex scenes with diverse compositions, including avatar-avatar, avatar-object and avatar-scene interactions. See  for more vivid 3D avatar and animation results.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2305.12529) | [🌐 Project Page](https://dreamwaltz3d.github.io/) | [💻 Code](https://github.com/IDEA-Research/DreamWaltz) 
 
 
 <br>
