@@ -2,7 +2,6 @@
 
 A curated list of papers and open-source resources focused on 3D AIGC, intended to keep pace with the anticipated surge of research in the coming months. If you have any additions or suggestions, feel free to contribute. Additional resources like blog posts, videos, etc. are also welcome.
 
-<div align=center><img src="https://github.com/mdyao/Awesome-3D-AIGC/assets/33108887/2bee41c0-b19c-4047-ae26-02ca2af2c38f"/></div>
 
 ## Table of contents
 
@@ -49,7 +48,9 @@ A curated list of papers and open-source resources focused on 3D AIGC, intended 
 
 </details>
 
-<br>
+<be>
+ 
+<div align=center><img src="https://github.com/mdyao/Awesome-3D-AIGC/assets/33108887/2bee41c0-b19c-4047-ae26-02ca2af2c38f"/></div>
 
 ## Survey:
 ### 1. Generative AI meets 3D: A Survey on Text-to-3D in AIGC Era [arxiv 2023.05]
