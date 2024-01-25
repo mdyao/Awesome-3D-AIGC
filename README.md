@@ -546,6 +546,16 @@ In this paper, we present TOSS, which introduces text to the task of novel view 
 
 [📄 Paper](https://arxiv.org/abs/2310.10644) | [🌐 Project Page](https://toss3d.github.io/)
 
+### 16. Make-it-3D: high-fidelity 3d creation from a single image with diffusion prior [ICCV 2023]
+
+**Authors**: Junshu Tang, Tengfei Wang, Bo Zhang, Ting Zhang, Ran Yi, Lizhuang Ma, Dong Chen
+
+<details span>
+<summary><b>Abstract</b></summary>
+In this work, we investigate the problem of creating high-fidelity 3D content from only a single image. This is inherently challenging: it essentially involves estimating the underlying 3D geometry while simultaneously hallucinating unseen textures. To address this challenge, we leverage prior knowledge from a well-trained 2D diffusion model to act as 3D-aware supervision for 3D creation. Our approach, Make-It-3D, employs a two-stage optimization pipeline: the first stage optimizes a neural radiance field by incorporating constraints from the reference image at the frontal view and diffusion prior at novel views; the second stage transforms the coarse model into textured point clouds and further elevates the realism with diffusion prior while leveraging the high-quality textures from the reference image. Extensive experiments demonstrate that our method outperforms prior works by a large margin, resulting in faithful reconstructions and impressive visual quality. Our method presents the first attempt to achieve high-quality 3D creation from a single image for general objects and enables various applications such as text-to-3D creation and texture editing.
+</details>
+
+[📄 Paper](https://arxiv.org/pdf/2303.14184.pdf) | [🌐 Project Page](https://make-it-3d.github.io) | [💻 Code](https://github.com/junshutang/Make-It-3D)
 
 <br>
 
@@ -825,6 +835,16 @@ We present DreamWaltz, a novel framework for generating and animating complex 3D
 
   [📄 Paper](https://arxiv.org/abs/2305.12529) | [🌐 Project Page](https://dreamwaltz3d.github.io/) | [💻 Code](https://github.com/IDEA-Research/DreamWaltz) 
 
+### 14. UltrAvatar: A Realistic Animatable 3D Avatar Diffusion Model with Authenticity Guided Textures [arxiv 2024.01]
+
+**Authors**: Mingyuan Zhou, Rakib Hyder, Ziwei Xuan, Guojun Qi
+
+<details span>
+<summary><b>Abstract</b></summary>
+Recent advances in 3D avatar generation have gained significant attentions. These breakthroughs aim to produce more realistic animatable avatars, narrowing the gap between virtual and real-world experiences. Most of existing works employ Score Distillation Sampling (SDS) loss, combined with a differentiable renderer and text condition, to guide a diffusion model in generating 3D avatars. However, SDS often generates oversmoothed results with few facial details, thereby lacking the diversity compared with ancestral sampling. On the other hand, other works generate 3D avatar from a single image, where the challenges of unwanted lighting effects, perspective views, and inferior image quality make them difficult to reliably reconstruct the 3D face meshes with the aligned complete textures. In this paper, we propose a novel 3D avatar generation approach termed UltrAvatar with enhanced fidelity of geometry, and superior quality of physically based rendering (PBR) textures without unwanted lighting. To this end, the proposed approach presents a diffuse color extraction model and an authenticity guided texture diffusion model. The former removes the unwanted lighting effects to reveal true diffuse colors so that the generated avatars can be rendered under various lighting conditions. The latter follows two gradient-based guidances for generating PBR textures to render diverse face-identity features and details better aligning with 3D mesh geometry. We demonstrate the effectiveness and robustness of the proposed method, outperforming the state-of-the-art methods by a large margin in the experiments.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2401.11078.pdf) | [🌐 Project Page](https://usrc-sea.github.io/UltrAvatar/)
 
 <br>
 
