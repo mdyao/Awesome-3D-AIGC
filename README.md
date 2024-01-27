@@ -1080,3 +1080,8 @@ ProlificDreamer | DreamFusion | Magic3D | SJC | Latent-NeRF | Fantasia3D | TextM
 ## Credits
 
 - Thanks to [MrNeRF](https://github.com/MrNeRF/awesome-3D-gaussian-splatting) for inspiring me to construct this repo.
+
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=mdyao/Awesome-3D-AIGC&type=Date)](https://star-history.com/#mdyao/Awesome-3D-AIGC&Date)
