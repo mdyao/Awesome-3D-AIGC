@@ -5,6 +5,8 @@ A curated list of papers and open-source resources focused on 3D AIGC, intended 
 <p align="center">
   <img alt="GitHub latest commit" src="https://img.shields.io/github/last-commit/mdyao/Awesome-3D-AIGC">
   <img alt="GitHub stars" src="https://img.shields.io/github/stars/mdyao/Awesome-3D-AIGC?color=0088ff" />
+  <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fmdyao%2FAwesome-3D-AIGC%2F&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a>
+  <a href="https://github.com/mdyao/Awesome-3D-AIGC"><img src="https://img.shields.io/badge/Awesome-3DAIGC-orange"/></a>
 </p>
 
 ## Table of contents
