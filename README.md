@@ -15,7 +15,7 @@ A curated list of papers and open-source resources focused on 3D AIGC, intended 
 - [Text to 3D Generation](#text-to-3d-generation)
 - [Image to 3D Generation](#image-to-3d-generation)
 - [Audio to 3D Generation](#audio-to-3d-generation)
-- [3D Editing](#editing)
+- [3D Editing](#3d-editing)
 - [Human Avatar Generation](#human-avatar-generation)
 - [City/Autonomous Driving](#autonomous-driving)
 - [SLAM](#slam)
