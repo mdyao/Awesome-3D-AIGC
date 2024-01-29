@@ -380,6 +380,17 @@ Recent works learn 3D representation explicitly under text-3D guidance. However,
 
   [📄 Paper](https://arxiv.org/abs/2309.17175) | [🌐 Project Page](https://tyhuang0428.github.io/textfield3d.html)
 
+  ### 22. Sketch2NeRF: Multi-view Sketch-guided Text-to-3D Generation [arxiv 2024.01]
+
+**Authors**: Minglin Chen, Longguang Wang, Weihao Yuan, Yukun Wang, Zhe Sheng, Yisheng He, Zilong Dong, Liefeng Bo, Yulan Guo
+
+<details span>
+<summary><b>Abstract</b></summary>
+Recently, text-to-3D approaches have achieved high-fidelity 3D content generation using text description. However, the generated objects are stochastic and lack fine-grained control. Sketches provide a cheap approach to introduce such fine-grained control. Nevertheless, it is challenging to achieve flexible control from these sketches due to their abstraction and ambiguity. In this paper, we present a multi-view sketch-guided text-to-3D generation framework (namely, Sketch2NeRF) to add sketch control to 3D generation. Specifically, our method leverages pretrained 2D diffusion models (e.g., Stable Diffusion and ControlNet) to supervise the optimization of a 3D scene represented by a neural radiance field (NeRF). We propose a novel synchronized generation and reconstruction method to effectively optimize the NeRF. In the experiments, we collected two kinds of multi-view sketch datasets to evaluate the proposed method. We demonstrate that our method can synthesize 3D consistent contents with fine-grained sketch control while being high-fidelity to text prompts. Extensive results show that our method achieves state-of-the-art performance in terms of sketch similarity and text alignment.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2401.14257)
+
 
 <br>
 
@@ -594,7 +605,7 @@ We present a framework for generating full-bodied photorealistic avatars that ge
 
 <br>
 
-## Editing:
+## 3D Editing:
 ### 1. DreamEditor: Text-Driven 3D Scene Editing with Neural Fields [arxiv 2023.06]
 
 **Authors**: Zhuang, Jingyu and Wang, Chen and Liu, Lingjie and Lin, Liang and Li, Guanbin
@@ -688,6 +699,18 @@ Despite advances in 3D generation, the direct creation of 3D objects within an e
 </details>
 
 [📄 Paper](https://arxiv.org/abs/2401.05750) | [🌐 Project Page](https://daipengwa.github.io/GO-NeRF/) 
+
+### 9. Exploration and Improvement of Nerf-based 3D Scene Editing Techniques [arxiv 2024.01]
+
+**Authors**: Shun Fang, Ming Cui, Xing Feng, Yanan Zhang
+
+<details span>
+<summary><b>Abstract</b></summary>
+NeRF's high-quality scene synthesis capability was quickly accepted by scholars in the years after it was proposed, and significant progress has been made in 3D scene representation and synthesis. However, the high computational cost limits intuitive and efficient editing of scenes, making NeRF's development in the scene editing field facing many challenges. This paper reviews the preliminary explorations of scholars on NeRF in the scene or object editing field in recent years, mainly changing the shape and texture of scenes or objects in new synthesized scenes; through the combination of residual models such as GaN and Transformer with NeRF, the generalization ability of NeRF scene editing has been further expanded, including realizing real-time new perspective editing feedback, multimodal editing of text synthesized 3D scenes, 4D synthesis performance, and in-depth exploration in light and shadow editing, initially achieving optimization of indirect touch editing and detail representation in complex scenes. Currently, most NeRF editing methods focus on the touch points and materials of indirect points, but when dealing with more complex or larger 3D scenes, it is difficult to balance accuracy, breadth, efficiency, and quality. Overcoming these challenges may become the direction of future NeRF 3D scene editing technology.
+</details>
+
+[📄 Paper](https://arxiv.org/abs/2401.12456) 
+
 <br>
 
 ## Human-Avatar Generation:
@@ -875,6 +898,17 @@ Recent advancements in text-to-image generation have enabled significant progres
 
   [📄 Paper](https://arxiv.org/abs/2305.16411)
 
+  ### 16. PSAvatar: A Point-based Morphable Shape Model for Real-Time Head Avatar Creation with 3D Gaussian Splatting [arxiv 2024.01]
+
+**Authors**: Zhongyuan Zhao, Zhenyu Bao, Qing Li, Guoping Qiu, Kanglin Liu
+
+<details span>
+<summary><b>Abstract</b></summary>
+Despite much progress, achieving real-time high-fidelity head avatar animation is still difficult and existing methods have to trade-off between speed and quality. 3DMM based methods often fail to model non-facial structures such as eyeglasses and hairstyles, while neural implicit models suffer from deformation inflexibility and rendering inefficiency. Although 3D Gaussian has been demonstrated to possess promising capability for geometry representation and radiance field reconstruction, applying 3D Gaussian in head avatar creation remains a major challenge since it is difficult for 3D Gaussian to model the head shape variations caused by changing poses and expressions. In this paper, we introduce PSAvatar, a novel framework for animatable head avatar creation that utilizes discrete geometric primitive to create a parametric morphable shape model and employs 3D Gaussian for fine detail representation and high fidelity rendering. The parametric morphable shape model is a Point-based Morphable Shape Model (PMSM) which uses points instead of meshes for 3D representation to achieve enhanced representation flexibility. The PMSM first converts the FLAME mesh to points by sampling on the surfaces as well as off the meshes to enable the reconstruction of not only surface-like structures but also complex geometries such as eyeglasses and hairstyles. By aligning these points with the head shape in an analysis-by-synthesis manner, the PMSM makes it possible to utilize 3D Gaussian for fine detail representation and appearance modeling, thus enabling the creation of high-fidelity avatars. We show that PSAvatar can reconstruct high-fidelity head avatars of a variety of subjects and the avatars can be animated in real-time (≥ 25 fps at a resolution of 512 × 512 ).
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2401.12900) | [💻 Code](https://github.com/pcl3dv/PSAvatar) 
+
 
 
 <br>
@@ -934,6 +968,27 @@ In this paper, we introduce Recon3DMind, a groundbreaking task focused on recons
 </details>
 
   [📄 Paper](https://arxiv.org/abs/2312.07485) | [🌐 Project Page](https://jianxgao.github.io/MinD-3D/) | [💻 Code](https://github.com/JianxGao/MinD-3D) 
+
+  ### 2. EndoGaussian: Gaussian Splatting for Deformable Surgical Scene Reconstruction [arxiv 2024.01]
+**Authors**: Yifan Liu, Chenxin Li, Chen Yang, Yixuan Yuan
+
+<details span>
+<summary><b>Abstract</b></summary>
+Reconstructing deformable tissues from endoscopic stereo videos is essential in many downstream surgical applications. However, existing methods suffer from slow inference speed, which greatly limits their practical use. In this paper, we introduce EndoGaussian, a real-time surgical scene reconstruction framework that builds on 3D Gaussian Splatting. Our framework represents dynamic surgical scenes as canonical Gaussians and a time-dependent deformation field, which predicts Gaussian deformations at novel timestamps. Due to the efficient Gaussian representation and parallel rendering pipeline, our framework significantly accelerates the rendering speed compared to previous methods. In addition, we design the deformation field as the combination of a lightweight encoding voxel and an extremely tiny MLP, allowing for efficient Gaussian tracking with a minor rendering burden. Furthermore, we design a holistic Gaussian initialization method to fully leverage the surface distribution prior, achieved by searching informative points from across the input image sequence. Experiments on public endoscope datasets demonstrate that our method can achieve real-time rendering speed (195 FPS real-time, 100× gain) while maintaining the state-of-the-art reconstruction quality (35.925 PSNR) and the fastest training speed (within 2 min/scene), showing significant promise for intraoperative surgery applications.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2401.12561) | [🌐 Project Page](https://yifliu3.github.io/EndoGaussian/) | [💻 Code](https://github.com/yifliu3/EndoGaussian) 
+
+  ### 3. Deformable Endoscopic Tissues Reconstruction with Gaussian Splatting [arxiv 2024.01]
+**Authors**: Lingting Zhu, Zhao Wang, Zhenchao Jin, Guying Lin, Lequan Yu
+
+<details span>
+<summary><b>Abstract</b></summary>
+Surgical 3D reconstruction is a critical area of research in robotic surgery, with recent works adopting variants of dynamic radiance fields to achieve success in 3D reconstruction of deformable tissues from single-viewpoint videos. However, these methods often suffer from time-consuming optimization or inferior quality, limiting their adoption in downstream tasks. Inspired by 3D Gaussian Splatting, a recent trending 3D representation, we present EndoGS, applying Gaussian Splatting for deformable endoscopic tissue reconstruction. Specifically, our approach incorporates deformation fields to handle dynamic scenes, depth-guided supervision to optimize 3D targets with a single viewpoint, and a spatial-temporal weight mask to mitigate tool occlusion. As a result, EndoGS reconstructs and renders high-quality deformable endoscopic tissues from a single-viewpoint video, estimated depth maps, and labeled tool masks. Experiments on DaVinci robotic surgery videos demonstrate that EndoGS achieves superior rendering quality.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2401.11535) | [💻 Code](https://github.com/HKU-MedAI/EndoGS) 
+
 
 
 <br>
