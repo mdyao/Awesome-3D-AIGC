@@ -1097,10 +1097,27 @@ We introduce Ponymation, a new method for learning a generative model of articul
 
   [📄 Paper](https://arxiv.org/pdf/2312.13604.pdf) | [🌐 Project Page](https://keqiangsun.github.io/projects/ponymation/) | [💻 Code](https://keqiangsun.github.io/projects/ponymationn) 
 
+### 4. Fast Dynamic 3D Object Generation from a Single-view Video [arxiv 2024.01]
 
+**Authors**: Zijie Pan, Zeyu Yang, Xiatian Zhu, Li Zhang
 
+<details span>
+<summary><b>Abstract</b></summary>
+Generating dynamic three-dimensional (3D) object from a single-view video is challenging due to the lack of 4D labeled data. Existing methods extend text-to-3D pipelines by transferring off-the-shelf image generation models such as score distillation sampling, but they are slow and expensive to scale (e.g., 150 minutes per object) due to the need for back-propagating the information-limited supervision signals through a large pretrained model. To address this limitation, we propose an efficient video-to-4D object generation framework called Efficient4D. It generates high-quality spacetime-consistent images under different camera views, and then uses them as labeled data to directly train a novel 4D Gaussian splatting model with explicit point cloud geometry, enabling real-time rendering under continuous camera trajectories. Extensive experiments on synthetic and real videos show that Efficient4D offers a remarkable 10-fold increase in speed when compared to prior art alternatives while preserving the same level of innovative view synthesis quality. For example, Efficient4D takes only 14 minutes to model a dynamic object.
+</details>
 
+  [📄 Paper](https://arxiv.org/pdf/2401.08742v1.pdf) 
 
+### 5. WonderJourney: Going from Anywhere to Everywhere [arxiv 2023.12]
+
+**Authors**: Hong-Xing Yu, Haoyi Duan, Junhwa Hur, Kyle Sargent, Michael Rubinstein, William T. Freeman, Forrester Cole, Deqing Sun, Noah Snavely, Jiajun Wu, Charles Herrmann
+
+<details span>
+<summary><b>Abstract</b></summary>
+We introduce WonderJourney, a modularized framework for perpetual 3D scene generation. Unlike prior work on view generation that focuses on a single type of scenes, we start at any user-provided location (by a text description or an image) and generate a journey through a long sequence of diverse yet coherently connected 3D scenes. We leverage an LLM to generate textual descriptions of the scenes in this journey, a text-driven point cloud generation pipeline to make a compelling and coherent sequence of 3D scenes, and a large VLM to verify the generated scenes. We show compelling, diverse visual results across various scene types and styles, forming imaginary "wonderjourneys". Project website: [this https URL](https://kovenyu.com/WonderJourney/)
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2312.03884.pdf) | [🌐 Project Page](https://kovenyu.com/WonderJourney/) | [💻 Code](https://github.com/KovenYu/WonderJourney) 
 
 ## Misc:
 
