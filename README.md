@@ -2,7 +2,7 @@
 
 A curated list of papers and open-source resources focused on 3D AIGC, intended to keep pace with the anticipated surge of research in the coming months. If you have any additions or suggestions, feel free to contribute. Additional resources like blog posts, videos, etc. are also welcome.
 
-<p align="center">
+<p align="center"> 
   <img alt="GitHub latest commit" src="https://img.shields.io/github/last-commit/mdyao/Awesome-3D-AIGC">
   <img alt="GitHub stars" src="https://img.shields.io/github/stars/mdyao/Awesome-3D-AIGC?color=0088ff" />
   <a href="https://github.com/mdyao/Awesome-3D-AIGC"><img src="https://img.shields.io/badge/Awesome-3DAIGC-orange"/></a>
