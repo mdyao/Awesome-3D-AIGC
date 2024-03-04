@@ -132,6 +132,17 @@ Generating 3D models lies at the core of computer graphics and has been the focu
 
   [📄 Paper](https://arxiv.org/abs/2401.17807)
 
+   ### 8. A Survey for Foundation Models in Autonomous Driving [arxiv 2024.02]
+
+**Authors**: Haoxiang Gao, Yaqian Li, Kaiwen Long, Ming Yang, Yiqing Shen
+
+<details span>
+<summary><b>Abstract</b></summary>
+The advent of foundation models has revolutionized the fields of natural language processing and computer vision, paving the way for their application in autonomous driving (AD). This survey presents a comprehensive review of more than 40 research papers, demonstrating the role of foundation models in enhancing AD. Large language models contribute to planning and simulation in AD, particularly through their proficiency in reasoning, code generation and translation. In parallel, vision foundation models are increasingly adapted for critical tasks such as 3D object detection and tracking, as well as creating realistic driving scenarios for simulation and testing. Multi-modal foundation models, integrating diverse inputs, exhibit exceptional visual understanding and spatial reasoning, crucial for end-to-end AD. This survey not only provides a structured taxonomy, categorizing foundation models based on their modalities and functionalities within the AD domain but also delves into the methods employed in current research. It identifies the gaps between existing foundation models and cutting-edge AD approaches, thereby charting future research directions and proposing a roadmap for bridging these gaps.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2402.01105)
+
 
 
 <br>
@@ -447,6 +458,28 @@ Text-driven 3D scene editing has gained significant attention owing to its conve
   [📄 Paper](https://arxiv.org/abs/2401.14828)
 
   Note: TIP-Editor supports both text-to-3d and image-to-3d
+
+   ### 27. BoostDream: Efficient Refining for High-Quality Text-to-3D Generation from Multi-View Diffusion [arxiv 2024.01]
+
+**Authors**: Yonghao Yu, Shunan Zhu, Huai Qin, Haorui Li
+
+<details span>
+<summary><b>Abstract</b></summary>
+Witnessing the evolution of text-to-image diffusion models, significant strides have been made in text-to-3D generation. Currently, two primary paradigms dominate the field of text-to-3D: the feed-forward generation solutions, capable of swiftly producing 3D assets but often yielding coarse results, and the Score Distillation Sampling (SDS) based solutions, known for generating high-fidelity 3D assets albeit at a slower pace. The synergistic integration of these methods holds substantial promise for advancing 3D generation techniques. In this paper, we present BoostDream, a highly efficient plug-and-play 3D refining method designed to transform coarse 3D assets into high-quality. The BoostDream framework comprises three distinct processes: (1) We introduce 3D model distillation that fits differentiable representations from the 3D assets obtained through feed-forward generation. (2) A novel multi-view SDS loss is designed, which utilizes a multi-view aware 2D diffusion model to refine the 3D assets. (3) We propose to use prompt and multi-view consistent normal maps as guidance in refinement.Our extensive experiment is conducted on different differentiable 3D representations, revealing that BoostDream excels in generating high-quality 3D assets rapidly, overcoming the Janus problem compared to conventional SDS-based methods. This breakthrough signifies a substantial advancement in both the efficiency and quality of 3D generation processes.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2401.16764)
+
+  ### 28. AToM: Amortized Text-to-Mesh using 2D Diffusion [arxiv 2024.02]
+
+**Authors**: Guocheng Qian, Junli Cao, Aliaksandr Siarohin, Yash Kant, Chaoyang Wang, Michael Vasilkovsky, Hsin-Ying Lee, Yuwei Fang, Ivan Skorokhodov, Peiye Zhuang, Igor Gilitschenski, Jian Ren, Bernard Ghanem, Kfir Aberman, Sergey Tulyakov
+
+<details span>
+<summary><b>Abstract</b></summary>
+We introduce Amortized Text-to-Mesh (AToM), a feed-forward text-to-mesh framework optimized across multiple text prompts simultaneously. In contrast to existing text-to-3D methods that often entail time-consuming per-prompt optimization and commonly output representations other than polygonal meshes, AToM directly generates high-quality textured meshes in less than 1 second with around 10 times reduction in the training cost, and generalizes to unseen prompts. Our key idea is a novel triplane-based text-to-mesh architecture with a two-stage amortized optimization strategy that ensures stable training and enables scalability. Through extensive experiments on various prompt benchmarks, AToM significantly outperforms state-of-the-art amortized approaches with over 4 times higher accuracy (in DF415 dataset) and produces more distinguishable and higher-quality 3D outputs. AToM demonstrates strong generalizability, offering finegrained 3D assets for unseen interpolated prompts without further optimization during inference, unlike per-prompt solutions.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2402.00867) | [🌐 Project Page](https://snap-research.github.io/AToM/) | [💻 Code](https://github.com/snap-research/AToM)
 
 <br>
 
@@ -1364,6 +1397,39 @@ Toon shading is a type of non-photorealistic rendering task of animation. Its pr
 </details>
 
   [📄 Paper](https://arxiv.org/abs/2401.16224) | [🌐 Project Page](https://ecnu-cilab.github.io/DiffutoonProjectPage/) | [💻 Code](https://github.com/Artiprocher/DiffSynth-Studio) 
+
+   ### 8. BlockFusion: Expandable 3D Scene Generation using Latent Tri-plane Extrapolation [arxiv 2024.01]
+
+**Authors**: Zhennan Wu, Yang Li, Han Yan, Taizhang Shang, Weixuan Sun, Senbo Wang, Ruikai Cui, Weizhe Liu, Hiroyuki Sato, Hongdong Li, Pan Ji
+
+<details span>
+<summary><b>Abstract</b></summary>
+We present BlockFusion, a diffusion-based model that generates 3D scenes as unit blocks and seamlessly incorporates new blocks to extend the scene. BlockFusion is trained using datasets of 3D blocks that are randomly cropped from complete 3D scene meshes. Through per-block fitting, all training blocks are converted into the hybrid neural fields: with a tri-plane containing the geometry features, followed by a Multi-layer Perceptron (MLP) for decoding the signed distance values. A variational auto-encoder is employed to compress the tri-planes into the latent tri-plane space, on which the denoising diffusion process is performed. Diffusion applied to the latent representations allows for high-quality and diverse 3D scene generation. To expand a scene during generation, one needs only to append empty blocks to overlap with the current scene and extrapolate existing latent tri-planes to populate new blocks. The extrapolation is done by conditioning the generation process with the feature samples from the overlapping tri-planes during the denoising iterations. Latent tri-plane extrapolation produces semantically and geometrically meaningful transitions that harmoniously blend with the existing scene. A 2D layout conditioning mechanism is used to control the placement and arrangement of scene elements. Experimental results indicate that BlockFusion is capable of generating diverse, geometrically consistent and unbounded large 3D scenes with unprecedented high-quality shapes in both indoor and outdoor scenarios.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2401.17053)
+
+  ### 9. Geometry Transfer for Stylizing Radiance Fields [arxiv 2024.02]
+
+**Authors**: Hyunyoung Jung, Seonghyeon Nam, Nikolaos Sarafianos, Sungjoo Yoo, Alexander Sorkine-Hornung, Rakesh Ranjan
+
+<details span>
+<summary><b>Abstract</b></summary>
+Shape and geometric patterns are essential in defining stylistic identity. However, current 3D style transfer methods predominantly focus on transferring colors and textures, often overlooking geometric aspects. In this paper, we introduce Geometry Transfer, a novel method that leverages geometric deformation for 3D style transfer. This technique employs depth maps to extract a style guide, subsequently applied to stylize the geometry of radiance fields. Moreover, we propose new techniques that utilize geometric cues from the 3D scene, thereby enhancing aesthetic expressiveness and more accurately reflecting intended styles. Our extensive experiments show that Geometry Transfer enables a broader and more expressive range of stylizations, thereby significantly expanding the scope of 3D style transfer.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2402.00863) | [🌐 Project Page](https://hyblue.github.io/geo-srf/) | [💻 Code](https://github.com/hyBlue/Geo-SRF) 
+
+   ### 10. Diffusion-based Light Field Synthesis [arxiv 2024.02]
+
+**Authors**: Ruisheng Gao, Yutong Liu, Zeyu Xiao, Zhiwei Xiong
+
+<details span>
+<summary><b>Abstract</b></summary>
+Light fields (LFs), conducive to comprehensive scene radiance recorded across angular dimensions, find wide applications in 3D reconstruction, virtual reality, and computational photography.However, the LF acquisition is inevitably time-consuming and resource-intensive due to the mainstream acquisition strategy involving manual capture or laborious software synthesis.Given such a challenge, we introduce LFdiff, a straightforward yet effective diffusion-based generative framework tailored for LF synthesis, which adopts only a single RGB image as input.LFdiff leverages disparity estimated by a monocular depth estimation network and incorporates two distinctive components: a novel condition scheme and a noise estimation network tailored for LF data.Specifically, we design a position-aware warping condition scheme, enhancing inter-view geometry learning via a robust conditional signal.We then propose DistgUnet, a disentanglement-based noise estimation network, to harness comprehensive LF representations.Extensive experiments demonstrate that LFdiff excels in synthesizing visually pleasing and disparity-controllable light fields with enhanced generalization capability.Additionally, comprehensive results affirm the broad applicability of the generated LF data, spanning applications like LF super-resolution and refocusing.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2402.00575)
 
 
 
