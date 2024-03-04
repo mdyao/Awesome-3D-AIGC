@@ -413,6 +413,30 @@ We introduce Amortized Text-to-Mesh (AToM), a feed-forward text-to-mesh framewor
 
   [📄 Paper](https://arxiv.org/abs/2402.00867v1) | [🌐 Project Page](https://snap-research.github.io/AToM/) | [💻 Code](https://github.com/snap-research/AToM)
 
+   ### 25. EscherNet: A Generative Model for Scalable View Synthesis [arxiv 2024.02]
+
+**Authors**: Xin Kong, Shikun Liu, Xiaoyang Lyu, Marwan Taher, Xiaojuan Qi, Andrew J. Davison
+
+<details span>
+<summary><b>Abstract</b></summary>
+We introduce EscherNet, a multi-view conditioned diffusion model for view synthesis. EscherNet learns implicit and generative 3D representations coupled with a specialised camera positional encoding, allowing precise and continuous relative control of the camera transformation between an arbitrary number of reference and target views. EscherNet offers exceptional generality, flexibility, and scalability in view synthesis -- it can generate more than 100 consistent target views simultaneously on a single consumer-grade GPU, despite being trained with a fixed number of 3 reference views to 3 target views. As a result, EscherNet not only addresses zero-shot novel view synthesis, but also naturally unifies single- and multi-image 3D reconstruction, combining these diverse tasks into a single, cohesive framework. Our extensive experiments demonstrate that EscherNet achieves state-of-the-art performance in multiple benchmarks, even when compared to methods specifically tailored for each individual problem. This remarkable versatility opens up new directions for designing scalable neural architectures for 3D vision.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2402.03908) | [🌐 Project Page](https://kxhit.github.io/EscherNet) | [💻 Code](https://github.com/kxhit/EscherNet)
+
+   ### 26. TIP-Editor: An Accurate 3D Editor Following Both Text-Prompts And Image-Prompts [arxiv 2024.01]
+
+**Authors**: Jingyu Zhuang, Di Kang, Yan-Pei Cao, Guanbin Li, Liang Lin, Ying Shan
+
+<details span>
+<summary><b>Abstract</b></summary>
+Text-driven 3D scene editing has gained significant attention owing to its convenience and user-friendliness. However, existing methods still lack accurate control of the specified appearance and location of the editing result due to the inherent limitations of the text description. To this end, we propose a 3D scene editing framework, TIPEditor, that accepts both text and image prompts and a 3D bounding box to specify the editing region. With the image prompt, users can conveniently specify the detailed appearance/style of the target content in complement to the text description, enabling accurate control of the appearance. Specifically, TIP-Editor employs a stepwise 2D personalization strategy to better learn the representation of the existing scene and the reference image, in which a localization loss is proposed to encourage correct object placement as specified by the bounding box. Additionally, TIPEditor utilizes explicit and flexible 3D Gaussian splatting as the 3D representation to facilitate local editing while keeping the background unchanged. Extensive experiments have demonstrated that TIP-Editor conducts accurate editing following the text and image prompts in the specified bounding box region, consistently outperforming the baselines in editing quality, and the alignment to the prompts, qualitatively and quantitatively.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2401.14828)
+
+  Note: TIP-Editor supports both text-to-3d and image-to-3d
+
 <br>
 
 ## Image to 3D Generation:
@@ -628,6 +652,19 @@ Directly generating scenes from satellite imagery offers exciting possibilities 
 </details>
 
 [📄 Paper](https://arxiv.org/abs/2401.10786)
+
+   ### 19. TIP-Editor: An Accurate 3D Editor Following Both Text-Prompts And Image-Prompts [arxiv 2024.01]
+
+**Authors**: Jingyu Zhuang, Di Kang, Yan-Pei Cao, Guanbin Li, Liang Lin, Ying Shan
+
+<details span>
+<summary><b>Abstract</b></summary>
+Text-driven 3D scene editing has gained significant attention owing to its convenience and user-friendliness. However, existing methods still lack accurate control of the specified appearance and location of the editing result due to the inherent limitations of the text description. To this end, we propose a 3D scene editing framework, TIPEditor, that accepts both text and image prompts and a 3D bounding box to specify the editing region. With the image prompt, users can conveniently specify the detailed appearance/style of the target content in complement to the text description, enabling accurate control of the appearance. Specifically, TIP-Editor employs a stepwise 2D personalization strategy to better learn the representation of the existing scene and the reference image, in which a localization loss is proposed to encourage correct object placement as specified by the bounding box. Additionally, TIPEditor utilizes explicit and flexible 3D Gaussian splatting as the 3D representation to facilitate local editing while keeping the background unchanged. Extensive experiments have demonstrated that TIP-Editor conducts accurate editing following the text and image prompts in the specified bounding box region, consistently outperforming the baselines in editing quality, and the alignment to the prompts, qualitatively and quantitatively.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2401.14828)
+
+  Note: TIP-Editor supports both text-to-3d and image-to-3d
 
 <br>
 
