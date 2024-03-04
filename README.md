@@ -123,6 +123,39 @@ Recent years have seen remarkable progress in deep learning powered visual conte
 
   [📄 Paper](https://dl.acm.org/doi/pdf/10.1145/3626193) | [🌐 Project Page](https://weihaox.github.io/3D-aware-Gen/)  
 
+  ### 7. Advances in 3D Generation: A Survey [arxiv 2024.01]
+
+**Authors**: Xiaoyu Li, Qi Zhang, Di Kang, Weihao Cheng, Yiming Gao, Jingbo Zhang, Zhihao Liang, Jing Liao, Yan-Pei Cao, Ying Shan
+
+<details span>
+<summary><b>Abstract</b></summary>
+Generating 3D models lies at the core of computer graphics and has been the focus of decades of research. With the emergence of advanced neural representations and generative models, the field of 3D content generation is developing rapidly, enabling the creation of increasingly high-quality and diverse 3D models. The rapid growth of this field makes it difficult to stay abreast of all recent developments. In this survey, we aim to introduce the fundamental methodologies of 3D generation methods and establish a structured roadmap, encompassing 3D representation, generation methods, datasets, and corresponding applications. Specifically, we introduce the 3D representations that serve as the backbone for 3D generation. Furthermore, we provide a comprehensive overview of the rapidly growing literature on generation methods, categorized by the type of algorithmic paradigms, including feedforward generation, optimization-based generation, procedural generation, and generative novel view synthesis. Lastly, we discuss available datasets, applications, and open challenges. We hope this survey will help readers explore this exciting topic and foster further advancements in the field of 3D content generation.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2401.17807)
+
+   ### 8. A Survey for Foundation Models in Autonomous Driving [arxiv 2024.02]
+
+**Authors**: Haoxiang Gao, Yaqian Li, Kaiwen Long, Ming Yang, Yiqing Shen
+
+<details span>
+<summary><b>Abstract</b></summary>
+The advent of foundation models has revolutionized the fields of natural language processing and computer vision, paving the way for their application in autonomous driving (AD). This survey presents a comprehensive review of more than 40 research papers, demonstrating the role of foundation models in enhancing AD. Large language models contribute to planning and simulation in AD, particularly through their proficiency in reasoning, code generation and translation. In parallel, vision foundation models are increasingly adapted for critical tasks such as 3D object detection and tracking, as well as creating realistic driving scenarios for simulation and testing. Multi-modal foundation models, integrating diverse inputs, exhibit exceptional visual understanding and spatial reasoning, crucial for end-to-end AD. This survey not only provides a structured taxonomy, categorizing foundation models based on their modalities and functionalities within the AD domain but also delves into the methods employed in current research. It identifies the gaps between existing foundation models and cutting-edge AD approaches, thereby charting future research directions and proposing a roadmap for bridging these gaps.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2402.01105)
+
+   ### 9. Diffusion Model-Based Image Editing: A Survey [arxiv 2024.02]
+
+**Authors**: Yi Huang, Jiancheng Huang, Yifan Liu, Mingfu Yan, Jiaxi Lv, Jianzhuang Liu, Wei Xiong, He Zhang, Shifeng Chen, Liangliang Cao
+
+<details span>
+<summary><b>Abstract</b></summary>
+Denoising diffusion models have emerged as a powerful tool for various image generation and editing tasks, facilitating the synthesis of visual content in an unconditional or input-conditional manner. The core idea behind them is learning to reverse the process of gradually adding noise to images, allowing them to generate high-quality samples from a complex distribution. In this survey, we provide an exhaustive overview of existing methods using diffusion models for image editing, covering both theoretical and practical aspects in the field. We delve into a thorough analysis and categorization of these works from multiple perspectives, including learning strategies, user-input conditions, and the array of specific editing tasks that can be accomplished. In addition, we pay special attention to image inpainting and outpainting, and explore both earlier traditional context-driven and current multimodal conditional methods, offering a comprehensive analysis of their methodologies. To further evaluate the performance of text-guided image editing algorithms, we propose a systematic benchmark, EditEval, featuring an innovative metric, LMM Score. Finally, we address current limitations and envision some potential directions for future research.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2402.01105) | [🌐 Project Page](https://github.com/SiatMMLab/Awesome-Diffusion-Model-Based-Image-Editing-Methods)  
+
 
 
 <br>
@@ -439,6 +472,61 @@ Text-driven 3D scene editing has gained significant attention owing to its conve
 
   Note: TIP-Editor supports both text-to-3d and image-to-3d
 
+   ### 27. BoostDream: Efficient Refining for High-Quality Text-to-3D Generation from Multi-View Diffusion [arxiv 2024.01]
+
+**Authors**: Yonghao Yu, Shunan Zhu, Huai Qin, Haorui Li
+
+<details span>
+<summary><b>Abstract</b></summary>
+Witnessing the evolution of text-to-image diffusion models, significant strides have been made in text-to-3D generation. Currently, two primary paradigms dominate the field of text-to-3D: the feed-forward generation solutions, capable of swiftly producing 3D assets but often yielding coarse results, and the Score Distillation Sampling (SDS) based solutions, known for generating high-fidelity 3D assets albeit at a slower pace. The synergistic integration of these methods holds substantial promise for advancing 3D generation techniques. In this paper, we present BoostDream, a highly efficient plug-and-play 3D refining method designed to transform coarse 3D assets into high-quality. The BoostDream framework comprises three distinct processes: (1) We introduce 3D model distillation that fits differentiable representations from the 3D assets obtained through feed-forward generation. (2) A novel multi-view SDS loss is designed, which utilizes a multi-view aware 2D diffusion model to refine the 3D assets. (3) We propose to use prompt and multi-view consistent normal maps as guidance in refinement.Our extensive experiment is conducted on different differentiable 3D representations, revealing that BoostDream excels in generating high-quality 3D assets rapidly, overcoming the Janus problem compared to conventional SDS-based methods. This breakthrough signifies a substantial advancement in both the efficiency and quality of 3D generation processes.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2401.16764)
+
+  ### 28. AToM: Amortized Text-to-Mesh using 2D Diffusion [arxiv 2024.02]
+
+**Authors**: Guocheng Qian, Junli Cao, Aliaksandr Siarohin, Yash Kant, Chaoyang Wang, Michael Vasilkovsky, Hsin-Ying Lee, Yuwei Fang, Ivan Skorokhodov, Peiye Zhuang, Igor Gilitschenski, Jian Ren, Bernard Ghanem, Kfir Aberman, Sergey Tulyakov
+
+<details span>
+<summary><b>Abstract</b></summary>
+We introduce Amortized Text-to-Mesh (AToM), a feed-forward text-to-mesh framework optimized across multiple text prompts simultaneously. In contrast to existing text-to-3D methods that often entail time-consuming per-prompt optimization and commonly output representations other than polygonal meshes, AToM directly generates high-quality textured meshes in less than 1 second with around 10 times reduction in the training cost, and generalizes to unseen prompts. Our key idea is a novel triplane-based text-to-mesh architecture with a two-stage amortized optimization strategy that ensures stable training and enables scalability. Through extensive experiments on various prompt benchmarks, AToM significantly outperforms state-of-the-art amortized approaches with over 4 times higher accuracy (in DF415 dataset) and produces more distinguishable and higher-quality 3D outputs. AToM demonstrates strong generalizability, offering finegrained 3D assets for unseen interpolated prompts without further optimization during inference, unlike per-prompt solutions.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2402.00867) | [🌐 Project Page](https://snap-research.github.io/AToM/) | [💻 Code](https://github.com/snap-research/AToM)
+
+  ### 29. IM-3D: Iterative Multiview Diffusion and Reconstruction for High-Quality 3D Generation [arxiv 2024.02]
+
+**Authors**: Luke Melas-Kyriazi, Iro Laina, Christian Rupprecht, Natalia Neverova, Andrea Vedaldi, Oran Gafni, Filippos Kokkinos
+
+<details span>
+<summary><b>Abstract</b></summary>
+Most text-to-3D generators build upon off-the-shelf text-to-image models trained on billions of images. They use variants of Score Distillation Sampling (SDS), which is slow, somewhat unstable, and prone to artifacts. A mitigation is to fine-tune the 2D generator to be multi-view aware, which can help distillation or can be combined with reconstruction networks to output 3D objects directly. In this paper, we further explore the design space of text-to-3D models. We significantly improve multi-view generation by considering video instead of image generators. Combined with a 3D reconstruction algorithm which, by using Gaussian splatting, can optimize a robust image-based loss, we directly produce high-quality 3D outputs from the generated views. Our new method, IM-3D, reduces the number of evaluations of the 2D generator network 10-100x, resulting in a much more efficient pipeline, better quality, fewer geometric inconsistencies, and higher yield of usable 3D assets.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2402.08682)
+
+  ### 30. GALA3D: Towards Text-to-3D Complex Scene Generation via Layout-guided Generative Gaussian Splatting [arxiv 2024.02]
+
+**Authors**: Xiaoyu Zhou, Xingjian Ran, Yajiao Xiong, Jinlin He, Zhiwei Lin, Yongtao Wang, Deqing Sun, Ming-Hsuan Yang
+
+<details span>
+<summary><b>Abstract</b></summary>
+We present GALA3D, generative 3D GAussians with LAyout-guided control, for effective compositional text-to-3D generation. We first utilize large language models (LLMs) to generate the initial layout and introduce a layout-guided 3D Gaussian representation for 3D content generation with adaptive geometric constraints. We then propose an object-scene compositional optimization mechanism with conditioned diffusion to collaboratively generate realistic 3D scenes with consistent geometry, texture, scale, and accurate interactions among multiple objects while simultaneously adjusting the coarse layout priors extracted from the LLMs to align with the generated scene. Experiments show that GALA3D is a user-friendly, end-to-end framework for state-of-the-art scene-level 3D content generation and controllable editing while ensuring the high fidelity of object-level entities within the scene.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2402.07207) | [🌐 Project Page](https://gala3d.github.io) | [💻 Code](https://github.com/VDIGPKU/GALA3D)
+
+  ### 31. GPT-4V(ision) is a Human-Aligned Evaluator for Text-to-3D Generation [arxiv 2024.01]
+
+**Authors**: Tong Wu, Guandao Yang, Zhibing Li, Kai Zhang, Ziwei Liu, Leonidas Guibas, Dahua Lin, Gordon Wetzstein
+
+<details span>
+<summary><b>Abstract</b></summary>
+Despite recent advances in text-to-3D generative methods, there is a notable absence of reliable evaluation metrics. Existing metrics usually focus on a single criterion each, such as how well the asset aligned with the input text. These metrics lack the flexibility to generalize to different evaluation criteria and might not align well with human preferences. Conducting user preference studies is an alternative that offers both adaptability and human-aligned results. User studies, however, can be very expensive to scale. This paper presents an automatic, versatile, and human-aligned evaluation metric for text-to-3D generative models. To this end, we first develop a prompt generator using GPT-4V to generate evaluating prompts, which serve as input to compare text-to-3D models. We further design a method instructing GPT-4V to compare two 3D assets according to user-defined criteria. Finally, we use these pairwise comparison results to assign these models Elo ratings. Experimental results suggest our metric strongly align with human preference across different evaluation criteria.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2401.04092) 
+
 <br>
 
 ## Image to 3D Generation:
@@ -668,6 +756,50 @@ Text-driven 3D scene editing has gained significant attention owing to its conve
 
   Note: TIP-Editor supports both text-to-3d and image-to-3d
 
+  ### 20. 2L3: Lifting Imperfect Generated 2D Images into Accurate 3D [arxiv 2024.01]
+
+**Authors**: Yizheng Chen, Rengan Xie, Qi Ye, Sen Yang, Zixuan Xie, Tianxiao Chen, Rong Li, Yuchi Huo
+
+<details span>
+<summary><b>Abstract</b></summary>
+Reconstructing 3D objects from a single image is an intriguing but challenging problem. One promising solution is to utilize multi-view (MV) 3D reconstruction to fuse generated MV images into consistent 3D objects. However, the generated images usually suffer from inconsistent lighting, misaligned geometry, and sparse views, leading to poor reconstruction quality. To cope with these problems, we present a novel 3D reconstruction framework that leverages intrinsic decomposition guidance, transient-mono prior guidance, and view augmentation to cope with the three issues, respectively. Specifically, we first leverage to decouple the shading information from the generated images to reduce the impact of inconsistent lighting; then, we introduce mono prior with view-dependent transient encoding to enhance the reconstructed normal; and finally, we design a view augmentation fusion strategy that minimizes pixel-level loss in generated sparse views and semantic loss in augmented random views, resulting in view-consistent geometry and detailed textures. Our approach, therefore, enables the integration of a pre-trained MV image generator and a neural network-based volumetric signed distance function (SDF) representation for a single image to 3D object reconstruction. We evaluate our framework on various datasets and demonstrate its superior performance in both quantitative and qualitative assessments, signifying a significant advancement in 3D object reconstruction. Compared with the latest state-of-the-art method Syncdreamer~\cite{liu2023syncdreamer}, we reduce the Chamfer Distance error by about 36\% and improve PSNR by about 30\% .
+</details>
+
+[📄 Paper](https://arxiv.org/abs/2401.15841)
+
+  ### 21. GaussianObject: Just Taking Four Images to Get A High-Quality 3D Object with Gaussian Splatting [arxiv 2024.02]
+
+**Authors**: Chen Yang, Sikuang Li, Jiemin Fang, Ruofan Liang, Lingxi Xie, Xiaopeng Zhang, Wei Shen, Qi Tian
+
+<details span>
+<summary><b>Abstract</b></summary>
+Reconstructing and rendering 3D objects from highly sparse views is of critical importance for promoting applications of 3D vision techniques and improving user experience. However, images from sparse views only contain very limited 3D information, leading to two significant challenges: 1) Difficulty in building multi-view consistency as images for matching are too few; 2) Partially omitted or highly compressed object information as view coverage is insufficient. To tackle these challenges, we propose GaussianObject, a framework to represent and render the 3D object with Gaussian splatting, that achieves high rendering quality with only 4 input images. We first introduce techniques of visual hull and floater elimination which explicitly inject structure priors into the initial optimization process for helping build multi-view consistency, yielding a coarse 3D Gaussian representation. Then we construct a Gaussian repair model based on diffusion models to supplement the omitted object information, where Gaussians are further refined. We design a self-generating strategy to obtain image pairs for training the repair model. Our GaussianObject is evaluated on several challenging datasets, including MipNeRF360, OmniObject3D, and OpenIllumination, achieving strong reconstruction results from only 4 views and significantly outperforming previous state-of-the-art methods.
+</details>
+
+[📄 Paper](https://arxiv.org/abs/2402.10259) | [🌐 Project Page](https://gaussianobject.github.io) | [💻 Code](https://github.com/GaussianObject/GaussianObject)
+
+  ### 22. Colorizing Monochromatic Radiance Fields [arxiv 2024.02]
+
+**Authors**: Yean Cheng, Renjie Wan, Shuchen Weng, Chengxuan Zhu, Yakun Chang, Boxin Shi
+
+<details span>
+<summary><b>Abstract</b></summary>
+Though Neural Radiance Fields (NeRF) can produce colorful 3D representations of the world by using a set of 2D images, such ability becomes non-existent when only monochromatic images are provided. Since color is necessary in representing the world, reproducing color from monochromatic radiance fields becomes crucial. To achieve this goal, instead of manipulating the monochromatic radiance fields directly, we consider it as a representation-prediction task in the Lab color space. By first constructing the luminance and density representation using monochromatic images, our prediction stage can recreate color representation on the basis of an image colorization module. We then reproduce a colorful implicit model through the representation of luminance, density, and color. Extensive experiments have been conducted to validate the effectiveness of our approaches.
+</details>
+
+[📄 Paper](https://liquidammonia.github.io/color-nerf/assets/paper.pdf) | [🌐 Project Page](https://liquidammonia.github.io/color-nerf/)
+
+  ### 23. DreamUp3D: Object-Centric Generative Models for Single-View 3D Scene Understanding and Real-to-Sim Transfer [arxiv 2024.02]
+
+**Authors**: Yizhe Wu, Haitz Sáez de Ocáriz Borde, Jack Collins, Oiwi Parker Jones, Ingmar Posner
+
+<details span>
+<summary><b>Abstract</b></summary>
+3D scene understanding for robotic applications exhibits a unique set of requirements including real-time inference, object-centric latent representation learning, accurate 6D pose estimation and 3D reconstruction of objects. Current methods for scene understanding typically rely on a combination of trained models paired with either an explicit or learnt volumetric representation, all of which have their own drawbacks and limitations. We introduce DreamUp3D, a novel Object-Centric Generative Model (OCGM) designed explicitly to perform inference on a 3D scene informed only by a single RGB-D image. DreamUp3D is a self-supervised model, trained end-to-end, and is capable of segmenting objects, providing 3D object reconstructions, generating object-centric latent representations and accurate per-object 6D pose estimates. We compare DreamUp3D to baselines including NeRFs, pre-trained CLIP-features, ObSurf, and ObPose, in a range of tasks including 3D scene reconstruction, object matching and object pose estimation. Our experiments show that our model outperforms all baselines by a significant margin in real-world scenarios displaying its applicability for 3D scene understanding tasks while meeting the strict demands exhibited in robotics applications.
+</details>
+
+[📄 Paper](https://arxiv.org/abs/2402.16308)
+
 <br>
 
 ## Audio to 3D Generation:
@@ -815,6 +947,28 @@ We introduce ViCA-NeRF, the first view-consistency-aware method for 3D editing w
 </details>
 
 [📄 Paper](https://arxiv.org/abs/2402.00864v1) | [💻 Code](https://github.com/Dongjiahua/VICA-NeRF)
+
+### 12. Consolidating Attention Features for Multi-view Image Editing [arxiv 2024.02]
+
+**Authors**: Or Patashnik, Rinon Gal, Daniel Cohen-Or, Jun-Yan Zhu, Fernando De la Torre
+
+<details span>
+<summary><b>Abstract</b></summary>
+Large-scale text-to-image models enable a wide range of image editing techniques, using text prompts or even spatial controls. However, applying these editing methods to multi-view images depicting a single scene leads to 3D-inconsistent results. In this work, we focus on spatial control-based geometric manipulations and introduce a method to consolidate the editing process across various views. We build on two insights: (1) maintaining consistent features throughout the generative process helps attain consistency in multi-view editing, and (2) the queries in self-attention layers significantly influence the image structure. Hence, we propose to improve the geometric consistency of the edited images by enforcing the consistency of the queries. To do so, we introduce QNeRF, a neural radiance field trained on the internal query features of the edited images. Once trained, QNeRF can render 3D-consistent queries, which are then softly injected back into the self-attention layers during generation, greatly improving multi-view consistency. We refine the process through a progressive, iterative method that better consolidates queries across the diffusion timesteps. We compare our method to a range of existing techniques and demonstrate that it can achieve better multi-view consistency and higher fidelity to the input scene. These advantages allow us to train NeRFs with fewer visual artifacts, that are better aligned with the target geometry.
+</details>
+
+[📄 Paper](https://arxiv.org/abs/2402.14792) | [🌐 Project Page](https://qnerf-consolidation.github.io/qnerf-consolidation/) 
+
+### 13. SealD-NeRF: Interactive Pixel-Level Editing for Dynamic Scenes by Neural Radiance Fields [arxiv 2024.02]
+
+**Authors**: Zhentao Huang, Yukun Shi, Neil Bruce, Minglun Gong
+
+<details span>
+<summary><b>Abstract</b></summary>
+The widespread adoption of implicit neural representations, especially Neural Radiance Fields (NeRF), highlights a growing need for editing capabilities in implicit 3D models, essential for tasks like scene post-processing and 3D content creation. Despite previous efforts in NeRF editing, challenges remain due to limitations in editing flexibility and quality. The key issue is developing a neural representation that supports local edits for real-time updates. Current NeRF editing methods, offering pixel-level adjustments or detailed geometry and color modifications, are mostly limited to static scenes. This paper introduces SealD-NeRF, an extension of Seal-3D for pixel-level editing in dynamic settings, specifically targeting the D-NeRF network. It allows for consistent edits across sequences by mapping editing actions to a specific timeframe, freezing the deformation network responsible for dynamic scene representation, and using a teacher-student approach to integrate changes.
+</details>
+
+[📄 Paper](https://arxiv.org/abs/2402.13510)
 
 <br>
 
@@ -1047,6 +1201,50 @@ Artistic video portrait generation is a significant and sought-after task in the
 
   [📄 Paper](https://arxiv.org/abs/2402.00827v1)
 
+  ### 20. ImplicitDeepfake: Plausible Face-Swapping through Implicit Deepfake Generation using NeRF and Gaussian Splatting [arxiv 2024.02]
+
+**Authors**: Georgii Stanishevskii, Jakub Steczkiewicz, Tomasz Szczepanik, Sławomir Tadeja, Jacek Tabor, Przemysław Spurek
+
+<details span>
+<summary><b>Abstract</b></summary>
+Numerous emerging deep-learning techniques have had a substantial impact on computer graphics. Among the most promising breakthroughs are the recent rise of Neural Radiance Fields (NeRFs) and Gaussian Splatting (GS). NeRFs encode the object's shape and color in neural network weights using a handful of images with known camera positions to generate novel views. In contrast, GS provides accelerated training and inference without a decrease in rendering quality by encoding the object's characteristics in a collection of Gaussian distributions. These two techniques have found many use cases in spatial computing and other domains. On the other hand, the emergence of deepfake methods has sparked considerable controversy. Such techniques can have a form of artificial intelligence-generated videos that closely mimic authentic footage. Using generative models, they can modify facial features, enabling the creation of altered identities or facial expressions that exhibit a remarkably realistic appearance to a real person. Despite these controversies, deepfake can offer a next-generation solution for avatar creation and gaming when of desirable quality. To that end, we show how to combine all these emerging technologies to obtain a more plausible outcome. Our ImplicitDeepfake1 uses the classical deepfake algorithm to modify all training images separately and then train NeRF and GS on modified faces. Such relatively simple strategies can produce plausible 3D deepfake-based avatars.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2402.06390)
+
+  ### 21. HeadStudio: Text to Animatable Head Avatars with 3D Gaussian Splatting [arxiv 2024.02]
+
+**Authors**: Zhenglin Zhou, Fan Ma, Hehe Fan, Yi Yang
+
+<details span>
+<summary><b>Abstract</b></summary>
+Creating digital avatars from textual prompts has long been a desirable yet challenging task. Despite the promising outcomes obtained through 2D diffusion priors in recent works, current methods face challenges in achieving high-quality and animated avatars effectively. In this paper, we present HeadStudio, a novel framework that utilizes 3D Gaussian splatting to generate realistic and animated avatars from text prompts. Our method drives 3D Gaussians semantically to create a flexible and achievable appearance through the intermediate FLAME representation. Specifically, we incorporate the FLAME into both 3D representation and score distillation: 1) FLAME-based 3D Gaussian splatting, driving 3D Gaussian points by rigging each point to a FLAME mesh. 2) FLAME-based score distillation sampling, utilizing FLAME-based fine-grained control signal to guide score distillation from the text prompt. Extensive experiments demonstrate the efficacy of HeadStudio in generating animatable avatars from textual prompts, exhibiting visually appealing appearances. The avatars are capable of rendering high-quality real-time (≥40 fps) novel views at a resolution of 1024. They can be smoothly controlled by real-world speech and video. We hope that HeadStudio can advance digital avatar creation and that the present method can widely be applied across various domains.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2402.06149)
+
+   ### 22. Rig3DGS: Creating Controllable Portraits from Casual Monocular Videos [arxiv 2024.02]
+
+**Authors**: Alfredo Rivero, ShahRukh Athar, Zhixin Shu, Dimitris Samaras
+
+<details span>
+<summary><b>Abstract</b></summary>
+Creating controllable 3D human portraits from casual smartphone videos is highly desirable due to their immense value in AR/VR applications. The recent development of 3D Gaussian Splatting (3DGS) has shown improvements in rendering quality and training efficiency. However, it still remains a challenge to accurately model and disentangle head movements and facial expressions from a single-view capture to achieve high-quality renderings. In this paper, we introduce Rig3DGS to address this challenge. We represent the entire scene, including the dynamic subject, using a set of 3D Gaussians in a canonical space. Using a set of control signals, such as head pose and expressions, we transform them to the 3D space with learned deformations to generate the desired rendering. Our key innovation is a carefully designed deformation method which is guided by a learnable prior derived from a 3D morphable model. This approach is highly efficient in training and effective in controlling facial expressions, head positions, and view synthesis across various captures. We demonstrate the effectiveness of our learned deformation through extensive quantitative and qualitative experiments.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2402.03723) | [🌐 Project Page](http://shahrukhathar.github.io/2024/02/05/Rig3DGS.html)
+
+  ### 23. DivAvatar: Diverse 3D Avatar Generation with a Single Prompt [arxiv 2024.02]
+
+**Authors**: Weijing Tao, Biwen Lei, Kunhao Liu, Shijian Lu, Miaomiao Cui, Xuansong Xie, Chunyan Miao
+
+<details span>
+<summary><b>Abstract</b></summary>
+Text-to-Avatar generation has recently made significant strides due to advancements in diffusion models. However, most existing work remains constrained by limited diversity, producing avatars with subtle differences in appearance for a given text prompt. We design DivAvatar, a novel framework that generates diverse avatars, empowering 3D creatives with a multitude of distinct and richly varied 3D avatars from a single text prompt. Different from most existing work that exploits scene-specific 3D representations such as NeRF, DivAvatar finetunes a 3D generative model (i.e., EVA3D), allowing diverse avatar generation from simply noise sampling in inference time. DivAvatar has two key designs that help achieve generation diversity and visual quality. The first is a noise sampling technique during training phase which is critical in generating diverse appearances. The second is a semantic-aware zoom mechanism and a novel depth loss, the former producing appearances of high textual fidelity by separate fine-tuning of specific body parts and the latter improving geometry quality greatly by smoothing the generated mesh in the features space. Extensive experiments show that DivAvatar is highly versatile in generating avatars of diverse appearances.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2402.17292)
+
 <br>
 
 ## Autonomous Driving:
@@ -1133,6 +1331,16 @@ Surgical 3D reconstruction is a critical area of research in robotic surgery, wi
 
   [📄 Paper](https://arxiv.org/abs/2401.11535) | [💻 Code](https://github.com/HKU-MedAI/EndoGS) 
 
+  ### 4. Lips Are Lying: Spotting the Temporal Inconsistency between Audio and Visual in Lip-Syncing DeepFakes [arxiv 2024.01]
+**Authors**: Weifeng Liu, Tianyi She, Jiawei Liu, Run Wang, Dongyu Yao, Ziyou Liang
+
+<details span>
+<summary><b>Abstract</b></summary>
+In recent years, DeepFake technology has achieved unprecedented success in high-quality video synthesis, whereas these methods also pose potential and severe security threats to humanity. DeepFake can be bifurcated into entertainment applications like face swapping and illicit uses such as lip-syncing fraud. However, lip-forgery videos, which neither change identity nor have discernible visual artifacts, present a formidable challenge to existing DeepFake detection methods. Our preliminary experiments have shown that the effectiveness of the existing methods often drastically decreases or even fails when tackling lip-syncing videos.
+In this paper, for the first time, we propose a novel approach dedicated to lip-forgery identification that exploits the inconsistency between lip movements and audio signals. We also mimic human natural cognition by capturing subtle biological links between lips and head regions to boost accuracy. To better illustrate the effectiveness and advances of our proposed method, we curate a high-quality LipSync dataset by employing the SOTA lip generator. We hope this high-quality and diverse dataset could be well served the further research on this challenging and interesting field. Experimental results show that our approach gives an average accuracy of more than 95.3% in spotting lip-syncing videos, significantly outperforming the baselines. Extensive experiments demonstrate the capability to tackle deepfakes and the robustness in surviving diverse input transformations. Our method achieves an accuracy of up to 90.2% in real-world scenarios (e.g., WeChat video call) and shows its powerful capabilities in real scenario deployment.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2401.15668) | [💻 Code](https://github.com/AaronComo/LipFD) 
 
 
 <br>
@@ -1251,6 +1459,17 @@ Large-scale diffusion generative models are greatly simplifying image, video and
 
   [📄 Paper](https://arxiv.org/abs/2311.14603) | [🌐 Project Page](https://research.nvidia.com/labs/nxp/dream-in-4d/)
 
+  ### 11. 4D Gaussian Splatting: Towards Efficient Novel View Synthesis for Dynamic Scenes [arxiv 2024.02]
+
+**Authors**: Yuanxing Duan, Fangyin Wei, Qiyu Dai, Yuhang He, Wenzheng Chen, Baoquan Chen
+
+<details span>
+<summary><b>Abstract</b></summary>
+We consider the problem of novel view synthesis (NVS) for dynamic scenes. Recent neural approaches have accomplished exceptional NVS results for static 3D scenes, but extensions to 4D time-varying scenes remain non-trivial. Prior efforts often encode dynamics by learning a canonical space plus implicit or explicit deformation fields, which struggle in challenging scenarios like sudden movements or capturing high-fidelity renderings. In this paper, we introduce 4D Gaussian Splatting (4DGS), a novel method that represents dynamic scenes with anisotropic 4D XYZT Gaussians, inspired by the success of 3D Gaussian Splatting in static scenes. We model dynamics at each timestamp by temporally slicing the 4D Gaussians, which naturally compose dynamic 3D Gaussians and can be seamlessly projected into images. As an explicit spatial-temporal representation, 4DGS demonstrates powerful capabilities for modeling complicated dynamics and fine details, especially for scenes with abrupt motions. We further implement our temporal slicing and splatting techniques in a highly optimized CUDA acceleration framework, achieving real-time inference rendering speeds of up to 277 FPS on an RTX 3090 GPU and 583 FPS on an RTX 4090 GPU. Rigorous evaluations on scenes with diverse motions showcase the superior efficiency and effectiveness of 4DGS, which consistently outperforms existing methods both quantitatively and qualitatively.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2402.03307)
+
 ## Misc:
 
 ### 1. FMGS: Foundation Model Embedded 3D Gaussian Splatting for Holistic 3D Scene Understanding [arxiv 2024.01]
@@ -1323,6 +1542,72 @@ We introduce Infinigen, a procedural generator of photorealistic 3D scenes of th
 </details>
 
   [📄 Paper](https://arxiv.org/abs/2306.09310) |  [💻 Code](https://github.com/princeton-vl/infinigen) 
+
+  ### 7. Diffutoon: High-Resolution Editable Toon Shading via Diffusion Models [arxiv 2024.01]
+
+**Authors**: Zhongjie Duan, Chengyu Wang, Cen Chen, Weining Qian, Jun Huang
+
+<details span>
+<summary><b>Abstract</b></summary>
+Toon shading is a type of non-photorealistic rendering task of animation. Its primary purpose is to render objects with a flat and stylized appearance. As diffusion models have ascended to the forefront of image synthesis methodologies, this paper delves into an innovative form of toon shading based on diffusion models, aiming to directly render photorealistic videos into anime styles. In video stylization, extant methods encounter persistent challenges, notably in maintaining consistency and achieving high visual quality. In this paper, we model the toon shading problem as four subproblems: stylization, consistency enhancement, structure guidance, and colorization. To address the challenges in video stylization, we propose an effective toon shading approach called \textit{Diffutoon}. Diffutoon is capable of rendering remarkably detailed, high-resolution, and extended-duration videos in anime style. It can also edit the content according to prompts via an additional branch. The efficacy of Diffutoon is evaluated through quantitive metrics and human evaluation. Notably, Diffutoon surpasses both open-source and closed-source baseline approaches in our experiments. Our work is accompanied by the release of both the source code and example videos on Github
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2401.16224) | [🌐 Project Page](https://ecnu-cilab.github.io/DiffutoonProjectPage/) | [💻 Code](https://github.com/Artiprocher/DiffSynth-Studio) 
+
+   ### 8. BlockFusion: Expandable 3D Scene Generation using Latent Tri-plane Extrapolation [arxiv 2024.01]
+
+**Authors**: Zhennan Wu, Yang Li, Han Yan, Taizhang Shang, Weixuan Sun, Senbo Wang, Ruikai Cui, Weizhe Liu, Hiroyuki Sato, Hongdong Li, Pan Ji
+
+<details span>
+<summary><b>Abstract</b></summary>
+We present BlockFusion, a diffusion-based model that generates 3D scenes as unit blocks and seamlessly incorporates new blocks to extend the scene. BlockFusion is trained using datasets of 3D blocks that are randomly cropped from complete 3D scene meshes. Through per-block fitting, all training blocks are converted into the hybrid neural fields: with a tri-plane containing the geometry features, followed by a Multi-layer Perceptron (MLP) for decoding the signed distance values. A variational auto-encoder is employed to compress the tri-planes into the latent tri-plane space, on which the denoising diffusion process is performed. Diffusion applied to the latent representations allows for high-quality and diverse 3D scene generation. To expand a scene during generation, one needs only to append empty blocks to overlap with the current scene and extrapolate existing latent tri-planes to populate new blocks. The extrapolation is done by conditioning the generation process with the feature samples from the overlapping tri-planes during the denoising iterations. Latent tri-plane extrapolation produces semantically and geometrically meaningful transitions that harmoniously blend with the existing scene. A 2D layout conditioning mechanism is used to control the placement and arrangement of scene elements. Experimental results indicate that BlockFusion is capable of generating diverse, geometrically consistent and unbounded large 3D scenes with unprecedented high-quality shapes in both indoor and outdoor scenarios.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2401.17053)
+
+  ### 9. Geometry Transfer for Stylizing Radiance Fields [arxiv 2024.02]
+
+**Authors**: Hyunyoung Jung, Seonghyeon Nam, Nikolaos Sarafianos, Sungjoo Yoo, Alexander Sorkine-Hornung, Rakesh Ranjan
+
+<details span>
+<summary><b>Abstract</b></summary>
+Shape and geometric patterns are essential in defining stylistic identity. However, current 3D style transfer methods predominantly focus on transferring colors and textures, often overlooking geometric aspects. In this paper, we introduce Geometry Transfer, a novel method that leverages geometric deformation for 3D style transfer. This technique employs depth maps to extract a style guide, subsequently applied to stylize the geometry of radiance fields. Moreover, we propose new techniques that utilize geometric cues from the 3D scene, thereby enhancing aesthetic expressiveness and more accurately reflecting intended styles. Our extensive experiments show that Geometry Transfer enables a broader and more expressive range of stylizations, thereby significantly expanding the scope of 3D style transfer.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2402.00863) | [🌐 Project Page](https://hyblue.github.io/geo-srf/) | [💻 Code](https://github.com/hyBlue/Geo-SRF) 
+
+   ### 10. Diffusion-based Light Field Synthesis [arxiv 2024.02]
+
+**Authors**: Ruisheng Gao, Yutong Liu, Zeyu Xiao, Zhiwei Xiong
+
+<details span>
+<summary><b>Abstract</b></summary>
+Light fields (LFs), conducive to comprehensive scene radiance recorded across angular dimensions, find wide applications in 3D reconstruction, virtual reality, and computational photography.However, the LF acquisition is inevitably time-consuming and resource-intensive due to the mainstream acquisition strategy involving manual capture or laborious software synthesis.Given such a challenge, we introduce LFdiff, a straightforward yet effective diffusion-based generative framework tailored for LF synthesis, which adopts only a single RGB image as input.LFdiff leverages disparity estimated by a monocular depth estimation network and incorporates two distinctive components: a novel condition scheme and a noise estimation network tailored for LF data.Specifically, we design a position-aware warping condition scheme, enhancing inter-view geometry learning via a robust conditional signal.We then propose DistgUnet, a disentanglement-based noise estimation network, to harness comprehensive LF representations.Extensive experiments demonstrate that LFdiff excels in synthesizing visually pleasing and disparity-controllable light fields with enhanced generalization capability.Additionally, comprehensive results affirm the broad applicability of the generated LF data, spanning applications like LF super-resolution and refocusing.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2402.00575)
+
+  ### 11. OV-NeRF: Open-vocabulary Neural Radiance Fields with Vision and Language Foundation Models for 3D Semantic Understanding [arxiv 2024.02]
+
+**Authors**: Guibiao Liao, Kaichen Zhou, Zhenyu Bao, Kanglin Liu, Qing Li
+
+<details span>
+<summary><b>Abstract</b></summary>
+The development of Neural Radiance Fields (NeRFs) has provided a potent representation for encapsulating the geometric and appearance characteristics of 3D scenes. Enhancing the capabilities of NeRFs in open-vocabulary 3D semantic perception tasks has been a recent focus. However, current methods that extract semantics directly from Contrastive Language-Image Pretraining (CLIP) for semantic field learning encounter difficulties due to noisy and view-inconsistent semantics provided by CLIP. To tackle these limitations, we propose OV-NeRF, which exploits the potential of pre-trained vision and language foundation models to enhance semantic field learning through proposed single-view and cross-view strategies. First, from the single-view perspective, we introduce Region Semantic Ranking (RSR) regularization by leveraging 2D mask proposals derived from SAM to rectify the noisy semantics of each training view, facilitating accurate semantic field learning. Second, from the cross-view perspective, we propose a Cross-view Self-enhancement (CSE) strategy to address the challenge raised by view-inconsistent semantics. Rather than invariably utilizing the 2D inconsistent semantics from CLIP, CSE leverages the 3D consistent semantics generated from the well-trained semantic field itself for semantic field training, aiming to reduce ambiguity and enhance overall semantic consistency across different views. Extensive experiments validate our OV-NeRF outperforms current state-of-the-art methods, achieving a significant improvement of 20.31% and 18.42% in mIoU metric on Replica and Scannet, respectively. Furthermore, our approach exhibits consistent superior results across various CLIP configurations, further verifying its robustness.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2402.04648)
+
+   ### 12. MeshGPT: Generating Triangle Meshes with Decoder-Only Transformers [arxiv 2023.11]
+
+**Authors**: Yawar Siddiqui, Antonio Alliegro, Alexey Artemov, Tatiana Tommasi, Daniele Sirigatti, Vladislav Rosov, Angela Dai, Matthias Nießner
+
+<details span>
+<summary><b>Abstract</b></summary>
+We introduce MeshGPT, a new approach for generating triangle meshes that reflects the compactness typical of artist-created meshes, in contrast to dense triangle meshes extracted by iso-surfacing methods from neural fields. Inspired by recent advances in powerful large language models, we adopt a sequence-based approach to autoregressively generate triangle meshes as sequences of triangles. We first learn a vocabulary of latent quantized embeddings, using graph convolutions, which inform these embeddings of the local mesh geometry and topology. These embeddings are sequenced and decoded into triangles by a decoder, ensuring that they can effectively reconstruct the mesh. A transformer is then trained on this learned vocabulary to predict the index of the next embedding given previous embeddings. Once trained, our model can be autoregressively sampled to generate new triangle meshes, directly generating compact meshes with sharp edges, more closely imitating the efficient triangulation patterns of human-crafted meshes. MeshGPT demonstrates a notable improvement over state of the art mesh generation methods, with a 9% increase in shape coverage and a 30-point enhancement in FID scores across various categories.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2311.15475) | [🌐 Project Page](https://nihalsid.github.io/mesh-gpt/)
 
 
 
