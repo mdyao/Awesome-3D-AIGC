@@ -36,6 +36,8 @@ A curated list of papers and open-source resources focused on 3D AIGC, intended 
 <summary><b>Update Log:</b></summary>
 <be>
 
+  **Mar. 4, 2024**: Update several CVPR 2024 papers. 
+
   **Jan 23, 2024**: Update several ICLR 2024 papers. 
 
   **Jan 19, 2024**: Update several ICLR 2024 papers. 
