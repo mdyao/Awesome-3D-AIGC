@@ -121,6 +121,17 @@ Recent years have seen remarkable progress in deep learning powered visual conte
 
   [📄 Paper](https://dl.acm.org/doi/pdf/10.1145/3626193) | [🌐 Project Page](https://weihaox.github.io/3D-aware-Gen/)  
 
+  ### 7. Advances in 3D Generation: A Survey [arxiv 2024.01]
+
+**Authors**: Xiaoyu Li, Qi Zhang, Di Kang, Weihao Cheng, Yiming Gao, Jingbo Zhang, Zhihao Liang, Jing Liao, Yan-Pei Cao, Ying Shan
+
+<details span>
+<summary><b>Abstract</b></summary>
+Generating 3D models lies at the core of computer graphics and has been the focus of decades of research. With the emergence of advanced neural representations and generative models, the field of 3D content generation is developing rapidly, enabling the creation of increasingly high-quality and diverse 3D models. The rapid growth of this field makes it difficult to stay abreast of all recent developments. In this survey, we aim to introduce the fundamental methodologies of 3D generation methods and establish a structured roadmap, encompassing 3D representation, generation methods, datasets, and corresponding applications. Specifically, we introduce the 3D representations that serve as the backbone for 3D generation. Furthermore, we provide a comprehensive overview of the rapidly growing literature on generation methods, categorized by the type of algorithmic paradigms, including feedforward generation, optimization-based generation, procedural generation, and generative novel view synthesis. Lastly, we discuss available datasets, applications, and open challenges. We hope this survey will help readers explore this exciting topic and foster further advancements in the field of 3D content generation.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2401.17807)
+
 
 
 <br>
@@ -666,6 +677,17 @@ Text-driven 3D scene editing has gained significant attention owing to its conve
 
   Note: TIP-Editor supports both text-to-3d and image-to-3d
 
+  ### 20. 2L3: Lifting Imperfect Generated 2D Images into Accurate 3D [arxiv 2024.01]
+
+**Authors**: Yizheng Chen, Rengan Xie, Qi Ye, Sen Yang, Zixuan Xie, Tianxiao Chen, Rong Li, Yuchi Huo
+
+<details span>
+<summary><b>Abstract</b></summary>
+Reconstructing 3D objects from a single image is an intriguing but challenging problem. One promising solution is to utilize multi-view (MV) 3D reconstruction to fuse generated MV images into consistent 3D objects. However, the generated images usually suffer from inconsistent lighting, misaligned geometry, and sparse views, leading to poor reconstruction quality. To cope with these problems, we present a novel 3D reconstruction framework that leverages intrinsic decomposition guidance, transient-mono prior guidance, and view augmentation to cope with the three issues, respectively. Specifically, we first leverage to decouple the shading information from the generated images to reduce the impact of inconsistent lighting; then, we introduce mono prior with view-dependent transient encoding to enhance the reconstructed normal; and finally, we design a view augmentation fusion strategy that minimizes pixel-level loss in generated sparse views and semantic loss in augmented random views, resulting in view-consistent geometry and detailed textures. Our approach, therefore, enables the integration of a pre-trained MV image generator and a neural network-based volumetric signed distance function (SDF) representation for a single image to 3D object reconstruction. We evaluate our framework on various datasets and demonstrate its superior performance in both quantitative and qualitative assessments, signifying a significant advancement in 3D object reconstruction. Compared with the latest state-of-the-art method Syncdreamer~\cite{liu2023syncdreamer}, we reduce the Chamfer Distance error by about 36\% and improve PSNR by about 30\% .
+</details>
+
+[📄 Paper](https://arxiv.org/abs/2401.15841)
+
 <br>
 
 ## Audio to 3D Generation:
@@ -1131,6 +1153,16 @@ Surgical 3D reconstruction is a critical area of research in robotic surgery, wi
 
   [📄 Paper](https://arxiv.org/abs/2401.11535) | [💻 Code](https://github.com/HKU-MedAI/EndoGS) 
 
+  ### 4. Lips Are Lying: Spotting the Temporal Inconsistency between Audio and Visual in Lip-Syncing DeepFakes [arxiv 2024.01]
+**Authors**: Weifeng Liu, Tianyi She, Jiawei Liu, Run Wang, Dongyu Yao, Ziyou Liang
+
+<details span>
+<summary><b>Abstract</b></summary>
+In recent years, DeepFake technology has achieved unprecedented success in high-quality video synthesis, whereas these methods also pose potential and severe security threats to humanity. DeepFake can be bifurcated into entertainment applications like face swapping and illicit uses such as lip-syncing fraud. However, lip-forgery videos, which neither change identity nor have discernible visual artifacts, present a formidable challenge to existing DeepFake detection methods. Our preliminary experiments have shown that the effectiveness of the existing methods often drastically decreases or even fails when tackling lip-syncing videos.
+In this paper, for the first time, we propose a novel approach dedicated to lip-forgery identification that exploits the inconsistency between lip movements and audio signals. We also mimic human natural cognition by capturing subtle biological links between lips and head regions to boost accuracy. To better illustrate the effectiveness and advances of our proposed method, we curate a high-quality LipSync dataset by employing the SOTA lip generator. We hope this high-quality and diverse dataset could be well served the further research on this challenging and interesting field. Experimental results show that our approach gives an average accuracy of more than 95.3% in spotting lip-syncing videos, significantly outperforming the baselines. Extensive experiments demonstrate the capability to tackle deepfakes and the robustness in surviving diverse input transformations. Our method achieves an accuracy of up to 90.2% in real-world scenarios (e.g., WeChat video call) and shows its powerful capabilities in real scenario deployment.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2401.15668) | [💻 Code](https://github.com/AaronComo/LipFD) 
 
 
 <br>
@@ -1321,6 +1353,17 @@ We introduce Infinigen, a procedural generator of photorealistic 3D scenes of th
 </details>
 
   [📄 Paper](https://arxiv.org/abs/2306.09310) |  [💻 Code](https://github.com/princeton-vl/infinigen) 
+
+  ### 7. Diffutoon: High-Resolution Editable Toon Shading via Diffusion Models [arxiv 2024.01]
+
+**Authors**: Zhongjie Duan, Chengyu Wang, Cen Chen, Weining Qian, Jun Huang
+
+<details span>
+<summary><b>Abstract</b></summary>
+Toon shading is a type of non-photorealistic rendering task of animation. Its primary purpose is to render objects with a flat and stylized appearance. As diffusion models have ascended to the forefront of image synthesis methodologies, this paper delves into an innovative form of toon shading based on diffusion models, aiming to directly render photorealistic videos into anime styles. In video stylization, extant methods encounter persistent challenges, notably in maintaining consistency and achieving high visual quality. In this paper, we model the toon shading problem as four subproblems: stylization, consistency enhancement, structure guidance, and colorization. To address the challenges in video stylization, we propose an effective toon shading approach called \textit{Diffutoon}. Diffutoon is capable of rendering remarkably detailed, high-resolution, and extended-duration videos in anime style. It can also edit the content according to prompts via an additional branch. The efficacy of Diffutoon is evaluated through quantitive metrics and human evaluation. Notably, Diffutoon surpasses both open-source and closed-source baseline approaches in our experiments. Our work is accompanied by the release of both the source code and example videos on Github
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2401.16224) | [🌐 Project Page](https://ecnu-cilab.github.io/DiffutoonProjectPage/) | [💻 Code](https://github.com/Artiprocher/DiffSynth-Studio) 
 
 
 
