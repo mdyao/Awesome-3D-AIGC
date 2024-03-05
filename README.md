@@ -134,29 +134,6 @@ Generating 3D models lies at the core of computer graphics and has been the focu
 
   [📄 Paper](https://arxiv.org/abs/2401.17807)
 
-   ### 8. A Survey for Foundation Models in Autonomous Driving [arxiv 2024.02]
-
-**Authors**: Haoxiang Gao, Yaqian Li, Kaiwen Long, Ming Yang, Yiqing Shen
-
-<details span>
-<summary><b>Abstract</b></summary>
-The advent of foundation models has revolutionized the fields of natural language processing and computer vision, paving the way for their application in autonomous driving (AD). This survey presents a comprehensive review of more than 40 research papers, demonstrating the role of foundation models in enhancing AD. Large language models contribute to planning and simulation in AD, particularly through their proficiency in reasoning, code generation and translation. In parallel, vision foundation models are increasingly adapted for critical tasks such as 3D object detection and tracking, as well as creating realistic driving scenarios for simulation and testing. Multi-modal foundation models, integrating diverse inputs, exhibit exceptional visual understanding and spatial reasoning, crucial for end-to-end AD. This survey not only provides a structured taxonomy, categorizing foundation models based on their modalities and functionalities within the AD domain but also delves into the methods employed in current research. It identifies the gaps between existing foundation models and cutting-edge AD approaches, thereby charting future research directions and proposing a roadmap for bridging these gaps.
-</details>
-
-  [📄 Paper](https://arxiv.org/abs/2402.01105)
-
-   ### 9. Diffusion Model-Based Image Editing: A Survey [arxiv 2024.02]
-
-**Authors**: Yi Huang, Jiancheng Huang, Yifan Liu, Mingfu Yan, Jiaxi Lv, Jianzhuang Liu, Wei Xiong, He Zhang, Shifeng Chen, Liangliang Cao
-
-<details span>
-<summary><b>Abstract</b></summary>
-Denoising diffusion models have emerged as a powerful tool for various image generation and editing tasks, facilitating the synthesis of visual content in an unconditional or input-conditional manner. The core idea behind them is learning to reverse the process of gradually adding noise to images, allowing them to generate high-quality samples from a complex distribution. In this survey, we provide an exhaustive overview of existing methods using diffusion models for image editing, covering both theoretical and practical aspects in the field. We delve into a thorough analysis and categorization of these works from multiple perspectives, including learning strategies, user-input conditions, and the array of specific editing tasks that can be accomplished. In addition, we pay special attention to image inpainting and outpainting, and explore both earlier traditional context-driven and current multimodal conditional methods, offering a comprehensive analysis of their methodologies. To further evaluate the performance of text-guided image editing algorithms, we propose a systematic benchmark, EditEval, featuring an innovative metric, LMM Score. Finally, we address current limitations and envision some potential directions for future research.
-</details>
-
-  [📄 Paper](https://arxiv.org/abs/2402.01105) | [🌐 Project Page](https://github.com/SiatMMLab/Awesome-Diffusion-Model-Based-Image-Editing-Methods)  
-
-
 
 <br>
 
