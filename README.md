@@ -504,6 +504,18 @@ Despite recent advances in text-to-3D generative methods, there is a notable abs
 
   [📄 Paper](https://arxiv.org/abs/2401.04092) 
 
+  ### 32. ScaleDreamer: Scalable Text-to-3D Synthesis with Asynchronous Score Distillation [ECCV 2024]
+
+**Authors**: Zhiyuan Ma, Yuxiang Wei, Yabin Zhang, Xiangyu Zhu, Zhen Lei, Lei Zhang
+
+<details span>
+<summary><b>Abstract</b></summary>
+By leveraging the text-to-image diffusion priors, score distillation can synthesize 3D contents without paired text-3D training data. Instead of spending hours of online optimization per text prompt, recent studies have been focused on learning a text-to-3D generative network for amortizing multiple text-3D relations, which can synthesize 3D contents in seconds. However, existing score distillation methods are hard to scale up to a large amount of text prompts due to the difficulties in aligning pretrained diffusion prior with the distribution of rendered images from various text prompts. Current state-of-the-arts such as Variational Score Distillation finetune the pretrained diffusion model to minimize the noise prediction error so as to align the distributions, which are however unstable to train and will impair the model's comprehension capability to numerous text prompts. Based on the observation that the diffusion models tend to have lower noise prediction errors at earlier timesteps, we propose Asynchronous Score Distillation (ASD), which minimizes the noise prediction error by shifting the diffusion timestep to earlier ones. ASD is stable to train and can scale up to 100k prompts. It reduces the noise prediction error without changing the weights of pre-trained diffusion model, thus keeping its strong comprehension capability to prompts. We conduct extensive experiments across different 2D diffusion models, including Stable Diffusion and MVDream, and text-to-3D generators, including Hyper-iNGP, 3DConv-Net and Triplane-Transformer. The results demonstrate ASD's effectiveness in stable 3D generator training, high-quality 3D content synthesis, and its superior prompt-consistency, especially under large prompt corpus.
+</details>
+
+  [📄 Paper](https://arxiv.org/pdf/2407.02040) | [🌐 Project Page](https://sites.google.com/view/scaledreamer-release/) | [💻 Code](https://github.com/theEricMa/ScaleDreamer)
+
+
 <br>
 
 ## Image to 3D Generation:
