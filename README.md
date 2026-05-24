@@ -27,6 +27,7 @@ A curated list of papers and open-source resources focused on 3D AIGC, intended 
   * [Unofficial Implementations](#unofficial-implementations)
   * [Datasets](#datasets)
   * [Other](#other)
+- [Practical Tools](#practical-tools)
 - [Blog Posts](#blog-posts)
 - [Tutorial Videos](#tutorial-videos)
 - [Credits](#credits)
@@ -1626,6 +1627,10 @@ Currenty supported 3D content generation methods (2023.12.29):
 
 ProlificDreamer | DreamFusion | Magic3D | SJC | Latent-NeRF | Fantasia3D | TextMesh | Zero-1-to-3 | Magic123 | InstructNeRF2NeRF | Control4D 
 
+
+## Practical Tools
+
+- [Image3D](https://image3d.io/) is a browser-based image-to-3D tool for converting a single image into downloadable GLB, OBJ, STL, and PLY files. Related workflows include [image to STL](https://image3d.io/image-to-stl/), [image to GLB](https://image3d.io/image-to-glb/), and [AI image to 3D](https://image3d.io/ai-image-to-3d/).
 
 
 ## Credits
