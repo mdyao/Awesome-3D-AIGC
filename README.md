@@ -790,6 +790,18 @@ Though Neural Radiance Fields (NeRF) can produce colorful 3D representations of 
 
 [📄 Paper](https://arxiv.org/abs/2402.16308)
 
+  ### 24. Sat3DGen: Comprehensive Street-Level 3D Scene Generation from Single Satellite Image [arxiv 2026.05]
+
+**Authors**: Ming Qian, Zimin Xia, Changkun Liu, Shuailei Ma, Wen Wang, Zeran Ke, Bin Tan, Hang Zhang, Gui-Song Xia
+
+<details span>
+<summary><b>Abstract</b></summary>
+Generating a street-level 3D scene from a single satellite image is a crucial yet challenging task. Current methods present a stark trade-off: geometry-colorization models achieve high geometric fidelity but are typically building-focused and lack semantic diversity. In contrast, proxy-based models use feed-forward image-to-3D frameworks to generate holistic scenes by jointly learning geometry and texture, a process that yields rich content but coarse and unstable geometry. We attribute these geometric failures to the extreme viewpoint gap and sparse, inconsistent supervision inherent in satellite-to-street data. We introduce Sat3DGen to address these fundamental challenges, which embodies a geometry-first methodology. This methodology enhances the feed-forward paradigm by integrating novel geometric constraints with a perspective-view training strategy, explicitly countering the primary sources of geometric error. This geometry-centric strategy yields a dramatic leap in both 3D accuracy and photorealism. For validation, we first constructed a new benchmark by pairing the VIGOR-OOD test set with high-resolution DSM data. On this benchmark, our method improves geometric RMSE from 6.76m to 5.20m. Crucially, this geometric leap also boosts photorealism, reducing the Fr'echet Inception Distance (FID) from 
+40 to 19 against the leading method, Sat2Density++, despite using no extra tailored image-quality modules. We demonstrate the versatility of our high-quality 3D assets through diverse downstream applications, including semantic-map-to-3D synthesis, multi-camera video generation, large-scale meshing, and unsupervised single-image Digital Surface Model (DSM) estimation.
+</details>
+
+[Online Demo](https://huggingface.co/spaces/qian43/Sat3DGen) [📄 Paper](https://openreview.net/forum?id=E7JzkZCofa) [🌐 Project Page](https://qianmingduowan.github.io/Sat3DGen_project_page/) [💻 Code](https://github.com/qianmingduowan/Sat3DGen)
+
 <br>
 
 ## Audio to 3D Generation:
