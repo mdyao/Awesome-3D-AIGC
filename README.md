@@ -135,6 +135,17 @@ Generating 3D models lies at the core of computer graphics and has been the focu
 
   [📄 Paper](https://arxiv.org/abs/2401.17807)
 
+### 8. Advances in Neural 3D Mesh Texturing: A Survey [arxiv 2026.06]
+
+**Authors**: Sai Raj Kishore Perla, Hao (Richard) Zhang, Ali Mahdavi-Amiri
+
+<details span>
+<summary><b>Abstract</b></summary>
+Texturing 3D meshes plays a vital role in determining the visual realism of digital objects and scenes. Although recent generative 3D approaches based on Neural Radiance Fields and Gaussian Splatting can produce textured assets directly, polygonal meshes remain the core representation across modeling, animation, visual effects, and gaming pipelines. Neural 3D mesh texturing therefore continues to be an essential and active area of research. In this survey, we present a comprehensive review of recent advances in neural 3D mesh texturing, covering methods for texture synthesis, transfer, and completion. We first summarize key foundations in mesh geometry, texture mapping, differentiable rendering, and neural generative models, and then organize the literature into a unified taxonomy spanning early GAN-based methods to modern diffusion-based pipelines. We further analyze common architectures and supervision strategies, review datasets and evaluation protocols, and discuss emerging applications, practical/commercial systems, and open challenges. Together, these insights provide a structured perspective on the current landscape and help guide future developments in learning-based 3D mesh texturing.
+</details>
+
+  [📄 Paper](https://arxiv.org/abs/2606.00137) | [🌐 Project Page](https://sairajk.github.io/neural-mesh-texturing/)
+
 
 <br>
 
