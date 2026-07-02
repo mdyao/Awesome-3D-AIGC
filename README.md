@@ -813,6 +813,17 @@ Generating a street-level 3D scene from a single satellite image is a crucial ye
 
 [Online Demo](https://huggingface.co/spaces/qian43/Sat3DGen) [📄 Paper](https://openreview.net/forum?id=E7JzkZCofa) [🌐 Project Page](https://qianmingduowan.github.io/Sat3DGen_project_page/) [💻 Code](https://github.com/qianmingduowan/Sat3DGen)
 
+  ### 25. Ink3D: Sculpting 3D Assets with Extremely Complex Textures via Video Generative Models [ECCV 2026]
+
+**Authors**: Yue Han, Chong Li, Zhening Liu, Cong Huang, Fang Deng, Yong Liu, Fangyun Wei, Yan Lu
+
+<details span>
+<summary><b>Abstract</b></summary>
+Recent 3D generative models can synthesize high-quality geometry but often struggle to reproduce intricate textures from reference images, largely due to the scarcity of large-scale 3D training data with rich surface appearance. In contrast, visual generative models are trained on datasets several orders of magnitude larger and excel at modeling complex visual patterns. Motivated by this gap, we introduce Ink3D, a framework that bridges 3D generation with large-scale video generative models to synthesize extremely complex textures. Ink3D first reconstructs a white-mesh geometry using an off-the-shelf 3D generation model. It then employs OrbitPainter, a conditional video generative model, to produce dense orbit-scan videos capturing object appearance across viewpoints. To convert these views into coherent textures, we introduce TextureOptimizer, a neural baking module that integrates dense multi-view observations while mitigating geometry inconsistencies arising from video generation. By decoupling geometry and texture synthesis and leveraging large-scale pretrained video priors, Ink3D enables significantly richer and more faithful texture generation than prior approaches.
+</details>
+
+[📄 Paper](https://arxiv.org/abs/2607.01222) [🌐 Project Page](https://yuehan99.github.io/Ink3D-TextureGen/) [💻 Code](https://github.com/YueHan99/Ink3D.TextureGen)
+
 <br>
 
 ## Audio to 3D Generation:
