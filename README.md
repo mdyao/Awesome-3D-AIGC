@@ -1685,4 +1685,4 @@ ProlificDreamer | DreamFusion | Magic3D | SJC | Latent-NeRF | Fantasia3D | TextM
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=mdyao/Awesome-3D-AIGC&type=Date)](https://star-history.com/#mdyao/Awesome-3D-AIGC&Date)
+[![Star History Chart](https://star-history.dera.page/svg?repos=mdyao/Awesome-3D-AIGC&type=Date)](https://star-history.dera.page/#mdyao/Awesome-3D-AIGC&Date)
