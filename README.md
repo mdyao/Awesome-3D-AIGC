@@ -1678,6 +1678,9 @@ ProlificDreamer | DreamFusion | Magic3D | SJC | Latent-NeRF | Fantasia3D | TextM
 - [Image3D](https://image3d.io/) is a browser-based image-to-3D tool for converting a single image into downloadable GLB, OBJ, STL, and PLY files. Related workflows include [image to STL](https://image3d.io/image-to-stl/), [image to GLB](https://image3d.io/image-to-glb/), and [AI image to 3D](https://image3d.io/ai-image-to-3d/).
 
 
+- [Ai3DSculpt](https://ai3dsculpt.com/) is a 60-second browser-based photo/PNG to 3D model generator (20 free signup credits = 1 free Fast Draft, no credit card required) exporting watertight STL for 3D printing alongside textured GLB, OBJ, and USDZ ([PNG to 3D](https://ai3dsculpt.com/png-to-3d)).
+- [TripoSR AI](https://www.triposrai.com/) provides open-source single-image 3D reconstruction guides, a [TripoSR ComfyUI Workflow Generator](https://www.triposrai.com/tools/triposr-comfyui-workflow-generator/), and 100% free local-browser 3D file converters ([GLB to OBJ](https://www.triposrai.com/tools/convert/glb-to-obj/), [PLY to STL](https://www.triposrai.com/tools/convert/ply-to-stl/)) with zero server uploads.
+
 ## Credits
 
 - Thanks to [MrNeRF](https://github.com/MrNeRF/awesome-3D-gaussian-splatting) for inspiring me to construct this repo.
