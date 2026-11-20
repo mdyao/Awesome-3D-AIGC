@@ -1679,6 +1679,7 @@ ProlificDreamer | DreamFusion | Magic3D | SJC | Latent-NeRF | Fantasia3D | TextM
 
 
 - [Ai3DSculpt](https://ai3dsculpt.com/) is a 60-second browser-based photo/PNG to 3D model generator (20 free signup credits = 1 free Fast Draft, no credit card required) exporting watertight STL for 3D printing alongside textured GLB, OBJ, and USDZ ([PNG to 3D](https://ai3dsculpt.com/png-to-3d)).
+- [Marble 3D AI](https://www.marble3dai.com/) is a browser-based text-to-3D and image-to-3D generator powered by TRELLIS 2 (watertight STL) and Hunyuan 3.1 Pro (PBR GLB/OBJ/FBX/USDZ), offering 18 free signup credits and a [$5 one-time credit pack (no subscription required)](https://www.marble3dai.com/pricing).
 - [TripoSR AI](https://www.triposrai.com/) provides open-source single-image 3D reconstruction guides, a [TripoSR ComfyUI Workflow Generator](https://www.triposrai.com/tools/triposr-comfyui-workflow-generator/), and 100% free local-browser 3D file converters ([GLB to OBJ](https://www.triposrai.com/tools/convert/glb-to-obj/), [PLY to STL](https://www.triposrai.com/tools/convert/ply-to-stl/)) with zero server uploads.
 
 ## Credits
